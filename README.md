@@ -23,4 +23,6 @@ binance.           http://bscmain.ungravel.org
 
 
 
+If you find a bug, please send a short bugreport to: bugreport@ungravel.com
 
+Thank you!
