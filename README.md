@@ -1,5 +1,5 @@
 # smartcontracts
-Ungravel GroupWallet is based on 4 different smart contracts and lots of proxy contracts.
+Ungravel is based on 4 different smart contracts and lots of proxy contracts that depend on ENS.
 
 Watch these contracts in action on ethereum mainnet  http://ethereum.ungravel.org
 
