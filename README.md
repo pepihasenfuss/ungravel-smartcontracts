@@ -3,7 +3,7 @@ Ungravel GroupWallet is based on 4 different smart contracts and lots of proxy c
 
 Watch these contracts in action on ethereum mainnet  http://ethereum.ungravel.org
 
-or explore a sample group on a testnet, such as http://arbitrum.ungravel.org on arbitrum sepolia testnet.
+or explore the testnet landing page, such as http://arbitrum.ungravel.org on arbitrum sepolia testnet.
 
 
 
