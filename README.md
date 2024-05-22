@@ -1,5 +1,5 @@
 # smartcontracts
-Ungravel is based on 4 different smart contracts and lots of proxy contracts that depend on ENS.
+ungravel is based on 4 different smart contracts and lots of proxy contracts that depend on ENS.
 
 
 factory        https://app.ens.domains/factory.ungravel.eth
@@ -19,7 +19,7 @@ or explore the testnet landing page, such as http://arbitrum.ungravel.org on arb
 
 
 
-Ungravel is live for a (friendly) user test on the following chains:
+ungravel is live for a (friendly) user test on the following chains:
 
 goerli            http://goerli.ungravel.org          (deprecated, sorry!)
 
