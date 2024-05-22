@@ -25,7 +25,7 @@ arbitrum          http://arbitrum.ungravel.org        ( fast and really good dep
 
 optimism          http://optimism.ungravel.org        ( I cannot get free test ether, so sad! Otherwise super-fast test deployment, deprecated 1.7.2024 )
 
-ethereum mainnet  http://ethereum.ungravel.org        ( super-fast installation (thank you Infura guys a lot!!!!), integrated into ENS-Manager V3 ) (really nice)
+ethereum mainnet  http://ethereum.ungravel.org        ( super-fast installation (thank you Infura guys a lot!!!!), integrated into ENS-Manager V3 )
 
 
 
