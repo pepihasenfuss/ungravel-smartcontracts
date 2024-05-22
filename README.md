@@ -19,7 +19,7 @@ polygon           http://polygon.ungravel.org         ( live on mainnet )
 
 gnosis            http://gnosis.ungravel.org          (deprecating in June 2024)
 
-binance           http://bscmain.ungravel.org         ( live on mainnet )
+binance           http://bscmain.ungravel.org         ( live on mainnet, probably discontinued )
 
 arbitrum          http://arbitrum.ungravel.org        ( fast and really good deployment )
 
