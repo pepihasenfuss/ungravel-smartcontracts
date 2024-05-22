@@ -7,7 +7,7 @@ gwallet        https://app.ens.domains/gwallet.ungravel.eth
 
 tokenMaster    https://app.ens.domains/tokenmaster.ungravel.eth
 
-auctionMaster
+auctionMaster  https://app.ens.domains/auctionmaster.ungravel.eth
 
 
 
