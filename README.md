@@ -23,7 +23,7 @@ binance           http://bscmain.ungravel.org         ( live on mainnet )
 
 arbitrum          http://arbitrum.ungravel.org        ( fast and really good deployment )
 
-optimism          http://optimism.ungravel.org        ( deprecating because I cannot get free test ether, so sad! Otherwise super-fast test deployment, live  until 1.7.2024 )
+optimism          http://optimism.ungravel.org        ( I cannot get free test ether, so sad! Otherwise super-fast test deployment, deprecated 1.7.2024 )
 
 ethereum mainnet  http://ethereum.ungravel.org        ( super-fast installation (thank you Infura guys a lot!!!!), integrated into ENS-Manager V3 ) (really nice)
 
