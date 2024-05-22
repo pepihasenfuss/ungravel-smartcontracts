@@ -30,6 +30,6 @@ ethereum mainnet  http://ethereum.ungravel.org        ( super-fast infura instal
 
 
 If you find a bug, please send a short bugreport to: bugreport@ungravel.com
-Each bug report gets directly rooted to the lead developer and probably receives a small grant once ungravel goes live officially.
+Each bug report gets directly rooted to the lead developer and probably receives am answer once ungravel goes live officially. (include your Ethereum mainnet account / address & your e-mail)
 
 Thank you!
