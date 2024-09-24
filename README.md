@@ -42,7 +42,9 @@ ethereum mainnet  http://ethereum.ungravel.org        ( super-fast installation 
 
 <br><br>
 
-If you want to be included in the Google Play test program, send your gmail address to one@ungravel.com to get a pre-release access to Ungravel on Android.
+If you want to be included in the Google Play test, send your gmail address to one@ungravel.com to get a pre-release access to "Ungravel on Android".
+<br>
+Ungravel on Android is super fast!
 
 If you may be interested in the iOS dapp, send a note to one@ungravel.com with the subject "Ungravel on iOS", thank you!
 
