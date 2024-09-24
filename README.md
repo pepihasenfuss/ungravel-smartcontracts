@@ -10,7 +10,7 @@ tokenMaster    https://app.ens.domains/tokenmaster.ungravel.eth
 
 auctionMaster  https://app.ens.domains/auctionmaster.ungravel.eth
 
-
+<br>
 
 
 Watch these contracts in action on ethereum mainnet  http://ethereum.ungravel.org
@@ -38,7 +38,7 @@ arbitrum          http://arbitrum.ungravel.org        ( super fast and really go
 
 optimism          http://optimism.ungravel.org        ( I cannot get enough test ether, so sad! Otherwise fast test deployment, deprecated 1.7.2024 )
 
-ethereum mainnet  http://ethereum.ungravel.org        ( super-fast installation (thank you to the Infura guys, a lot!!!!), integrated into ENS-Manager V3 )
+ethereum mainnet  http://ethereum.ungravel.org        ( super-fast installation (thanks to the Infura guys, a lot!!!!), integrated into ENS-Manager V3 )
 
 
 If you want to be included in the Google Play test program, send your gmail address to one@ungravel.com to get a pre-release access to Ungravel on Android.
