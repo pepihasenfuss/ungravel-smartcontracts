@@ -49,7 +49,7 @@ Ungravel on Android is super fast!
 If you may be interested in the iOS dapp, send a note to one@ungravel.com with the subject "Ungravel on iOS", thank you!
 
 
-**** Attention ****
+**** Attention **** DISCLAIMER ****
 
 Ungravel is NOT yet ready for prime-time! Be carefull with accounts that hold valuable assets. We are debugging and testing, please consider Ungravel a dApp in beta.
 
