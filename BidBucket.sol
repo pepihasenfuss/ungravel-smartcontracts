@@ -155,3 +155,58 @@ abstract contract AbsMultiFour {
   function chainName() public virtual view returns (string memory);
 }
 bytes32 constant KSALT = 0x4db45745d63e3d3fca02d388bb6d96a256b72fa6a5ca7e7b2c10c90c84130f3b;
+
+// ************************* BiddingProxy CONTRACT *****************************
+// The bidding proxy contract is deployed for each external bidder, an Ungravel Group.
+// External bidders are GWP from another team/group. Bidders must be from a Group.
+// BiddingProxy is a safe and cost-saving method to participate and bid in a Funding Auction.
+pragma solidity 0.8.30;
+contract BiddingProxy {
+    address   public           masterCopy;
+    uint64    public           creationDate;
+    AbsReg    public           registrar;
+    bytes32   public           lhash;
+    address   public           beneficiary;
+    
+    event DeedCreated(address indexed,bytes32 indexed);
+    
+    modifier onlyGWP() {
+      if (msg.sender!=address(registrar))
+        registrar.__calledByUngravelGWP(msg.sender);
+
+      _;
+    }
+
+    constructor(address _masterCopy,bytes32 _lhash) payable { 
+      masterCopy   = _masterCopy;
+      registrar    = AbsReg(msg.sender);
+      creationDate = uint64(block.timestamp);
+      lhash        = _lhash;
+      emit DeedCreated(address(this),_lhash);
+    }
+    
+    fallback () external onlyGWP payable
+    {   
+      // solium-disable-next-line security/no-inline-assembly
+      assembly {
+          let ptr := mload(0x40)
+          calldatacopy(ptr, 0, calldatasize())
+          let success := delegatecall(gas(),and(sload(0),0xffffffffffffffffffffffffffffffffffffffff),ptr,calldatasize(),0,0)
+          returndatacopy(0, 0, returndatasize())
+          if eq(success,0) { revert(0,0x204) }
+          return(0, returndatasize())
+      }
+    }
+    receive() external onlyGWP payable
+    { 
+      // solium-disable-next-line security/no-inline-assembly
+      assembly {
+          let ptr := mload(0x40)
+          calldatacopy(ptr, 0, calldatasize())
+          let success := delegatecall(gas(),and(sload(0),0xffffffffffffffffffffffffffffffffffffffff),ptr,calldatasize(),0,0)
+          returndatacopy(0, 0, returndatasize())
+          if eq(success,0) { revert(0,0x204) }
+          return(0, returndatasize())
+      }
+    }
+}
