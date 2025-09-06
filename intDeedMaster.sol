@@ -156,3 +156,56 @@ abstract contract AbsMultiFour {
 }
 bytes32 constant KSALT = 0x4db45745d63e3d3fca02d388bb6d96a256b72fa6a5ca7e7b2c10c90c84130f3b;
 
+// ******************************* DEED MASTER CONTRACT ************************
+pragma solidity 0.8.30;
+contract intDeedMaster {
+  address internal           masterCopy;
+  bytes32   public           lhash;
+  address   public           owner;
+  uint64    public           creationDate;
+  AbsReg    public immutable theRegistrar;
+
+  uint256 private _guardCounter  = 1;
+
+  event DeedMasterCreated(address indexed);
+  event AdjustBalance(uint indexed);
+  event CloseDeed(address indexed, address indexed);
+
+  modifier nonReentrant() {
+      _guardCounter += 1;
+      uint256 localCounter = _guardCounter;
+      _;
+      require(localCounter == _guardCounter,"r");
+  }
+
+  modifier onlyTheRegistrar() {
+    require(msg.sender==address(theRegistrar),"x");
+    _;
+  }
+  
+  constructor(string memory _intDName) payable
+  {
+    masterCopy   = msg.sender;
+    owner        = msg.sender;
+    theRegistrar = AbsReg(msg.sender); // AuctionMaster contract
+    creationDate = uint64(block.timestamp);
+    emit DeedMasterCreated(address(this));
+    AbsReverseRegistrar(theRegistrar.reverseR()).setName(_intDName);
+  }
+  
+  function getMasterCopy() external view returns (address) { return masterCopy; }
+  function registrar()     external view returns (AbsReg)  { return AbsIntDeedMaster(masterCopy).theRegistrar(); }
+
+  function adjustBal_1k3(uint newValue) external nonReentrant onlyTheRegistrar payable { // 0x0000f6a6
+    if (address(this).balance<=newValue) return;
+    payable(owner).transfer(address(this).balance-newValue);
+    require(address(this).balance==newValue,"G");
+    emit AdjustBalance(newValue);
+  }
+  
+  function closeDeed_igk(address receiver) external nonReentrant onlyTheRegistrar payable { // 0x00004955
+    payable(address( (receiver!=address(0)) ? receiver : owner )).transfer(address(this).balance);
+    require(address(this).balance==0,"I");
+    emit CloseDeed(address(this), receiver);
+  }
+}
