@@ -20,6 +20,7 @@ interface IMulGWP {                                                             
   function getAllTransactions()            external view returns (uint256[] memory transArr);
   function getMasterCopy()                                                    external view returns (address);
   function nameAuctionBidBucketLabel(bytes32 labelhash, address deedContract) external;
+  function getIntention()                  external   view returns (AbsIntentions);
 }
 
 interface IMulENS {                                                              // ENS Registry grants access to domain names and domain name properties
@@ -102,19 +103,30 @@ interface MulDefaultResolver {                                                 /
   function setText(bytes32 node, string calldata key, string calldata value) external;
   function setAuthorisation(bytes32 node, address target, bool isAuthorised) external;
 }
-
+abstract contract AbsIntentions {
+  function getGWF() public virtual view returns (MulGwf);
+  function saveLetterOfIntent(address target, uint nbOfShares) public virtual payable;
+}
 abstract contract MulRr {                                                     // Reverse Resolver and Reverse Default Resolver give access to the domain name, if only an address is given
   MulDefaultResolver public defaultResolver;
+  IMulENS   public immutable ens;
   function node(address addr) external virtual pure returns (bytes32);
   function setName(string memory name) external virtual returns (bytes32);
   function name(bytes32 node) external virtual view returns (string memory);
 }
-
+abstract contract NmWrapper {
+  function setSubnodeRecord(bytes32 parentNode,string memory label,address owner,address resolver,uint64 ttl,uint32 fuses,uint64 expiry) external virtual returns (bytes32 node);
+  function setSubnodeOwner(bytes32 node,string calldata label,address newOwner,uint32 fuses,uint64 expiry) external virtual returns (bytes32);
+  function ownerOf(uint256 id) external virtual view returns (address);
+  function setApprovalForAll(address operator,bool approved) external virtual;
+}
 abstract contract MulGwf {                                                    // Group Wallet Factory, GWF, main Ungravel entry point coordinating Ungravel Groups and all activities, deploying ProxyGroupWallet, GWP, and ProxyToken, aka TokenProxy
   MultiResolver                       public  resolverContract;
   IMulENS                             public  ens;
   MulBaseR                            public  base;
   MulRr                               public  reverseContract;
+  NmWrapper                           public  ensNameWrapper;
+
   function getGWProxy(bytes32 _dHash) external view virtual returns (address);
   function getIsOwner(bytes32 _dHash,address _owner) external view virtual returns (bool);
   function getOwner(bytes32 _domainHash) external view virtual returns (address);
@@ -154,15 +166,15 @@ contract Multicall4 {
       _;
       require(localCounter == _guardCounter,"No re-entrance!");
     }
-    modifier onlyGWP() {
+    modifier onlyGWPorMember() {
       address send = msg.sender;
-      bytes32 hash = __nHashFromSender(send); // ************************ node hash *******
-
-      require(hash!=0x0 && __isGwpNameSpace(hash,send) && __isGwpFromSender(send),"onlyGWP!");
+      bytes32 hash = __nHashFromSender(send); // ************************ node hash === reverse record entry *****
+    
+      require(__isGroupMember(send) || (hash!=0x0 && __isGwpNameSpace(hash,send) && __isGwpFromSender(send)),"onlyGWPorMem!");
       _;
     }
 
-    function strlen(string memory s) private pure returns (uint) {
+    function strlen(string memory s) public pure returns (uint) {
         uint len;
         uint i = 0;
         uint bytelength = (bytes(s).length % 32);
@@ -263,7 +275,7 @@ contract Multicall4 {
           a := mload(add(_data, 32))
       }
     }
-    function bytes32ToStr(bytes32 _b) private pure returns (string memory) {
+    function bytes32ToStr(bytes32 _b) public pure returns (string memory) {
       bytes memory bArr = new bytes(32);
       uint256 i;
       
@@ -287,6 +299,9 @@ contract Multicall4 {
       
       return string(rArr); 
     }
+    function bytes32ToBytes32WithLen(bytes32 _b) public pure returns (bytes32) {
+      return bytes32( uint256(uint256(_b) & 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00) + uint256(uint256(strlen(bytes32ToStr(_b)))&0xff) );
+    }
     function toLowerCaseBytes32(bytes32 _in) private pure returns (bytes32 _out) {
       uint256 K_TMASK = 0xf000000000000000000000000000000000000000000000000000000000000000;
       if ( uint256(uint256(uint256(_in) & K_TMASK) >> 252) <= 5 ) return bytes32(uint256(uint256(_in) | 0x2000000000000000000000000000000000000000000000000000000000000000 ));
@@ -303,7 +318,7 @@ contract Multicall4 {
     /// @notice Reverts if msg.value is less than the sum of the call values
     /// @param calls An array of Call3Value structs
     /// @return returnData An array of Result structs
-    function aggregate3Value(Call3Value[] calldata calls) public payable nonReentrant onlyGWP returns (Result[] memory returnData) {
+    function aggregate3Value(Call3Value[] calldata calls) public payable nonReentrant onlyGWPorMember returns (Result[] memory returnData) {
         uint256 valAccumulator;
         uint256 length = calls.length;
         returnData = new Result[](length);
@@ -412,7 +427,6 @@ contract Multicall4 {
       if (chainId==480)      return ".wc";
       if (chainId==1135)     return ".lisk";
       if (chainId==1868)     return ".son";
-      if (chainId==5777)     return ".neth";
       if (chainId==8453)     return ".base";
       if (chainId==41455)    return ".az";
       if (chainId==42161)    return ".one";
@@ -425,7 +439,6 @@ contract Multicall4 {
       if (chainId==534352)   return ".scroll";
       if (chainId==7777777)  return ".zora";
       if (chainId==11155111) return ".sepeth";
-      if (chainId==11155420) return ".opt";
       return "";
     }
 
@@ -441,7 +454,6 @@ contract Multicall4 {
       if (chainId==480)      return "worldchain";
       if (chainId==1135)     return "lisk";
       if (chainId==1868)     return "soneium";
-      if (chainId==5777)     return "ganache";
       if (chainId==8453)     return "base";
       if (chainId==41455)    return "alephzero";      
       if (chainId==42161)    return "arbmain";
@@ -454,7 +466,6 @@ contract Multicall4 {
       if (chainId==534352)   return "scroll";
       if (chainId==7777777)  return "zora";
       if (chainId==11155111) return "sepolia";
-      if (chainId==11155420) return "optimism";
       return "";
     }
 
@@ -478,23 +489,23 @@ contract Multicall4 {
       return keccak256( abi.encodePacked( MulBaseR(getGWF().base()).baseNode(), keccak256( abi.encodePacked(dn) ) ) );
     }
 
-    function nodeHashOfMember(string memory _dn) public view returns (bytes32) { // domain name e.g. 'ethereum-foundation.eth'
+    function nodeHashOfMember(string memory _dn) public view returns (bytes32) {  // domain name e.g. 'ethereum-foundation.eth'
       return keccak256(abi.encodePacked( MulBaseR(getGWF().base()).baseNode(),keccak256( substring( bytes(_dn), delArr(_dn)[0]+1, delArr(_dn)[1] - delArr(_dn)[0] -1 ) ) ));
     }
 
-    function domHash(IMulGWP gw) internal view returns (bytes32) {                 // provide domain name hash of domain name of the GWP - Group Wallet Proxy contract, s.a. hash("my-company.one")
+    function domHash(IMulGWP gw) internal view returns (bytes32) {                // provide domain name hash of domain name of the GWP - Group Wallet Proxy contract, s.a. hash("my-company.one")
       address gwfc = gw.getGWF();
       require(address(gwfc)!=address(0x0)&&address(getGWF())==gwfc,"gwfc");
       return bytes32(gw.getTransactionRecord(uint256(uint160(gwfc))));
     }
 
-    function getGWP(bytes32 _dhash) internal view returns (IMulGWP) {              // get GroupWallet Proxy contract address of Group(_dhash)
+    function getGWP(bytes32 _dhash) internal view returns (IMulGWP) {             // get GroupWallet Proxy contract address of Group(_dhash)
       address gwp = getGWF().getGWProxy(_dhash);
       require(gwp!=address(0x0)&&isContract(gwp),"GW");
       return IMulGWP(gwp);
     }
 
-    function reverseDName(IMulGWP _g) private view returns (string memory) {       // reverse the address to get the domain name, s.a. "vitalik.ens.eth"
+    function reverseDName(IMulGWP _g) private view returns (string memory) {      // reverse the address to get the domain name, s.a. "vitalik.ens.eth"
       return string(rev().defaultResolver().name(rev().node(address(_g))));
     }
 
@@ -503,6 +514,7 @@ contract Multicall4 {
       return this.onERC1155Received.selector;
     }
 
+    // avatar utilities for setting avatar pictures to resolver() contract
     function setAvatarPicture(bytes32 _dHash, MultiResolver resolver) public payable {     // default avatar url
       resolver.setText(_dHash,'avatar','https://www.ungravel.com/ung.png');
     }
@@ -544,6 +556,9 @@ contract Multicall4 {
       require(_dHash!=0,"__tokenFromHash");
       return MulToken(GWF.getProxyToken(_dHash));
     }
+    function __tokenContract(IMulGWP _gwp) public view returns (MulToken) {                // TokenProxy contract from GWP contract
+      return __tokenFromHash( __hashFromGWP(_gwp) );
+    }
     function __ownersFromHash(bytes32 _dHash) public view returns (address[] memory) {     // owners (ARRAY) from domain hash of GWP, using GWF
       require(_dHash!=0,"__ownersFromHash");
       return GWF.getOwners(_dHash);
@@ -582,11 +597,11 @@ contract Multicall4 {
       require(_dHash!=0,"__ensOwner");
       return MultiResolver(GWF.resolverContract()).addr(_dHash);                           // return resolvedAddress() from group domain name hash
     }
-    function __isGwpNameSpace(bytes32 _dHash,address _sender) public view returns (bool) { // _dHash/_sender belong to EVM and Ungravel Unified Name Space, UUNS
+    function __isGwpNameSpace(bytes32 _dHash,address _sender) public view returns (bool) { // _dHash / _sender belong to EVM and Ungravel Unified Name Space, UUNS
       require(_dHash!=0,          "__isGwpNameSpace");
       require(_sender!=address(0),"__isGwpNameSpace2");
-      require(isContract(_sender),"__isGwpNameSpace3");
-      return (isContract(_sender) && __isNameSpace(_dHash) && __ensOwner(_dHash)==_sender);// and msg.sender is GWP belonging to UUNS
+      require(isContract(_sender),"__isGwpNameSpace3");                                    // GWP or member of group
+      return (__isNameSpace(_dHash) && __ensOwner(_dHash)==_sender);                       // and msg.sender is GWP or group member and is belonging to UUNS
     }
     function __ungravelDomain() public view returns (string memory) {                      // "ungravel.base" | "ungravel.lisk"
       bytes32 tld32 = mb32(bytes(tld()));                                                  // tld ".base" | ".eth" | ".lisk"
@@ -631,7 +646,6 @@ contract Multicall4 {
       if (strlen(dn)==0) return false;
 
       bytes32 hash = __getDomainHash(dn);                                                  // domain hash of somegroup.base | somegroup.lisk
-      //require(hash!=0x0,"__isGM2");
 
       IMulGWP gwp = __gwpFromHash(hash);                                                   // GWP of sender
       return ((strlen(dn)!=0) && hash!=0x0 && __isNameSpace(hash) && address(gwp)!=address(0) && __isGwpFromSender(address(gwp)) && __ensOwner(hash)==address(gwp) && __isMemberOfGroup(gwp,_sender)); // is UUNS
@@ -651,6 +665,89 @@ contract Multicall4 {
     }
     function __resolveSubDomain(string memory _d) public view returns (address) {          // resolve subdomain name to address, e.g. "pepsi.ungravel.lisk"
       return __ensOwner(__subdomainHash(_d));
+    }
+    function __validAddress(address ct) private pure returns (bool) {                      // checks for 0x0 addresses
+      return ct!=address(0);
+    }
+    function __validIntentionsContract(address a) public view returns (AbsIntentions intent) { // get Intentions contract address from GWP
+      intent = IMulGWP(a).getIntention();
+      require(__validAddress(a)&&__validAddress(address(intent)),"U");                 // _validAddress
+      return intent;
+    }
+    function __callerExists(address _caller) public view returns (bool) {                  // check reverse name node of sender address, e.g. "silvias-bakery.eth"
+      return MulRr(GWF.reverseContract()).ens().recordExists(MulRr(GWF.reverseContract()).node(_caller)); // check if ENS entry of node exists: true | false
+    }
+    function __calledByMember(address _sender) public view returns (bool) {                // check if calling sender is member of a group
+       require(__isGroupMember(_sender),"N");
+       return true;
+    }     
+    function __ungravelGW(bytes32 _hash) public view {                                     // _hash belongs to a domain name that belongs to Ungravel Unified Name Space
+      // _hash belongs to a domain name that belongs to Ungravel - 
+      // protecting the call to only accept calls from inside the unified name space, UUNS
+
+      IMulGWP gwp = IMulGWP(GWF.getOwner(_hash));                                       // *** hash of aseed *** _hash = auction label hash
+
+      bytes32 hsh  = __hashFromGWP(gwp);                                                // hsh = GroupWallet domain hash
+      address gwfc = gwp.getGWF();                                                      // GWF contract, derived from GWP
+      require(__callerExists(address(gwp)) && hsh!=0x0 && __validAddress(gwfc) && MulGwf(gwfc).getOwner(hsh)==address(gwp),"R");
+    }                                   
+    function __getGasPrice() public view returns (uint256 gasPrice) {
+      assembly { gasPrice := gasprice() }
+    }
+    function __calculateMinAuctionPrice() public view returns (uint64 minP) {
+      minP = uint64(uint64(__getGasPrice()) * uint(2433123) * 100) / 10;
+      if (minP<=0.001 ether) minP += 0.001 ether;
+      return minP;
+    }
+    function __auctionTRecord(IMulGWP gwp) public view returns (address,uint) {
+      uint256 K_TYPEMASK    = 0xf000000000000000000000000000000000000000000000000000000000000000;
+      uint256 K_ADDRESSMASK = 0x000000000000000000000000ffffffffffffffffffffffffffffffffffffffff; 
+
+      uint256 t;
+      uint i = gwp.getTransactionsCount();
+      require(i!=0,"0");
+
+      do {
+        i--;
+        t = gwp.getTransactionRecord(i);
+      } while( (i!=0) && (t!=0) && ((t & K_TYPEMASK) != K_TYPEMASK) );
+
+      require(address(uint160(t & K_ADDRESSMASK))==address(this),"n");
+      return (address(uint160(t & K_ADDRESSMASK)),i);
+    }
+    function __getLabelBytes32(IMulGWP gw,uint _tNb) internal view returns (bytes32) {
+      return bytes32(uint256(gw.getTransactionRecord(_tNb) & 0x000000000000ffffffffffff0000000000000000000000000000000000000000)<<48);  // e.g. label name "seed"
+    }
+    function __addBucketNbToLabel(bytes32 label32,uint nb) internal pure returns (bytes32) { // *** only one byte *** 
+      return bytes32( uint256(uint256(uint256(nb+96))<<248) + uint256(uint256(label32)>>8) );
+    }
+    function __nextBucketLabel(IMulGWP gw) public view returns (bytes32 b) {
+      address gwfc = gw.getGWF();
+      require(address(gwfc)!=address(0),"f");
+      
+      IMulENS ens = MulGwf(gwfc).ens();
+      
+      (address auctionTAddr,uint tNb) = __auctionTRecord(gw);
+      require(address(ens)!=address(0) && auctionTAddr!=address(0)&&tNb!=0,"*");
+
+      bytes32 label    = __getLabelBytes32(gw,tNb);
+      bytes32 ldomHash = __hashFromGWP(gw);
+      bytes32 labelHash;
+      bytes32 dhash;
+      
+      uint i = 0;
+      do {
+        i++;
+        labelHash  = keccak256(bytes(bytes32ToStr( __addBucketNbToLabel(label,i) )));
+        dhash      = keccak256(abi.encodePacked(ldomHash,labelHash));
+      } while(ens.recordExists(dhash)&&i<=26);
+      
+      if (!ens.recordExists(dhash)) {
+        if ((address(MulGwf(gwfc).ensNameWrapper())==address(0))) return labelHash;  
+        else          return bytes32ToBytes32WithLen(__addBucketNbToLabel(label,i));
+      }
+
+      require(false,"bb"); // *** max. 26 different labels *** a-z
     }
 
     function __unit_tests() private view returns (bool) {
@@ -704,7 +801,7 @@ contract Multicall4 {
     }
 
     function version() public pure returns(uint256 v) {
-      return 20010016;
+      return 20010319;
     }
 
     fallback() external payable {
