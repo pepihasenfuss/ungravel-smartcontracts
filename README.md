@@ -282,6 +282,50 @@ sepolia<br>
 
 <br><br>
 
+polygon<br>
+
+<a href="https://polygonscan.com/address/0x21f71275edb2e8bbac49975b3b7999005340f7ff#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x21f71275edb2e8bbac49975b3b7999005340f7ff]<br>
+<a href="https://polygonscan.com/address/0x575ffdffb6b322b5d28b3c0edeccba24020102c8#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x575ffdffb6b322b5d28b3c0edeccba24020102c8]<br>
+<a href="https://polygonscan.com/address/0xdfc47977b8de864aafe85c53028c3c777dc432de#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0xdfc47977b8de864aafe85c53028c3c777dc432de]<br>
+<a href="https://polygonscan.com/address/0xc39afb9d7648256f6a706868c908896e079510c1#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0xc39afb9d7648256f6a706868c908896e079510c1]<br>
+<a href="https://polygonscan.com/address/0x827ad71b2118225eeea9e3ed36ac7b2900d82633#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0x827ad71b2118225eeea9e3ed36ac7b2900d82633]<br>
+<a href="https://polygonscan.com/address/0xc7346582ecda765a198b9554ad0ec1e6bd91f58d#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0xc7346582ecda765a198b9554ad0ec1e6bd91f58d]<br>
+<a href="https://polygonscan.com/address/0x82301243198e208b90e1bbfe3d134d0c4a86c2b1#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0x82301243198e208b90e1bbfe3d134d0c4a86c2b1]<br>
+<a href="https://polygonscan.com/address/0x2ae1f932718da8157a8c27a926dbbbfeae668259#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0x2ae1f932718da8157a8c27a926dbbbfeae668259]<br>
+<a href="https://polygonscan.com/address/0xd6d08bd18e814e92ecf69d492fc0a4f822658db1#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0xd6d08bd18e814e92ecf69d492fc0a4f822658db1]<br>
+<a href="https://polygonscan.com/address/0xa45d1747645996dca6d0fd836dbebb4dad8574d1#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0xa45d1747645996dca6d0fd836dbebb4dad8574d1]<br>
+<a href="https://polygonscan.com/address/0x9fab241a2035b33e4327c9c6074b211a939b4007#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0x9fab241a2035b33e4327c9c6074b211a939b4007]<br>
+<a href="https://polygonscan.com/address/0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc]<br>
+<a href="https://polygonscan.com/address/0x376224e09bf72b5b16586ccc78dbe53444221b54#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0x376224e09bf72b5b16586ccc78dbe53444221b54]<br>
+<a href="https://polygonscan.com/address/0x12695c119f848be7acb0f2bbb8e8cc090f050ea6#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0x12695c119f848be7acb0f2bbb8e8cc090f050ea6]<br>
+<a href="https://polygonscan.com/address/0x2d7b51a6fe81d8b4546872a46166e4d6e45e0f9d#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x2d7b51a6fe81d8b4546872a46166e4d6e45e0f9d]<br>
+<a href="https://polygonscan.com/address/0xafe96ad86a9b10834cb02ebe083c4044e27be623#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0xafe96ad86a9b10834cb02ebe083c4044e27be623]<br>
+<a href="https://polygonscan.com/address/0x124bb8e8c994a107c0fab0337311547f217cfa89#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0x124bb8e8c994a107c0fab0337311547f217cfa89]<br>
+<a href="https://polygonscan.com/address/0x6e720f0f882ef04db76282b71f59f4e28f2f39ae#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0x6e720f0f882ef04db76282b71f59f4e28f2f39ae]<br>
+
+<a href="https://polygonscan.com/address/0x98907cb3106e122eb9ff2154ebacd3ec436d35a2#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0x98907cb3106e122eb9ff2154ebacd3ec436d35a2]<br>
+<a href="https://polygonscan.com/address/0x769074deb813c99b5da9b29a4340996f5e3c343c#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0x769074deb813c99b5da9b29a4340996f5e3c343c]<br>
+<a href="https://polygonscan.com/address/0x5164ab7725bc1f58ff2b63b6cbbb2d5d8c5f056c#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0x5164ab7725bc1f58ff2b63b6cbbb2d5d8c5f056c]<br>
+<a href="https://polygonscan.com/address/0xf6b64dfeb46ce2b1793d03e070bd44510e02d116#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0xf6b64dfeb46ce2b1793d03e070bd44510e02d116]<br>
+<a href="https://polygonscan.com/address/0x96750a75376f4393ba02c5e1066aed232cb65b6c#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0x96750a75376f4393ba02c5e1066aed232cb65b6c]<br>
+<a href="https://polygonscan.com/address/0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d]<br>
+<a href="https://polygonscan.com/address/0xb24a8c178cf81d35e38683012e786e3231cb950b#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0xb24a8c178cf81d35e38683012e786e3231cb950b]<br>
+<a href="https://polygonscan.com/address/0x2c804ca3604771eb71210736f9cab91c984b57ea#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0x2c804ca3604771eb71210736f9cab91c984b57ea]<br>
+<a href="https://polygonscan.com/address/0x2d7b51a6fe81d8b4546872a46166e4d6e45e0f9d#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x2d7b51a6fe81d8b4546872a46166e4d6e45e0f9d]<br>
+<a href="https://polygonscan.com/address/0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8]<br>
+<a href="https://polygonscan.com/address/0x312e4928c5b01b1cc286e3dfb64330028bd4052c#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x312e4928c5b01b1cc286e3dfb64330028bd4052c]<br>
+<a href="https://polygonscan.com/address/0x7382aa0db46c60a7ccc2a48a3cedd534c7edf2fe#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x7382aa0db46c60a7ccc2a48a3cedd534c7edf2fe]<br>
+
+<a href="https://polygonscan.com/address/0xcb60ebaa8a4745d9c896978a0cc68d36089e0c6c#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0xcb60ebaa8a4745d9c896978a0cc68d36089e0c6c]<br>
+<a href="https://polygonscan.com/address/0x2300de3081abbb84fb224be765a427a30104e548#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x2300de3081abbb84fb224be765a427a30104e548]<br>
+<a href="https://polygonscan.com/address/0x1c576c8d038f48224dfe780108449a0ac828864a#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0x1c576c8d038f48224dfe780108449a0ac828864a]<br>
+<a href="https://polygonscan.com/address/0xcf6cd89eba2884dfe8d3c1fe7013112ad3a99060#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0xcf6cd89eba2884dfe8d3c1fe7013112ad3a99060]<br>
+<a href="https://polygonscan.com/address/0xa68b1a57b1013048789b014be0d20a2aaa16c2c4#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0xa68b1a57b1013048789b014be0d20a2aaa16c2c4]<br>
+<a href="https://polygonscan.com/address/0x75114401118c5041b13c075a305ae5f4c641a7b9#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0x75114401118c5041b13c075a305ae5f4c641a7b9]<br>
+<a href="https://polygonscan.com/address/0x312e4928c5b01b1cc286e3dfb64330028bd4052c#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x312e4928c5b01b1cc286e3dfb64330028bd4052c]<br>
+<a href="https://polygonscan.com/address/0x7382aa0db46c60a7ccc2a48a3cedd534c7edf2fe#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x7382aa0db46c60a7ccc2a48a3cedd534c7edf2fe]<br>
+
+<br><br>
 
 
 
