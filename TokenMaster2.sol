@@ -850,7 +850,7 @@ contract TokenMaster2 {
         emit Transfer(from, toReceiver, amount);
     }
     
-    function transferOwnership_m0(address newOwner) external nonReentrant onlyByGWF {
+    function transferOwnership_m0(address newOwner) external nonReentrant onlyByGWF { // 0x0000e7f1
       my_require(newOwner!=address(0),"Y");
       ownerPrices = uint256(ownerPrices & KPMASK) + uint256(uint160(newOwner));
     }
