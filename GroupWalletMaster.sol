@@ -823,7 +823,7 @@ contract GroupWalletMaster {                                                    
       return getENS().owner(_hash);
     }
 
-    function submitExecuteSplitTransaction(uint aTRecord, uint256 _secret) external nonReentrant onlyOwners payable { // special transaction type 
+    function submitExecuteSplitTransaction(uint aTRecord, uint256 _secret) external nonReentrant onlyOwners payable { // special transaction type 0xd8197658 submitExecuteSplitTransaction(uint256,uint256)
       // Submitting a spin-off proposal / transaction record.
 
       uint tNb = msg.value & 0x000000000000000000000000000000000000000000000000000000ffffffffff;
@@ -842,16 +842,22 @@ contract GroupWalletMaster {                                                    
       bytes32 dHash        = dHashFromLabelBytes32(splitName);
       string memory _dname = labelStrFromBytes32(splitName);                               // domainName
       
-      if (!isENSV3()) {
-        getCtrl().registerWithConfig{value: getCtrl().rentPrice(_dname,31536000)}(_dname,address(this),31536000,bytes32(_secret),address(getRsv()),GWF);
+      // Unfortunately, some code deals with chains that support ENSV3 and the other one is ENSV2.
+      // We differentiate with the isENSV3() function. ENS on mainnet supports the NameWrapper, wrapping all domain names into NFTs.
+      // On all other chains, Ungravel supports what we coined ENSV2, ENS - compatible to ENS on mainnet, except NameWrapper() support.
+      // Hint: NameWrapper() makes things really complicate and we do not need more NFTs.
+      // Without NameWrapper(), you have ERC721 token as well, we do not support or need tradable, wrapped NFTs, sorry.
+
+      if (!isENSV3()) {                                                                          // ENSV2 without wrapped domain names
+        getCtrl().registerWithConfig{value: getCtrl().rentPrice(_dname,31536000)}(_dname,address(this),31536000,bytes32(_secret),address(getRsv()),GWF); // one year
         getRsv().setName(dHash,string(abi.encodePacked(_dname,AbstractGroupWalletFactory(GWF).tld())));
         getENS().setOwner(dHash,GWF);
       }
-      else
+      else                                                                                       // ENS V3 with NameWrapper() support on mainnet
       {
-        (uint _rent,uint _dd) = AbsEthRegV3(address(getCtrl())).rentPrice(_dname,31536000);// rent ENS V3
-        _dd = 0;                                                                           // silence compiler warning
-        AbstractGroupWalletFactory(GWF)._register(dHash,_rent,_dname,31536000,bytes32(_secret));
+        (uint _rent,uint _dd) = AbsEthRegV3(address(getCtrl())).rentPrice(_dname,31536000);      // rent ENS V3 rentPrice 0x83e7f6ff // one year
+        _dd = 0;                                                                                 // silence compiler warning
+        AbstractGroupWalletFactory(GWF)._register(dHash,_rent,_dname,31536000,bytes32(_secret)); // one year
       }
       
       tArr[tNb] = uint256( (uint256( uint64( getTRequired(tNb-1) ) | getOwnerMask(msg.sender) )<<216) & K_FLAGSMASK ) + uint256( uint256(aTRecord) & K_FLAGS3MASK );
@@ -1045,7 +1051,12 @@ contract GroupWalletMaster {                                                    
       }
       
       if (cmd==14) {                                                                                   // K_UPGRADECTR upgrade
-        if (asset==127) AbstractGroupWalletFactory(GWF).upgradeGWF(dHash,target);                      // upgrade GWF contract
+        if (asset==127) {
+          AbstractGroupWalletFactory(GWF).upgradeGWF(dHash,target);                                    // upgrade GWF contract. calls current GWF, upgradeGWF() calls new GWF
+          GWF = target;                                                                                // upgrade GWF to new GWF
+          tArr[uint256(uint160(GWF))] = uint256(dHash);                                                // GWP stores project domain hash
+        }
+
         if (asset==123) l_token.upgradeTokenMaster(dHash,target);                                      // upgrade TMC contract
         if (asset==122) l_token.upgradeGWM(dHash,target);                                              // upgrade GWM contract
       }
@@ -1066,7 +1077,6 @@ contract GroupWalletMaster {                                                    
       if ((cmd==7)||(cmd==8))  return saveNotExecuted(_tId,f,t);                                       // K_SPLITGROUP split-group | K_SPINOFFGROUP spin-off, DO NOT execute split-group yet
       
       // *** migrate and legacy token transactions handled elsewhere, only for reference ***
-
       //if (cmd==9)  return saveExecuted(_tId,f,t);                                                    // K_MIGRATE migrate group to another chain, x-chain migration
       //if (cmd==11) return saveExecuted(_tId,f,t);                                                    // K_LEGACYTOKEN legacy token, shares from another group before split-group
       
@@ -1421,7 +1431,7 @@ contract GroupWalletMaster {                                                    
     receive() external payable { emit Deposit(msg.sender, msg.value); }
 
     function version() external pure returns(uint256) {
-      return 20010127;
+      return 20010129;
     }
     
     constructor(AbstractReverseRegistrar _reverse, address[] memory _owners) payable {
@@ -1434,6 +1444,6 @@ contract GroupWalletMaster {                                                    
       } while(i<(_owners.length & MAX_OWNER_COUNT));
       
       masterCopy = msg.sender;                                                  // save owner of GroupWalletMaster
-      _reverse.setName(string(abi.encodePacked('gwallet.ungravel',AbsMultiFour(address(owners[0])).tld())));     // assigning reverse resolver record GWM, e.g. ".lisk"
+      _reverse.setName(string(bytes.concat(bytes('gwallet.ungravel'),bytes(AbsMultiFour(address(owners[0])).tld())))); // assigning reverse resolver record GWM, e.g. ".lisk"
     }
 }
