@@ -374,6 +374,54 @@ binanceBSC<br>
 <br><br>
 
 
+gnosis<br>
+
+<a href="https://gnosisscan.io/address/0x2ae1f932718da8157a8c27a926dbbbfeae668259#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x2ae1f932718da8157a8c27a926dbbbfeae668259]<br>
+<a href="https://gnosisscan.io/address/0x7255fc0384f58d875946aba8956028ef2906ffb3#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x7255fc0384f58d875946aba8956028ef2906ffb3]<br>
+<a href="https://gnosisscan.io/address/0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc]<br>
+<a href="https://gnosisscan.io/address/0x1effb9ab223c4ea18e11927bac0ef4fddda89671#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0x1effb9ab223c4ea18e11927bac0ef4fddda89671]<br>
+<a href="https://gnosisscan.io/address/0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8]<br>
+<a href="https://gnosisscan.io/address/0x82301243198e208b90e1bbfe3d134d0c4a86c2b1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0x82301243198e208b90e1bbfe3d134d0c4a86c2b1]<br>
+<a href="https://gnosisscan.io/address/0x42f136303a16281d17be4a8c338ddd2fb357a337#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0x42f136303a16281d17be4a8c338ddd2fb357a337]<br>
+<a href="https://gnosisscan.io/address/0xd6d08bd18e814e92ecf69d492fc0a4f822658db1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0xd6d08bd18e814e92ecf69d492fc0a4f822658db1]<br>
+<a href="https://gnosisscan.io/address/0x1ee35f96b80d40c00e4725c773edcbcd0dcc0306#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0x1ee35f96b80d40c00e4725c773edcbcd0dcc0306]<br>
+<a href="https://gnosisscan.io/address/0x9fab241a2035b33e4327c9c6074b211a939b4007#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0x9fab241a2035b33e4327c9c6074b211a939b4007]<br>
+<a href="https://gnosisscan.io/address/0xea5ef72bfda032f440f8ae0dc9b06435938e6472#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0xea5ef72bfda032f440f8ae0dc9b06435938e6472]<br>
+<a href="https://gnosisscan.io/address/0xc90e88e9019c985a155c996e05903605d1995cb6#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0xc90e88e9019c985a155c996e05903605d1995cb6]<br>
+<a href="https://gnosisscan.io/address/0x1ae129d0a2f3d267030e1839a9815a83c56f1ce9#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0x1ae129d0a2f3d267030e1839a9815a83c56f1ce9]<br>
+<a href="https://gnosisscan.io/address/0xcc530da0ab8aa6dc12f3d47fd88b2b66bb16035e#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0xcc530da0ab8aa6dc12f3d47fd88b2b66bb16035e]<br>
+<a href="https://gnosisscan.io/address/0x98907cb3106e122eb9ff2154ebacd3ec436d35a2#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x98907cb3106e122eb9ff2154ebacd3ec436d35a2]<br>
+<a href="https://gnosisscan.io/address/0x124bb8e8c994a107c0fab0337311547f217cfa89#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0x124bb8e8c994a107c0fab0337311547f217cfa89]<br>
+<a href="https://gnosisscan.io/address/0x6e720f0f882ef04db76282b71f59f4e28f2f39ae#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0x6e720f0f882ef04db76282b71f59f4e28f2f39ae]<br>
+<a href="https://gnosisscan.io/address/0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f]<br>
+
+<a href="https://gnosisscan.io/address/0x5164ab7725bc1f58ff2b63b6cbbb2d5d8c5f056c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0x5164ab7725bc1f58ff2b63b6cbbb2d5d8c5f056c]<br>
+<a href="https://gnosisscan.io/address/0x925af25d339018ea63701bb79e2c59a51ab6604f#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0x925af25d339018ea63701bb79e2c59a51ab6604f]<br>
+<a href="https://gnosisscan.io/address/0xf6b64dfeb46ce2b1793d03e070bd44510e02d116#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0xf6b64dfeb46ce2b1793d03e070bd44510e02d116]<br>
+<a href="https://gnosisscan.io/address/0x96750a75376f4393ba02c5e1066aed232cb65b6c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0x96750a75376f4393ba02c5e1066aed232cb65b6c]<br>
+<a href="https://gnosisscan.io/address/0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d]<br>
+<a href="https://gnosisscan.io/address/0xb24a8c178cf81d35e38683012e786e3231cb950b#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0xb24a8c178cf81d35e38683012e786e3231cb950b]<br>
+<a href="https://gnosisscan.io/address/0x2c804ca3604771eb71210736f9cab91c984b57ea#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0x2c804ca3604771eb71210736f9cab91c984b57ea]<br>
+<a href="https://gnosisscan.io/address/0xeb9a1effe5bd833dfaefb761b59ddec33370bc04#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0xeb9a1effe5bd833dfaefb761b59ddec33370bc04]<br>
+<a href="https://gnosisscan.io/address/0x98907cb3106e122eb9ff2154ebacd3ec436d35a2#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x98907cb3106e122eb9ff2154ebacd3ec436d35a2]<br>
+<a href="https://gnosisscan.io/address/0x3033edfcc0424743a9cbdcff91771a75990539e9#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0x3033edfcc0424743a9cbdcff91771a75990539e9]<br>
+<a href="https://gnosisscan.io/address/0x8b0c42751a767fbe92b09705ef3623585379f639#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x8b0c42751a767fbe92b09705ef3623585379f639]<br>
+<a href="https://gnosisscan.io/address/0xa083189b159de78d5b0add4341eb2e197516ac57#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0xa083189b159de78d5b0add4341eb2e197516ac57]<br>
+
+<a href="https://gnosisscan.io/address/0xf231ef4e4983eacb144ce7fa3884270b6a4d4fa2#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0xf231ef4e4983eacb144ce7fa3884270b6a4d4fa2]<br>
+<a href="https://gnosisscan.io/address/0x0615ad37d5d6b34631f2980f8e87206ae8c55932#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x0615ad37d5d6b34631f2980f8e87206ae8c55932]<br>
+<a href="https://gnosisscan.io/address/0x279bdd14a19e37553b5c9d1aa076d4f7f74dba23#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0x279bdd14a19e37553b5c9d1aa076d4f7f74dba23]<br>
+<a href="https://gnosisscan.io/address/0xc798e5597a1cb2ce1be2744e77ab5d733b6579d6#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0xc798e5597a1cb2ce1be2744e77ab5d733b6579d6]<br>
+<a href="https://gnosisscan.io/address/0x872f0d00ef7f981e7a71c3cd28242e28b0510b95#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0x872f0d00ef7f981e7a71c3cd28242e28b0510b95]<br>
+<a href="https://gnosisscan.io/address/0x5b5d92373733e40feaebb730e8d4b69f46722c2b#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0x5b5d92373733e40feaebb730e8d4b69f46722c2b]<br>
+<a href="https://gnosisscan.io/address/0x8b0c42751a767fbe92b09705ef3623585379f639#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x8b0c42751a767fbe92b09705ef3623585379f639]<br>
+<a href="https://gnosisscan.io/address/0xa083189b159de78d5b0add4341eb2e197516ac57#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0xa083189b159de78d5b0add4341eb2e197516ac57]<br>
+
+
+<br><br>
+
+
+
 
 
 If you want to be included in the Google Play test, send your gmail address to one@ungravel.com to get a pre-release access to "Ungravel on Android".
