@@ -556,6 +556,53 @@ arbitrumOne<br>
 <br><br>
 
 
+optimism<br>
+
+<a href="https://optimistic.etherscan.io/address/0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502]<br>
+<a href="https://optimistic.etherscan.io/address/0x372dfbe5f4ee377e83e843cdadb27e376e0592dc#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x372dfbe5f4ee377e83e843cdadb27e376e0592dc]<br>
+<a href="https://optimistic.etherscan.io/address/0xa222540ceac5dc28460bc8554646d833fda2e10c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0xa222540ceac5dc28460bc8554646d833fda2e10c]<br>
+<a href="https://optimistic.etherscan.io/address/0x6f6cb58e1aec63130b4f937ee7052f4970da4549#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0x6f6cb58e1aec63130b4f937ee7052f4970da4549]<br>
+<a href="https://optimistic.etherscan.io/address/0x6e720f0f882ef04db76282b71f59f4e28f2f39ae#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0x6e720f0f882ef04db76282b71f59f4e28f2f39ae]<br>
+<a href="https://optimistic.etherscan.io/address/0x2ae1f932718da8157a8c27a926dbbbfeae668259#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0x2ae1f932718da8157a8c27a926dbbbfeae668259]<br>
+<a href="https://optimistic.etherscan.io/address/0xd6d08bd18e814e92ecf69d492fc0a4f822658db1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0xd6d08bd18e814e92ecf69d492fc0a4f822658db1]<br>
+<a href="https://optimistic.etherscan.io/address/0xaa8499cd38ba0b6c122523ee7b41f29733aaf08e#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0xaa8499cd38ba0b6c122523ee7b41f29733aaf08e]<br>
+<a href="https://optimistic.etherscan.io/address/0x58b5a738d2e263f1588a3ba6123cdfda517df9a6#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0x58b5a738d2e263f1588a3ba6123cdfda517df9a6]<br>
+<a href="https://optimistic.etherscan.io/address/0x154239797693937f67a4746a7d3b19978bff4806#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0x154239797693937f67a4746a7d3b19978bff4806]<br>
+<a href="https://optimistic.etherscan.io/address/0x8a76dbdeaba77b6dca26fd52a04546881171311c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0x8a76dbdeaba77b6dca26fd52a04546881171311c]<br>
+<a href="https://optimistic.etherscan.io/address/0x827ad71b2118225eeea9e3ed36ac7b2900d82633#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0x827ad71b2118225eeea9e3ed36ac7b2900d82633]<br>
+<a href="https://optimistic.etherscan.io/address/0x03ebf0882401ca3e5bd506fc87cdb99f71ff6d1f#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0x03ebf0882401ca3e5bd506fc87cdb99f71ff6d1f]<br>
+<a href="https://optimistic.etherscan.io/address/0xa938506250e156e86514d55a1ccb0cd6eef8c560#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0xa938506250e156e86514d55a1ccb0cd6eef8c560]<br>
+<a href="https://optimistic.etherscan.io/address/0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d]<br>
+<a href="https://optimistic.etherscan.io/address/0xc39afb9d7648256f6a706868c908896e079510c1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0xc39afb9d7648256f6a706868c908896e079510c1]<br>
+<a href="https://optimistic.etherscan.io/address/0x1effb9ab223c4ea18e11927bac0ef4fddda89671#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0x1effb9ab223c4ea18e11927bac0ef4fddda89671]<br>
+<a href="https://optimistic.etherscan.io/address/0x1e2803c47532a31d1282c65589644670e0675a26#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0x1e2803c47532a31d1282c65589644670e0675a26]<br>
+
+<a href="https://optimistic.etherscan.io/address/0xb24a8c178cf81d35e38683012e786e3231cb950b#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0xb24a8c178cf81d35e38683012e786e3231cb950b]<br>
+<a href="https://optimistic.etherscan.io/address/0x8f314a485b6a95836bf745c8b73a54458f5783df#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0x8f314a485b6a95836bf745c8b73a54458f5783df]<br>
+<a href="https://optimistic.etherscan.io/address/0x2c804ca3604771eb71210736f9cab91c984b57ea#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0x2c804ca3604771eb71210736f9cab91c984b57ea]<br>
+<a href="https://optimistic.etherscan.io/address/0xeb9a1effe5bd833dfaefb761b59ddec33370bc04#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0xeb9a1effe5bd833dfaefb761b59ddec33370bc04]<br>
+<a href="https://optimistic.etherscan.io/address/0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7]<br>
+<a href="https://optimistic.etherscan.io/address/0xeb2027f460cfa975c1eb0340068a6d100a75a1ba#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0xeb2027f460cfa975c1eb0340068a6d100a75a1ba]<br>
+<a href="https://optimistic.etherscan.io/address/0x4ed0a0cc6a2c8f7aa2bca7e8f0a704eb76347260#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0x4ed0a0cc6a2c8f7aa2bca7e8f0a704eb76347260]<br>
+<a href="https://optimistic.etherscan.io/address/0x38b3fa728cc12b6d92fa753bad22294588c6a3a1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0x38b3fa728cc12b6d92fa753bad22294588c6a3a1]<br>
+<a href="https://optimistic.etherscan.io/address/0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d]<br>
+<a href="https://optimistic.etherscan.io/address/0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f]<br>
+<a href="https://optimistic.etherscan.io/address/0x044a7f7f34e5ce9a6bf3b37c827a9d901ead9dbf#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x044a7f7f34e5ce9a6bf3b37c827a9d901ead9dbf]<br>
+<a href="https://optimistic.etherscan.io/address/0x593ede947a82704b664a7c73a3eb56c5d86f681a#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x593ede947a82704b664a7c73a3eb56c5d86f681a]<br>
+
+<a href="https://optimistic.etherscan.io/address/0xa57a4a662a6f58f96b2a62c08ab14ab9716ac85e#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0xa57a4a662a6f58f96b2a62c08ab14ab9716ac85e]<br>
+<a href="https://optimistic.etherscan.io/address/0x4129ee60d0f349cf7ce0d49557dba4b003670a18#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x4129ee60d0f349cf7ce0d49557dba4b003670a18]<br>
+<a href="https://optimistic.etherscan.io/address/0x4fd84811272f4934341a5bf03e1ef24bcb27369a#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0x4fd84811272f4934341a5bf03e1ef24bcb27369a]<br>
+<a href="https://optimistic.etherscan.io/address/0x161febf0484f2983adf7af6e3b666476d2aa2afd#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0x161febf0484f2983adf7af6e3b666476d2aa2afd]<br>
+<a href="https://optimistic.etherscan.io/address/0x5776861ad72619bd828ab1c0c46f10f67618c01b#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0x5776861ad72619bd828ab1c0c46f10f67618c01b]<br>
+<a href="https://optimistic.etherscan.io/address/0x86dced891a0349b42b24b0b912553863dfed69e5#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0x86dced891a0349b42b24b0b912553863dfed69e5]<br>
+<a href="https://optimistic.etherscan.io/address/0x044a7f7f34e5ce9a6bf3b37c827a9d901ead9dbf#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x044a7f7f34e5ce9a6bf3b37c827a9d901ead9dbf]<br>
+<a href="https://optimistic.etherscan.io/address/0x593ede947a82704b664a7c73a3eb56c5d86f681a#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x593ede947a82704b664a7c73a3eb56c5d86f681a]<br>
+
+
+<br><br>
+
+
 
 
 
