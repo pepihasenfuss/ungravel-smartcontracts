@@ -57,6 +57,49 @@ http://lisk.ungravel.org lisk                          ( level-2 chain )
 
 <br><br>
 
+mainnet<br>
+
+<a href="https://etherscan.io/address/0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e]<br>
+<a href="https://etherscan.io/address/0x231b0ee14048e9dccd1d247744d114a4eb5e8e63#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x231b0Ee14048e9dCcD1d247744d114a4EB5E8E63]<br>
+<a href="https://etherscan.io/address/0x231b0ee14048e9dccd1d247744d114a4eb5e8e63#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0x231b0Ee14048e9dCcD1d247744d114a4EB5E8E63]<br>
+<a href="https://etherscan.io/address/0xa58e81fe9b61b5c3fe2afd33cf304c454abfc7cb#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0xa58E81fe9b61B5c3fE2AFD33CF304c454AbFc7Cb]<br>
+<a href="https://etherscan.io/address/0x7542565191d074ce84fbfa92cae13acb84788ca9#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0x7542565191d074cE84fBfA92cAE13AcB84788CA9]<br>
+<a href="https://etherscan.io/address/0x30200e0cb040f38e474e53ef437c95a1be723b2b#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0x30200E0cb040F38E474E53EF437c95A1bE723b2B]<br>
+<a href="https://etherscan.io/address/0xdaaf96c344f63131acadd0ea35170e7892d3dfba#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0xDaaF96c344f63131acadD0Ea35170E7892d3dfBA]<br>
+<a href="https://etherscan.io/address/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85]<br>
+<a href="https://etherscan.io/address/0x253553366da8546fc250f225fe3d25d0c782303b#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0x253553366Da8546fC250F225fe3d25d0C782303b]<br>
+<a href="https://etherscan.io/address/0xab528d626ec275e3fad363ff1393a41f581c5897#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0xaB528d626EC275E3faD363fF1393A41F581c5897]<br>
+<a href="https://etherscan.io/address/0xb896693d6a80df4e44fa738dbc9cffb6d35516cc#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0xb896693d6a80df4e44fa738dbc9cffb6d35516cc]<br>
+<a href="https://etherscan.io/address/0x823bda9ca8c47d072376ecd595530c8fb2faa3ed#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x823BDa9cA8c47d072376eCD595530c8fb2fAa3ED]<br>
+<a href="https://etherscan.io/address/0x7542565191d074ce84fbfa92cae13acb84788ca9#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0x7542565191d074cE84fBfA92cAE13AcB84788CA9]<br>
+<a href="https://etherscan.io/address/0xd4416b13d2b3a9abae7acd5d6c2bbdbe25686401#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0xD4416b13d2b3a9aBae7AcD5D6C2BbDBE25686401]<br>
+<a href="https://etherscan.io/address/0x253553366da8546fc250f225fe3d25d0c782303b#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0x253553366Da8546fC250F225fe3d25d0C782303b]<br>
+
+<a href="https://etherscan.io/address/0x0fc3152971714e5ed7723fafa650f86a4baf30c5#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0x0fc3152971714E5ed7723FAFa650F86A4BaF30C5]<br>
+<a href="https://etherscan.io/address/0xb32cb5677a7c971689228ec835800432b339ba2b#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0xB32cB5677a7C971689228EC835800432B339bA2B]<br>
+<a href="https://etherscan.io/address/0xb83a8ac6900f19d77333e640550bd8830d5fcb26#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0xB83A8AC6900f19d77333e640550Bd8830d5fcb26]<br>
+<a href="https://etherscan.io/address/0x765653c78f609826dfd091f9208aeb610949a28f#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0x765653c78f609826dfd091f9208aeb610949a28f]<br>
+<a href="https://etherscan.io/address/0x912dfbe4162efe45e08e39d6c39d68eda7b267a4#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0x912dfbe4162efe45e08e39d6c39d68eda7b267a4]<br>
+<a href="https://etherscan.io/address/0xdf89b8c7c9e4fcb340a2f1aaae1646a545dc4b40#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0xdf89b8c7c9e4fcb340a2f1aaae1646a545dc4b40]<br>
+<a href="https://etherscan.io/address/0x849851a7683cff52de5f50c712c0606fef6a3e8f#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0x849851a7683cff52de5f50c712c0606fef6a3e8f]<br>
+<a href="https://etherscan.io/address/0xe571a50f76ff7404f3ce380d06cbd2c9c6ca3670#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0xe571a50f76ff7404f3ce380d06cbd2c9c6ca3670]<br>
+<a href="https://etherscan.io/address/0x823bda9ca8c47d072376ecd595530c8fb2faa3ed#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x823BDa9cA8c47d072376eCD595530c8fb2fAa3ED]<br>
+<a href="https://etherscan.io/address/0x3a368e3d5f19af3de594a9fc2cffc6e256a616c7#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0x3A368e3D5F19aF3DE594A9fC2CFfc6e256a616c7]<br>
+<a href="https://etherscan.io/address/0x38498df414efe4a2f8cd242c7fece36aef5d40e8#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x38498df414efe4a2f8cd242c7fece36aef5d40e8]<br>
+<a href="https://etherscan.io/address/0x79cf9e002bcb7bad888688c593bca7519392d107#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x79cf9e002bcb7bad888688c593bca7519392d107]<br>
+
+<a href="https://etherscan.io/address/0x367df4428b8d219b1f3479d1b2d5698df8602a6b#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0x367df4428b8d219b1f3479d1b2d5698df8602a6b]<br>
+<a href="https://etherscan.io/address/0x08c2e90c1d17e25a663e2b6cc8277b9a320f7e62#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x08c2e90c1d17e25a663e2b6cc8277b9a320f7e62]<br>
+<a href="https://etherscan.io/address/0xa15817f254aca60194b7649d078fcb4cfec839a6#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0xa15817f254aca60194b7649d078fcb4cfec839a6]<br>
+<a href="https://etherscan.io/address/0xda80d216300b72359626d5c3c09638a98b6d67f3#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0xda80d216300b72359626d5c3c09638a98b6d67f3]<br>
+<a href="https://etherscan.io/address/0x4fc5a384b420488235ebd9fc86635f1db48aaff9#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0x4fc5a384b420488235ebd9fc86635f1db48aaff9]<br>
+<a href="https://etherscan.io/address/0x656692a40c5b270295d3f15824842455502964a2#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0x656692a40c5b270295d3f15824842455502964a2]<br>
+<a href="https://etherscan.io/address/0x38498df414efe4a2f8cd242c7fece36aef5d40e8#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x38498df414efe4a2f8cd242c7fece36aef5d40e8]<br>
+<a href="https://etherscan.io/address/0x79cf9e002bcb7bad888688c593bca7519392d107#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x79cf9e002bcb7bad888688c593bca7519392d107]<br>
+<a href="https://etherscan.io/address/0x7fe9226204c534c6852dcc09b6e8ed128f9de575#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletAddresses [0x7fe9226204c534c6852dcc09b6e8ed128f9de575]<br>
+<a href="https://etherscan.io/address/0xf294c02cdf89549d2d3afeb1ef0c3f3eec89cded#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenProxyContract [0xf294c02cdf89549d2d3afeb1ef0c3f3eec89cded]<br>
+
+
 
 blast<br>
 
