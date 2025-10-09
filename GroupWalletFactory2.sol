@@ -88,6 +88,7 @@ abstract contract AbstractGwfGwp {
 }
 interface ITokenProxy {
   function newToken(uint256[] calldata _data) external payable;
+  function transferOwnership_m0(address newOwner) external;
 }
 abstract contract AbstractEthRegController {
   mapping(bytes32 domainHash =>uint theCommitment) public commitments;
@@ -335,18 +336,10 @@ contract ProxyGroupWallet {
 
 // GroupWalletFactory by pepihasenfuss.eth 2017-2025
 contract GroupWalletFactory {
-    event TestReturn(uint256 v1, uint256 v2, uint256 v3, uint256 v4);
     event Deposit(address from, uint256 value);
-    event PrePaidAccountReady(address from, uint256 value);
     event StructureDeployed(bytes32 domainHash);
-    event ColorTableSaved(bytes32 domainHash);
-    event EtherScriptSaved(bytes32 domainHash,string key);
     event ProxyTokenCreation(ProxyToken proxy);
     event ProxyGroupWalletCreation(ProxyGroupWallet proxy);
-    event SetPrices(bytes32 domainHash);
-    event TransferOwner(bytes32 domainHash);
-    event FreezeToken(bytes32 domainHash);
-    event Transfer(address indexed from, address indexed to, uint256 value);
     
     uint256 constant K_AMASK        = 0x000000000000000000000000ffffffffffffffffffffffffffffffffffffffff; // 160 bits, address mask
     uint256 constant K_COMMITMASK   = 0xffffffffffffffffffffffff0000000000000000000000000000000000000000; // mask out lower 160 bits
@@ -361,7 +354,8 @@ contract GroupWalletFactory {
     address constant k_add00        = address(0);
     uint constant private MAX_OWNER_COUNT = 31;                                                           // group may have 2 ot up to 31 members
 
-    uint256 private _guardCounter = 1;                                                                    // used for reentrancy checks
+    uint256 private _guardCounter   = 1;                                                                  // used for reentrancy checks
+    uint256 private _guardCounter2  = 1;                                                                  // used for reentrancy checks
 
     AbstractGwfResolver             public  immutable resolverContract;                                   // ENS / EVM Names resolver
     AbstractEthRegController        public  immutable controllerContract;                                 // ENS / EVM EthRegController sells domain names
@@ -390,35 +384,33 @@ contract GroupWalletFactory {
        my_require(_dHash!=0x0 && ( __isInitiator(_dHash) || __isMember(_dHash) ), "i");
       _;
     }
-    modifier onlyByOwner() {                                                    // used by: withdraw(), setAuctionsContract()
-      my_require(GWFowner==msg.sender,"own");
+    modifier onlyByOwner(address _sender,address _owner) {                      // used by: withdraw(), setAuctionsContract(), setMultifourContract()
+      my_require(_owner!=address(0)&&GWFowner==_sender,"ow");
       _;
     }
-    modifier onlySameDeployers(address _ctr) {                                  // used by: upgradeGWF()
-      my_require(__sameDeployers(_ctr),"gf");
-      _;
-    }
-    modifier onlyUUNSgwp(bytes32 _dHash) {                                      // used by: upgradeGWF()
+    modifier onlyUUNSAndSameDeployer(address _ctr,bytes32 _dHash) {             // used by: upgradeGWF()
       // _dHash is a GWP that belongs to Ungravel Unified Name Space, UUNS, returns: true | false 
-      my_require(
+
+      my_require( 
+                  __sameDeployers(_ctr)                                                             && // this contract deployer === deployer of new _ctr
                   _dHash==__getdHash(AbstractGwfGwp(msg.sender))                                    && // GWP uses GWF contract, GWP owns dName, s.a. "silvias-bakery.eth" 
                   getOwner(_dHash)==msg.sender                                                      && // msg.sender is a GWP because _dHash is linked to the same address
                   AbstractGwfGwp(msg.sender).getGWF()==address(this)                                && // GWF of GWP is this contract, the GWF | GWF is calling itself
                   __isNameSpace(_dHash)                                                             && // _dHash belongs to EVM Name space in general, domain name is assigned
-                  __ensOwner(_dHash)==msg.sender,                                                      // msg.sender owns _dHash, therefore valid GWP belonging to UUNS
-            "GM");
+                  __ensOwner(_dHash)==msg.sender,                                                      // msg.sender owns _dHash, therefore its a valid GWP belonging to UUNS
+            "gf");
       _;
     }
     modifier notLocked(bytes32 _c) {                                            // used by: lock_dfs()
-      my_require(_c!=0x0 && installations[ uint64( (uint256(uint256(_c) & K_COMMITMASK)>>160) & K_COMMIT2Mask ) ]==0x0,"r3"); // NOT yet locked getInstallTime(c), getCommitment(c) 
+      my_require(installations[ uint64( (uint256(uint256(_c) & K_COMMITMASK)>>160) & K_COMMIT2Mask ) ]==0x0,"3"); // NOT yet locked getInstallTime(c), getCommitment(c) 
       _;
     }
     modifier initiatorOrThisGWF(bytes32 _dHash) {                               // used for: register_ki_(), lock_dfs(), registerAndLock_x3x(), inviteInstallToken_q31n()
-      my_require(__initOrThisGwf(_dHash), "ow3");
+      my_require(__initOrThisGwf(_dHash), "4");
       _;
     }
     modifier onlyInitiator(bytes32 _dHash) {                                    // used for: setTokenPrices(), transferOwner(), transferToken(), transferTokenFrom()
-      my_require(_dHash!=0x0 && __isInitiator(_dHash),"in");
+      my_require(_dHash!=0x0 && __isInitiator(_dHash),"5");
       _;
     }
     modifier ungravelUUNS(bytes32 _dHash) {                                     // used for: reserve_replicate(), importGWP()
@@ -429,12 +421,23 @@ contract GroupWalletFactory {
       _;
     }
     modifier groupOrPPA() {                                                     // used for: reserve_replicate()
-      my_require(multifourContract.__isGwpFromSender(msg.sender) || multifourContract.__isUngravelWaddr(msg.sender),"gO"); // is GWP | ungravel working address s.a. ppa, deployer
+      my_require(multifourContract.__isGwpFromSender(msg.sender) || multifourContract.__isUngravelWaddr(msg.sender),"6"); // is GWP | ungravel working address s.a. ppa, deployer
       _;
     }
     modifier onlyGWPorOwner(address _sender,bytes32 _dHash) {                   // used for: replicate_group_l9Y()
-      my_require(msg.value>0 && ( __isSenderGWP(_sender) || __isHashOwner(_dHash) ),"dm");
+      my_require(msg.value>0 && ( __isHashOwner(_dHash) || __isSenderGWP(_sender) ),"7");
       _;
+    }
+    modifier onlyAuthorized(string memory _name,bytes32 _dHash) {
+      _guardCounter2 += 1;
+      uint256 localCounter = _guardCounter2;
+
+      // Usually called by GWF === this contract, in case of executeSplit() proposal, it is called by a GWP.
+
+      my_require(controllerContract.available(_name) && ( __senderIsThisGwf() || (msg.sender==address(uint160( commitments[_dHash] & K_AMASK ))) ),"Y"); // 0xaeb8ce9b domain available
+
+      _;
+      require(localCounter == _guardCounter2,"r");
     }
 
     // low-level methods, used internally, all private(ly)
@@ -483,7 +486,7 @@ contract GroupWalletFactory {
       return uint64(block.timestamp);
     }
     function __time() private view returns (uint64) {                           // formatting time stamp, mask lower bits
-      return uint64(__timeStamp()*1000)&uint64(0xffffffffffff0000);          // time % 0x1000 - masking time record
+      return uint64(__timeStamp()*1000)&uint64(0xffffffffffff0000);             // time % 0x1000 - masking time record
     }
     function __originator() private view returns (address) {                    // originator of call
       return address(tx.origin);
@@ -497,10 +500,7 @@ contract GroupWalletFactory {
       return resolverContract.addr(_hash);                                      // return resolvedAddress() from group domain name hash
     }
     function __isNameSpace(bytes32 _dHash) private view returns (bool) {        // _dHash belongs to EVM Name Space, e.g. ENS Name Space on Ethereum
-      return (_dHash!=0x0 && base.ens().recordExists(_dHash));
-    }
-    function __isGwpNameSpace(bytes32 _dHash) private view returns (bool) {     // _dHash belongs to EVM and Ungravel Unified Name Space, UUNS
-      return (__isNameSpace(_dHash) && __ensOwner(_dHash)==msg.sender);         // and msg.sender is GWP belonging to UUNS
+      return multifourContract.__isNameSpace(_dHash);                           // return (_dHash!=0x0 && base.ens().recordExists(_dHash));
     }
     function __isEVMNameSpacedGWF(bytes32 _dHash) private view returns (bool) { // msg.sender is a GWF, _dHash belongs to EVM Name Space = UUNS
                                                                                 // GWP derived from EVM Name Space == GWP derived from GWF
@@ -706,47 +706,6 @@ contract GroupWalletFactory {
       }
     }
     
-    // function memcpy(uint dest, uint src, uint len) private pure {
-    //     // Copy word-length chunks while possible
-    //     for (; len >= 32; len -= 32) {
-    //         // solium-disable-next-line security/no-inline-assembly
-    //         assembly {
-    //             mstore(dest, mload(src))
-    //         }
-    //         dest += 32;
-    //         src += 32;
-    //     }
-        
-    //     if (len==0) return;
-
-    //     // Copy remaining bytes
-    //     uint mask = 256 ** (32 - len) - 1;
-        
-    //     // solium-disable-next-line security/no-inline-assembly
-    //     assembly {
-    //         let srcpart := and(mload(src), not(mask))
-    //         let destpart := and(mload(dest), mask)
-    //         mstore(dest, or(destpart, srcpart))
-    //     }
-    // }
-
-    // function substring(bytes memory self, uint offset, uint len) private pure returns(bytes memory ret) {
-    //     my_require(offset + len <= self.length,"s");
-
-    //     ret = new bytes(len);
-    //     uint dest;
-    //     uint src;
-
-    //     // solium-disable-next-line security/no-inline-assembly
-    //     assembly {
-    //         dest := add(ret, 32)
-    //         src  := add(add(self, 32), offset)
-    //     }
-    //     memcpy(dest, src, len);
-
-    //     return ret;
-    // }
-
     function fromBytes32(bytes32 _label) private pure returns (string memory) {
       return bytesToStr(_label,uint(_label)&0xff);
     }
@@ -794,33 +753,44 @@ contract GroupWalletFactory {
       resolverContract.setApprovalForAll(_owner,true);                              // GWP gets approved for PublicResolver
     }
 
-    function _register(bytes32 _dHash,uint256 _rent,string memory _name,uint256 _dur,bytes32 _secret) private {
-      my_require(_secret!=0&&_dur!=0&&controllerContract.available(_name),"Y");
+    function _register(bytes32 _dHash,uint256 _rent,string memory _name,uint256 _dur,bytes32 _secret) public onlyAuthorized(_name,_dHash) payable { // 0xee9390df
+      
+      // Usually called by the contract internally, in case of an executeSplit() proposal, called by GWP.
 
-      if (isENSV3()) {                                                                                                                  // register ENS V3
+      if (isENSV3()) {                                                                                                                  // register ENS V3, e.g. on Ethereum mainnet
+        // This gets really ugly since ENS on mainnet wraps domain names with the NameWrapper() and makes things really, really complicated. Sorry.
+
+        // First: We need a preconfigured setAddr() command, prepared to be transmitted with the register() command.
+
+        // The register() command gets transferred and executed by the regController contract, belonging to ENS.
+        // The prepared setAddr() command is attached, to be executed right after registration. The complicated stuff is required,
+        // because of the NameWrapper() who "owns" the new domain name. Why? Because ENS on mainnet makes all domain names NFTS.
+        // This makes it very painful here for us. To be compatible with ENS on mainnet, we have to execute different code for mainnet.
+        // On all other chains, except mainnet, we DO NOT support NameWrapper(), because we are not interested in NFT domains being sold and traded.
+
         bytes[] memory cmd = new bytes[](1);
-        cmd[0] = abi.encodePacked( bytes4(0x8b95dd71), _dHash, uint256(0x3c), uint256(0x60), uint256(0x14), uint256(uint256(uint160(address(this)))<<96) );
+        cmd[0] = abi.encodePacked( bytes4(0x8b95dd71), _dHash, uint256(0x3c), uint256(0x60), uint256(0x14), uint256(uint256(uint160(address(this)))<<96) ); // 0x8b95dd71 setAddr resolver() contract
 
         (bool success, bytes memory rdata) = 
-        address(controllerContract).call{value:_rent}
-                                        ( abi.encodeWithSignature("register(string,address,uint256,bytes32,address,bytes[],bool,uint16)",
+                                        address(controllerContract).call{value:_rent}                                                     // 0x74694a2b register() sent to regController() contract
+                                        ( abi.encodeWithSignature("register(string,address,uint256,bytes32,address,bytes[],bool,uint16)", // signature, domain name, duration, secret, resolver contract, the setAddr() cmd, reverseRecord (bool), ownerControlledFuses
                                           _name,address(this),_dur,_secret,address(resolverContract),cmd,false,0)
                                         );
 
         my_require(success&&rdata.length==0,string(rdata));
 
         address l_ProjectOwner = address(uint160( commitments[_dHash] & K_AMASK ));
-        if (l_ProjectOwner==msg.sender) _allowNameWrapperAndResolver(l_ProjectOwner);
+        _allowNameWrapperAndResolver(l_ProjectOwner);
       } else
       {
         controllerContract.registerWithConfig{value: _rent}(_name,address(this),_dur,_secret,address(resolverContract),address(this));  // register ENS V2
       }
 
-      resolverContract.setName(_dHash,string(abi.encodePacked(_name,tld())));
+      resolverContract.setName(_dHash,string(bytes.concat(bytes(_name),bytes(tld()))));
     }
 
     function _setAvatar(bytes32 _dHash, string memory _avatar) private {
-      if (strlen(_avatar)==0) _avatar = 'https://www.ungravel.com/ung.png'; // e.g. default: https://www.ungravel.com/ung.png
+      if (strlen(_avatar)==0) _avatar = 'https://www.ungravel.com/ung.png';
       resolverContract.setText(_dHash,'avatar',_avatar);
     }
 
@@ -839,7 +809,7 @@ contract GroupWalletFactory {
       }
     }
 
-    function register_ki_(bytes32[] calldata _m) external nonReentrant initiatorOrThisGWF(_m[0]) payable { 
+    function register_ki_(bytes32[] calldata _m) external nonReentrant initiatorOrThisGWF(_m[0]) payable { // 0x000017bb
                                                                                 // _m[0] _domainHash
                                                                                 // _m[1] _secret
                                                                                 // _m[2]  duration / rent
@@ -911,7 +881,7 @@ contract GroupWalletFactory {
         (nb, abi32) = resolverContract.ABI(dHash,128);                                                                   // isABI128
         if ((nb==128)&&(abi32.length>=224)&&((abi32.length%32)==0))             report = uint256(uint(report)+128);
 
-        (nb, abi32) = resolverContract.ABI(dHash,32);                                                                   // isABIstructure, ABI32
+        (nb, abi32) = resolverContract.ABI(dHash,32);                                                                    // isABIstructure, ABI32
         if ((nb==32)&&(abi32.length>32)&&(abi32.length<0x1000))                 report = uint256(uint(report)+32);
         
         nb = __getOwnersFromCommitment( commitments[ dHash] ).length;                                                    // nb of members in group
@@ -985,19 +955,24 @@ contract GroupWalletFactory {
                                                       concat(bytes32( uint256(_mem[3]) | K_LC ), tld()),           // _mem[3] --> domainname.toLowerCase(), s.a. "melody-woman.lisk"
                                                       reverseContract);                                            // reverse registry
 
-      {
+      {                                                                                                            // GWP
         AbstractGwfGwp(address(proxyGW)).newProxyGroupWallet_j5O{value: amount}( GWowners );                       // initialize list of owners
         
+
         if (!isENSV3()) {                                                                                          // Only EVM Names === ENSV2, no NameWrapper, UUNS
           base.ens().setSubnodeRecord(_dHash,K_TKLABELHASH,address(this),address(resolverContract), __time());     // assign ENS name, s.a. "token.bakery.lisk", temp. owned by GWF
           _setAvatar(dlHash,'');                                                                                   // proxyToken contract with default avatar
         }
 
+        _setOwner(_dHash,address(proxyGW),0x0,_dHash);                                                             // set resolved address, default avatar url
+
+
         commitments[_dHash] = uint256(uint160(address(proxyGW)) & K_AMASK) + uint256(c & K_COMMITMASK);            // save initiator = GWP-GroupWalletProxy owner
         emit ProxyGroupWalletCreation(proxyGW);
       }
 
-      {
+
+      {                                                                                                            // PT = token proxy
         string memory dName = string(abi.encodePacked('token.',concat(bytes32( uint256(_mem[3]) | K_LC ),tld()))); // e.g. token domain name: "token.silvias-bakery.lisk"
         ProxyToken proxy    = new ProxyToken( address(uint160(uint256(_mem[1]))),dName,reverseContract );          // install ProxyToken contract: masterCopy, domain name, reverse
         
@@ -1007,7 +982,6 @@ contract GroupWalletFactory {
           _setAvatar(dlHash,'');                                                                                   // proxyToken contract with default avatar
           resolverContract.setAddr(dlHash,address(proxy));                                                         // assign proxyToken resolved address = tokenProxy
           _setSubnodeRecordV3_token(_dHash,address(proxy));                                                        // proxyToken owns "token.silvias-bakery.eth", finally owned by proxy
-
           ensNameWrapper.setRecord(_dHash,address(proxyGW),address(resolverContract),0);                           // transfer ownership from the GWF to the group GWP
         }
         else
@@ -1016,9 +990,7 @@ contract GroupWalletFactory {
           base.ens().setOwner(dlHash,address(proxy));                                                              // proxyToken owns "token.bakery.lisk", finally owned by proxy
         }
        
-        
-        _setOwner(_dHash,address(proxyGW),0x0,_dHash);                                                             // set resolved address, default avatar url
-
+    
 
         GTowners[(l/5)+0] = uint256(_mem[3]);                                                                      // tokenName = domain name, e.g. "Mydomain.eth"
         GTowners[(l/5)+1] = uint256(uint160(address(proxyGW)));                                                    // GroupWalletProxy contract address, GWP
@@ -1062,10 +1034,16 @@ contract GroupWalletFactory {
 
     // Group votes on upgrade, then GWP calls upgradeGWF(). Even the GWF upgrade requires a majority vote.
 
-    function upgradeGWF(bytes32 _dHash, address _GWF) external onlySameDeployers(_GWF) onlyUUNSgwp(_dHash) payable { // *** MUST be called by a GWP contract belonging to UNGRAVEL UUNS ***
+    function upgradeGWF(bytes32 _dHash, address _GWF) external onlyUUNSAndSameDeployer(_GWF,_dHash) payable {
+      // *** MUST be called by a GWP contract belonging to UNGRAVEL UUNS ***
+      // *** _dHash is a GWP that belongs to Ungravel Unified Name Space, UUNS ***
+      // *** _GWF has the same deployer than this contract ***
+
       uint256 c = commitments[_dHash];                                              // commitment word
-      my_require(_dHash!=0x0 && address( uint160(c & K_AMASK) )==msg.sender,"u");   // called by GWP that owns commitment
+      my_require(address( uint160(c & K_AMASK) )==msg.sender,"u");                  // called by GWP that owns commitment
       AbstractGwf(_GWF).importGWP(_dHash,c,installations[ getCommitment(_dHash) ]); // call remote GWF to import current GWP
+
+      ITokenProxy(getProxyToken(_dHash)).transferOwnership_m0(_GWF);                // update proxyToken and set new GWF
     }
     
     function replicate_group_l9Y(bytes32[] calldata _m, bytes calldata data32, bytes32[] calldata _mem) external onlyGWPorOwner(msg.sender,_m[0]) payable { // gets called by initiator / default account | by GWP confirmSpinOffGroup_L51b()
@@ -1089,58 +1067,16 @@ contract GroupWalletFactory {
     }
     
 
-    // setTokenPrices(), transferOwner(), transferToken(), transferTokenFrom() : methods that may be called by the GWP only, since GWP owns _dHash
-
-    //function transferOwner_v3m(bytes32 _dHash, bytes memory data) public onlyInitiator(_dHash) payable {     // calls TP, transferOwnership_m0(address): 0x0000e7f1 *** only during development and debugging ***
-    //  address tProxy = __proxyToken(_dHash);
-    //  // solium-disable-next-line security/no-inline-assembly
-    //  assembly {
-    //    if eq(call(gas(), tProxy, 0, add(data, 0x20), mload(data), 0, 0), 0) { revert(0, 0) }
-    //  }
-    //  emit TransferOwner(_dHash); 
-    //}
-
-    //function setTokenPrices_dgw(bytes32 _dHash, bytes memory data) public onlyInitiator(_dHash) payable {    // calls TP, setPrices_7d4(uint256,uint256) 0x000084f3 *** only during development and debugging ***
-    //  address tProxy = __proxyToken(_dHash);
-    //  // solium-disable-next-line security/no-inline-assembly
-    //  assembly {
-    //    if eq(call(gas(), tProxy, 0, add(data, 0x20), mload(data), 0, 0), 0) { revert(0, 0) }
-    //  }
-    //  emit SetPrices(_dHash);
-    //}
-  
-    //function TransferToken_8uf(bytes32 _dHash, bytes memory data) public onlyInitiator(_dHash) payable {     // calls TP, transfer_G8l(address,uint256) 0x0000c771 *** only during development and debugging ***
-    //  address tProxy = __proxyToken(_dHash);
-    //  // solium-disable-next-line security/no-inline-assembly
-    //  assembly {
-    //    if eq(call(gas(), tProxy, 0, add(data, 0x20), mload(data), 0, 0), 0) { revert(0, 0) }
-    //  }
-    //  emit Transfer(address(this), address( uint160(uint256( uint256(mb32(substring(data,4,32))) & K_AMASK ))), uint256( mb32(substring(data,36,32)) ) / 100);
-    //}
-
-    //function TransferTokenFrom_VCv(bytes32 _dHash, bytes memory data) public onlyInitiator(_dHash) payable { // calls TP, transferFrom_78S(address,address,uint256) 0x00008711 *** only during development and debugging ***
-    //  address tProxy = __proxyToken(_dHash);
-    //  // solium-disable-next-line security/no-inline-assembly
-    //  assembly {
-    //    if eq(call(gas(), tProxy, 0, add(data, 0x20), mload(data), 0, 0), 0) { revert(0, 0) }
-    //  }
-    //  emit Transfer(address( uint160(uint256( uint256(mb32(substring(data,4,32))) & K_AMASK ))), address( uint160(uint256( uint256(mb32(substring(data,36,32))) & K_AMASK ))), uint256( mb32(substring(data,68,32)) ) / 100);
-    //}
-    
-    //
-
-    function withdraw() external onlyByOwner {
-      payable(msg.sender).transfer(__selfbalance()-1);
+    function withdraw() external onlyByOwner(msg.sender,msg.sender) {
+      payable(msg.sender).transfer(__selfbalance());
     }
 
-    function setAuctionsContract(AbsAuctionRegistrar auctCtr) external onlyByOwner payable {
-      my_require(address(auctCtr)!=address(0),"oO");
-      auctionContract = auctCtr;
+    function setAuctionsContract(address auctCtr) external onlyByOwner(msg.sender,auctCtr) payable {
+      auctionContract = AbsAuctionRegistrar(auctCtr);
     }
 
-    function setMultifourContract(AbsMultiFour multiCtr) external onlyByOwner payable {
-      my_require(address(multiCtr)!=address(0),"oM");
-      multifourContract = multiCtr;
+    function setMultifourContract(address multiCtr) external onlyByOwner(msg.sender,multiCtr) payable {
+      multifourContract = AbsMultiFour(multiCtr);
     }
 
     function tld() public view returns (string memory) {
@@ -1148,17 +1084,17 @@ contract GroupWalletFactory {
     }
     
     function version() public pure returns(uint256) {
-      return 20010136;
+      return 20010156;
     }
     
-    function receivePayment() external payable returns(bool) {                  // receive e.g. ungravel license fees
+    function receivePayment() public payable returns(bool) {                    // receive e.g. ungravel license fees
       emit Deposit(msg.sender, msg.value);
       return true;
     }
 
     receive() external payable {      
       if (msg.value==0) return;                                                 // no payment at all
-      emit Deposit(msg.sender, msg.value);
+      receivePayment();
     }
 
     constructor ( AbstractEthRegController  _controller,
@@ -1173,7 +1109,7 @@ contract GroupWalletFactory {
     {
 
       require(address(_controller)!=address(0) && address(_resolver)!=address(0) && address(_base)!=address(0) && address(_multifour)!=address(0) &&
-              address(_ens)!=address(0)        && address(_reverse)!=address(0)  && address(_auctionMaster)!=address(0),"CON");
+              address(_ens)!=address(0)        && address(_reverse)!=address(0)  && address(_auctionMaster)!=address(0),"C");
 
       GWFowner                          = msg.sender;
       
@@ -1187,6 +1123,6 @@ contract GroupWalletFactory {
       multifourContract                 = _multifour;
 
       // ENS reverse resolver entry of address(this) ---> "factory.ungravel.eth" | "factory.ungravel.lisk"
-      _reverse.setName(string(abi.encodePacked('factory.ungravel',multifourContract.tld()))); // claiming / assigning reverse resolver record
+      _reverse.setName(string(bytes.concat(bytes('factory.ungravel'),bytes(multifourContract.tld())))); // claiming / assigning reverse resolver record
     }
 }
