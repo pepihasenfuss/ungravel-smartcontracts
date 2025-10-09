@@ -70,6 +70,7 @@ Ungravel is NOT yet ready for prime-time! Be carefull with accounts that hold va
 
 
 If you find a bug, please send a short bugreport to: bugreport@ungravel.com
-Each bug report gets directly rooted to the lead developer and probably receives an answer once Ungravel goes live officially. (include your Ethereum mainnet account / address & your e-mail)
+Each bug report gets directly rooted to the lead developer and probably receives an answer once Ungravel goes live officially.
+(include your Ethereum mainnet account / address & your e-mail, in case we can pay out bug-bounties in the future.)
 
 Thank you!
