@@ -18,27 +18,36 @@ Watch these contracts in action on ethereum mainnet  http://ethereum.ungravel.or
 or explore the testnet landing page, such as http://arbitrum.ungravel.org on arbitrum sepolia testnet.
 <br><br>
 
-Ungravel is live for a (friendly) user test on the following chains:
+Ungravel on mainnet chains:
 
-goerli            http://goerli.ungravel.org          (deprecated, sorry!)
+http://ethereum.ungravel.org ethereum mainnet          ( thanks to Infura, integrating with ENS-Manager, expensive )
 
-sepolia           http://sepolia.ungravel.org         ( testnet installation, really slow )
+http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
 
-moonbeam          http://moonbeam.ungravel.org        (deprecated 1.7.2024)
+http://arbitrum.ungravel.org arbitrum                  ( super fast and really good user experience, thanks to BlockPi! )
 
-polygon           http://polygon.ungravel.org         ( live on mainnet, pretty fast )
+http://polygon.ungravel.org polygon                    ( live on mainnet, fast, although a bit spooky )
 
-gnosis            http://gnosis.ungravel.org          (deprecating in 2024)
+http://base.ungravel.org base                          ( pretty fast! Promising. Cheap transactions.)
 
-taiko             http://taiko.ungravel.org           (new in summer 2024, unfortunately super slow)
+http://linea.ungravel.org linea                        ( consensys / metamask chain, promising )
 
-binance           http://bscmain.ungravel.org         ( live on mainnet, probably discontinued, fast )
+http://unichain.ungravel.org unichain                  ( fast, not yet fully supported, promising )
 
-arbitrum          http://arbitrum.ungravel.org        ( super fast and really good user experience, thank you to BlockPi! )
+http://avalanche.ungravel.org avalanche                ( level-2 chain )
 
-optimism          http://optimism.ungravel.org        ( I cannot get enough test ether, so sad! Otherwise fast test deployment, deprecated 1.7.2024 )
+http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
 
-ethereum mainnet  http://ethereum.ungravel.org        ( super-fast installation (thanks to the Infura guys), integrated into ENS-Manager V3 )
+http://scroll.ungravel.org scroll                      ( zk-roll-up SCROLL, pretty fast )
+
+http://optimism.ungravel.org optimism                  ( I cannot get enough test ether! Otherwise fast )
+
+http://gnosis.ungravel.org gnosis                      ( super cheap, a bit like a testchain )
+
+http://taiko.ungravel.org taiko                        ( faster since the chain upgrade )
+
+http://lisk.ungravel.org lisk                          ( level-2 chain )
+
 
 <br><br>
 
