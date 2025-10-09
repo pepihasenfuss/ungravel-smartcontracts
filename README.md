@@ -105,7 +105,49 @@ blast<br>
 
 <br><br>
 
+lisk<br>
+<a href="https://liskscan.xyz/address/0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc]<br>
+<a href="https://liskscan.xyz/address/0xcf3f82cdcae6255499664e0b36d1b3b342f35e2c/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0xcf3f82cdcae6255499664e0b36d1b3b342f35e2c]<br>
+<a href="https://liskscan.xyz/address/0x6f6cb58e1aec63130b4f937ee7052f4970da4549/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0x6f6cb58e1aec63130b4f937ee7052f4970da4549]<br>
+<a href="https://liskscan.xyz/address/0x923b0b85377d40dcc5d9781e9036c113300de162/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0x923b0b85377d40dcc5d9781e9036c113300de162]<br>
+<a href="https://liskscan.xyz/address/0x1ae129d0a2f3d267030e1839a9815a83c56f1ce9/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0x1ae129d0a2f3d267030e1839a9815a83c56f1ce9]<br>
+<a href="https://liskscan.xyz/address/0x154239797693937f67a4746a7d3b19978bff4806/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0x154239797693937f67a4746a7d3b19978bff4806]<br>
+<a href="https://liskscan.xyz/address/0x8a76dbdeaba77b6dca26fd52a04546881171311c/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0x8a76dbdeaba77b6dca26fd52a04546881171311c]<br>
+<a href="https://liskscan.xyz/address/0xc90e88e9019c985a155c996e05903605d1995cb6/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0xc90e88e9019c985a155c996e05903605d1995cb6]<br>
+<a href="https://liskscan.xyz/address/0x375a965329cca6be5b4a4b736659c0f7cd19899d/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0x375a965329cca6be5b4a4b736659c0f7cd19899d]<br>
+<a href="https://liskscan.xyz/address/0xd7bfbc6cd9da96041ac87e504954489bebdebcb7/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0xd7bfbc6cd9da96041ac87e504954489bebdebcb7]<br>
+<a href="https://liskscan.xyz/address/0xc39afb9d7648256f6a706868c908896e079510c1/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0xc39afb9d7648256f6a706868c908896e079510c1]<br>
+<a href="https://liskscan.xyz/address/0x1f5fc6d81edeec54e4708b98ede09eea74287629/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0x1f5fc6d81edeec54e4708b98ede09eea74287629]<br>
+<a href="https://liskscan.xyz/address/0x372dfbe5f4ee377e83e843cdadb27e376e0592dc/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0x372dfbe5f4ee377e83e843cdadb27e376e0592dc]<br>
+<a href="https://liskscan.xyz/address/0x4b50e53c176228ec136eceb2175e13299636181b/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0x4b50e53c176228ec136eceb2175e13299636181b]<br>
+<a href="https://liskscan.xyz/address/0x9fba5f9e6c5a703731bc9e7bddaf8c33caa7cbe9/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x9fba5f9e6c5a703731bc9e7bddaf8c33caa7cbe9]<br>
+<a href="https://liskscan.xyz/address/0x3ccc16899c2df17d0e8b40800f7dbb57e2c043ef/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0x3ccc16899c2df17d0e8b40800f7dbb57e2c043ef]<br>
+<a href="https://liskscan.xyz/address/0x03ebf0882401ca3e5bd506fc87cdb99f71ff6d1f/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0x03ebf0882401ca3e5bd506fc87cdb99f71ff6d1f]<br>
+<a href="https://liskscan.xyz/address/0xc0a39e40ed07e435868caf4c408dc857906a0fda/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0xc0a39e40ed07e435868caf4c408dc857906a0fda]<br>
 
+<a href="https://liskscan.xyz/address/0x1921fa969fc542be3cbe7e34dcfb74afda5efec0/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0x1921fa969fc542be3cbe7e34dcfb74afda5efec0]<br>
+<a href="https://liskscan.xyz/address/0xfc167f6812e68c310049a0c44c286abc33850588/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0xfc167f6812e68c310049a0c44c286abc33850588]<br>
+<a href="https://liskscan.xyz/address/0x8e29abb3fa7458ff72db7ed3453c22830bb224d9/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0x8e29abb3fa7458ff72db7ed3453c22830bb224d9]<br>
+<a href="https://liskscan.xyz/address/0x8f314a485b6a95836bf745c8b73a54458f5783df/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0x8f314a485b6a95836bf745c8b73a54458f5783df]<br>
+<a href="https://liskscan.xyz/address/0x01a44aa667d0000d5ee30145f12d7069f5595bd5/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0x01a44aa667d0000d5ee30145f12d7069f5595bd5]<br>
+<a href="https://liskscan.xyz/address/0x7e4b85a4219086628954a4235716c25560a114e3/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0x7e4b85a4219086628954a4235716c25560a114e3]<br>
+<a href="https://liskscan.xyz/address/0xd2bee500006d3e12ce6792ffee131d07b213a56e/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0xd2bee500006d3e12ce6792ffee131d07b213a56e]<br>
+<a href="https://liskscan.xyz/address/0x6341122e467ab476cec37cdaaa5627ea88703e0e/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0x6341122e467ab476cec37cdaaa5627ea88703e0e]<br>
+<a href="https://liskscan.xyz/address/0x9fba5f9e6c5a703731bc9e7bddaf8c33caa7cbe9/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x9fba5f9e6c5a703731bc9e7bddaf8c33caa7cbe9]<br>
+<a href="https://liskscan.xyz/address/0xa0ff5708c58c3ff12e6fdb0d7caa4b22cfa2b38b/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0xa0ff5708c58c3ff12e6fdb0d7caa4b22cfa2b38b]<br>
+<a href="https://liskscan.xyz/address/0x331fed0551095121ad9a8d7c57cd909e31e6962e/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x331fed0551095121ad9a8d7c57cd909e31e6962e]<br>
+<a href="https://liskscan.xyz/address/0x102409ba81c063cb6e78506853837dd680a308d5/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x102409ba81c063cb6e78506853837dd680a308d5]<br>
+
+<a href="https://liskscan.xyz/address/0x2ab48e037748afc58470420076840ab04ea82ef0/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0x2ab48e037748afc58470420076840ab04ea82ef0]<br>
+<a href="https://liskscan.xyz/address/0xd5c6deb36bda4d510fe1163a75592b7dc6d4f0d5/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0xd5c6deb36bda4d510fe1163a75592b7dc6d4f0d5]<br>
+<a href="https://liskscan.xyz/address/0xd007308cb1682160b9246c337138a45814f46b44/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0xd007308cb1682160b9246c337138a45814f46b44]<br>
+<a href="https://liskscan.xyz/address/0x7295a83ae3cdd7056dc6f9885bcf8999d8097176/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0x7295a83ae3cdd7056dc6f9885bcf8999d8097176]<br>
+<a href="https://liskscan.xyz/address/0xe208d1171ee2e5ad952bc33ccf0543e06d095ba3/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0xe208d1171ee2e5ad952bc33ccf0543e06d095ba3]<br>
+<a href="https://liskscan.xyz/address/0xee7f0a2be60e270465d4751aa3e7766f66777dc9/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0xee7f0a2be60e270465d4751aa3e7766f66777dc9]<br>
+<a href="https://liskscan.xyz/address/0x331fed0551095121ad9a8d7c57cd909e31e6962e/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x331fed0551095121ad9a8d7c57cd909e31e6962e]<br>
+<a href="https://liskscan.xyz/address/0x102409ba81c063cb6e78506853837dd680a308d5/contract/1135/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x102409ba81c063cb6e78506853837dd680a308d5]<br>
+
+<br><br>
 
 
 
