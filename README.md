@@ -328,6 +328,53 @@ polygon<br>
 <br><br>
 
 
+binanceBSC<br>
+
+<a href="https://bscscan.com/address/0x21f71275edb2e8bbac49975b3b7999005340f7ff#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x21f71275edb2e8bbac49975b3b7999005340f7ff]<br>
+<a href="https://bscscan.com/address/0x575ffdffb6b322b5d28b3c0edeccba24020102c8#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x575ffdffb6b322b5d28b3c0edeccba24020102c8]<br>
+<a href="https://bscscan.com/address/0xdfc47977b8de864aafe85c53028c3c777dc432de#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0xdfc47977b8de864aafe85c53028c3c777dc432de]<br>
+<a href="https://bscscan.com/address/0xc39afb9d7648256f6a706868c908896e079510c1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0xc39afb9d7648256f6a706868c908896e079510c1]<br>
+<a href="https://bscscan.com/address/0x827ad71b2118225eeea9e3ed36ac7b2900d82633#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0x827ad71b2118225eeea9e3ed36ac7b2900d82633]<br>
+<a href="https://bscscan.com/address/0xc7346582ecda765a198b9554ad0ec1e6bd91f58d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0xc7346582ecda765a198b9554ad0ec1e6bd91f58d]<br>
+<a href="https://bscscan.com/address/0x82301243198e208b90e1bbfe3d134d0c4a86c2b1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0x82301243198e208b90e1bbfe3d134d0c4a86c2b1]<br>
+<a href="https://bscscan.com/address/0x2ae1f932718da8157a8c27a926dbbbfeae668259#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0x2ae1f932718da8157a8c27a926dbbbfeae668259]<br>
+<a href="https://bscscan.com/address/0xd6d08bd18e814e92ecf69d492fc0a4f822658db1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0xd6d08bd18e814e92ecf69d492fc0a4f822658db1]<br>
+<a href="https://bscscan.com/address/0xa45d1747645996dca6d0fd836dbebb4dad8574d1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0xa45d1747645996dca6d0fd836dbebb4dad8574d1]<br>
+<a href="https://bscscan.com/address/0x9fab241a2035b33e4327c9c6074b211a939b4007#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0x9fab241a2035b33e4327c9c6074b211a939b4007]<br>
+<a href="https://bscscan.com/address/0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc]<br>
+<a href="https://bscscan.com/address/0x376224e09bf72b5b16586ccc78dbe53444221b54#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0x376224e09bf72b5b16586ccc78dbe53444221b54]<br>
+<a href="https://bscscan.com/address/0xd21f4487af615e6eae8c724efc8fc6232d2feb59#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0xd21f4487af615e6eae8c724efc8fc6232d2feb59]<br>
+<a href="https://bscscan.com/address/0x2d7b51a6fe81d8b4546872a46166e4d6e45e0f9d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x2d7b51a6fe81d8b4546872a46166e4d6e45e0f9d]<br>
+<a href="https://bscscan.com/address/0xafe96ad86a9b10834cb02ebe083c4044e27be623#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0xafe96ad86a9b10834cb02ebe083c4044e27be623]<br>
+<a href="https://bscscan.com/address/0x124bb8e8c994a107c0fab0337311547f217cfa89#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0x124bb8e8c994a107c0fab0337311547f217cfa89]<br>
+<a href="https://bscscan.com/address/0x6e720f0f882ef04db76282b71f59f4e28f2f39ae#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0x6e720f0f882ef04db76282b71f59f4e28f2f39ae]<br>
+
+<a href="https://bscscan.com/address/0x98907cb3106e122eb9ff2154ebacd3ec436d35a2#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0x98907cb3106e122eb9ff2154ebacd3ec436d35a2]<br>
+<a href="https://bscscan.com/address/0x769074deb813c99b5da9b29a4340996f5e3c343c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0x769074deb813c99b5da9b29a4340996f5e3c343c]<br>
+<a href="https://bscscan.com/address/0x5164ab7725bc1f58ff2b63b6cbbb2d5d8c5f056c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0x5164ab7725bc1f58ff2b63b6cbbb2d5d8c5f056c]<br>
+<a href="https://bscscan.com/address/0xf6b64dfeb46ce2b1793d03e070bd44510e02d116#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0xf6b64dfeb46ce2b1793d03e070bd44510e02d116]<br>
+<a href="https://bscscan.com/address/0x96750a75376f4393ba02c5e1066aed232cb65b6c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0x96750a75376f4393ba02c5e1066aed232cb65b6c]<br>
+<a href="https://bscscan.com/address/0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d]<br>
+<a href="https://bscscan.com/address/0xb24a8c178cf81d35e38683012e786e3231cb950b#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0xb24a8c178cf81d35e38683012e786e3231cb950b]<br>
+<a href="https://bscscan.com/address/0x2c804ca3604771eb71210736f9cab91c984b57ea#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0x2c804ca3604771eb71210736f9cab91c984b57ea]<br>
+<a href="https://bscscan.com/address/0x2d7b51a6fe81d8b4546872a46166e4d6e45e0f9d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x2d7b51a6fe81d8b4546872a46166e4d6e45e0f9d]<br>
+<a href="https://bscscan.com/address/0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8]<br>
+<a href="https://bscscan.com/address/0x312e4928c5b01b1cc286e3dfb64330028bd4052c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x312e4928c5b01b1cc286e3dfb64330028bd4052c]<br>
+<a href="https://bscscan.com/address/0x3bf8d0d7fff41c8f40c11697d2769bab5bfa8793#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x3bf8d0d7fff41c8f40c11697d2769bab5bfa8793]<br>
+
+<a href="https://bscscan.com/address/0x7e52eb4d45a95ef4a607168eeaa5f577863e8645#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0x7e52eb4d45a95ef4a607168eeaa5f577863e8645]<br>
+<a href="https://bscscan.com/address/0x02bde5462ff81c7c28a4b508e7ee347614675bc5#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x02bde5462ff81c7c28a4b508e7ee347614675bc5]<br>
+<a href="https://bscscan.com/address/0x55541d38c7efaea360403c5705d2bc80805d14f2#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0x55541d38c7efaea360403c5705d2bc80805d14f2]<br>
+<a href="https://bscscan.com/address/0x4fd84811272f4934341a5bf03e1ef24bcb27369a#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0x4fd84811272f4934341a5bf03e1ef24bcb27369a]<br>
+<a href="https://bscscan.com/address/0x5b5d92373733e40feaebb730e8d4b69f46722c2b#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0x5b5d92373733e40feaebb730e8d4b69f46722c2b]<br>
+<a href="https://bscscan.com/address/0x012ef5dd2c92be3bf3fdcdb2dde6d30a72df3966#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0x012ef5dd2c92be3bf3fdcdb2dde6d30a72df3966]<br>
+<a href="https://bscscan.com/address/0x312e4928c5b01b1cc286e3dfb64330028bd4052c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x312e4928c5b01b1cc286e3dfb64330028bd4052c]<br>
+<a href="https://bscscan.com/address/0x3bf8d0d7fff41c8f40c11697d2769bab5bfa8793#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x3bf8d0d7fff41c8f40c11697d2769bab5bfa8793]<br>
+
+<br><br>
+
+
+
 
 If you want to be included in the Google Play test, send your gmail address to one@ungravel.com to get a pre-release access to "Ungravel on Android".
 <br>
