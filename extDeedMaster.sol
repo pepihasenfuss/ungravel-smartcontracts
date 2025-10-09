@@ -30,18 +30,18 @@ pragma solidity 0.8.30;
 // TLTR;
 // AuctionMaster is a beast: It enables groups or group members to invest
 // in other groups, acquiring group shares the safe way. This contract consists
-// of 5 different contracts that provide safe and yet affordable funding.
+// of 5 different contracts that provide safe and yet affordable funding, but it is complex.
 //
 // Funding Auctions are so-called Vickrey auctions: Winners pay the second-highest price.
 //
-// Ungravel auctions are safe because all participating parties act inside of UUNS:
+// Ungravel auctions are safe because all participating parties will act inside of UUNS:
 // Ungravel Unified Name Space. Example: "ethereum.eth" invests into "ens.eth".
 //
-// But also "vitalik.ethereum.eth" may invest into "ethereum.eth".
+// But also "vitalik.ethereum.eth" may invest into his own group: "ethereum.eth".
 //
 // Everything is happing inside of UUNS, thus making outside attacks virtually impossible.
 // Even smart contracts, such as "GroupWalletMaster", GWM, "AuctionMaster", AM, and other masters,
-// have proper UUNS names assigned, therefore, they all are acting agents indide of UUNS. This is safe.
+// have proper UUNS names assigned, therefore, they all are acting agents indide of UUNS.
 
 interface IAbsAucEns {
   function owner(bytes32 node) external view  returns(address);
@@ -88,7 +88,6 @@ abstract contract AbsResolver {
 }
 abstract contract AbsReverseRegistrar {
   IAbsAucEns   public immutable ens;
-  AbsResolver public defaultResolver;
   function setName(string memory name) external virtual returns (bytes32);
   function node(address addr) external virtual pure returns (bytes32);
 }
@@ -114,8 +113,8 @@ abstract contract NmWrapper {
   function setApprovalForAll(address operator,bool approved) external virtual;
 }
 abstract contract AbsGwf {
-  NmWrapper public  ensNameWrapper;
-  IAbsAucEns public  ens;
+  NmWrapper  public   ensNameWrapper;
+  IAbsAucEns public   ens;
   function getProxyToken(bytes32 _domainHash) public virtual view returns (address p);
   function getGWProxy(bytes32 _dHash) external view virtual returns (address);
   function getOwner(bytes32 _domainHash) external view virtual returns (address);
