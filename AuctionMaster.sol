@@ -30,18 +30,18 @@ pragma solidity 0.8.30;
 // TLTR;
 // AuctionMaster is a beast: It enables groups or group members to invest
 // in other groups, acquiring group shares the safe way. This contract consists
-// of 5 different contracts that provide safe and yet affordable funding.
+// of 5 different contracts that provide safe and yet affordable funding, but it is complex.
 //
 // Funding Auctions are so-called Vickrey auctions: Winners pay the second-highest price.
 //
-// Ungravel auctions are safe because all participating parties act inside of UUNS:
+// Ungravel auctions are safe because all participating parties will act inside of UUNS:
 // Ungravel Unified Name Space. Example: "ethereum.eth" invests into "ens.eth".
 //
-// But also "vitalik.ethereum.eth" may invest into "ethereum.eth".
+// But also "vitalik.ethereum.eth" may invest into his own group: "ethereum.eth".
 //
 // Everything is happing inside of UUNS, thus making outside attacks virtually impossible.
 // Even smart contracts, such as "GroupWalletMaster", GWM, "AuctionMaster", AM, and other masters,
-// have proper UUNS names assigned, therefore, they all are acting agents indide of UUNS. This is safe.
+// have proper UUNS names assigned, therefore, they all are acting agents indide of UUNS.
 
 interface IAbsAucEns {
   function owner(bytes32 node) external view  returns(address);
@@ -88,7 +88,6 @@ abstract contract AbsResolver {
 }
 abstract contract AbsReverseRegistrar {
   IAbsAucEns   public immutable ens;
-  AbsResolver public defaultResolver;
   function setName(string memory name) external virtual returns (bytes32);
   function node(address addr) external virtual pure returns (bytes32);
 }
@@ -114,8 +113,8 @@ abstract contract NmWrapper {
   function setApprovalForAll(address operator,bool approved) external virtual;
 }
 abstract contract AbsGwf {
-  NmWrapper public  ensNameWrapper;
-  IAbsAucEns public  ens;
+  NmWrapper  public   ensNameWrapper;
+  IAbsAucEns public   ens;
   function getProxyToken(bytes32 _domainHash) public virtual view returns (address p);
   function getGWProxy(bytes32 _dHash) external view virtual returns (address);
   function getOwner(bytes32 _domainHash) external view virtual returns (address);
@@ -158,6 +157,7 @@ bytes32 constant KSALT = 0x4db45745d63e3d3fca02d388bb6d96a256b72fa6a5ca7e7b2c10c
 
 // ******************************* DeedProxy CONTRACT **************************
 // The internal deed proxy is a cheap contract deployed for each bid of a member of the group, aka internal bidder.
+// This proxy contract is for one bid of one group member bidding in a internal Funding Auction.
 pragma solidity 0.8.30;
 contract IntDeedProxy {
     address   public           masterCopy;
@@ -209,6 +209,11 @@ contract IntDeedProxy {
     }
 }
 // ******************************* DEED MASTER CONTRACT ************************
+// The internal DeedMaster provides functionality for internal bids. Most important,
+// it may adjust the actual price being paid during the auction. And it may close
+// "the deed", transferring the deposit funding to the organizing group of the auction.
+// Once a deed is closed, it will not longer be used, but it still owns its domain name.
+
 pragma solidity 0.8.30;
 contract intDeedMaster {
   address internal           masterCopy;
@@ -464,6 +469,7 @@ contract extDeedMaster {
 // The bidding proxy contract is deployed for each external bidder, an Ungravel Group.
 // External bidders are GWP from another team/group. Bidders must be from a Group.
 // BiddingProxy is a safe and cost-saving method to participate and bid in a Funding Auction.
+
 pragma solidity 0.8.30;
 contract BiddingProxy {
     address   public           masterCopy;
@@ -623,10 +629,10 @@ contract AuctionMaster {
       return reverseR.ens().recordExists(reverseR.node(_caller));                       // check if ENS entry of node exists: true | false
     }                                                                               
     function __calledByUngravelGWP(address sender) public view {                        // caller MUST BE valid contract, a GroupWalletProxy, GWP, belonging to Ungravel
-      my_require(_validAddress(sender)&&__callerExists(sender),"J");                    // called by a contract && check reverse name of sender, e.g. "silvias-bakery.eth"
+      //my_require(_validAddress(sender)&&__callerExists(sender),"J");                  // called by a contract && check reverse name of sender, e.g. "silvias-bakery.eth"
                                                                                         // getdHash(AbsGwp(sender))  hsh = GroupWallet domain hash, from GWP contract
                                                                                         // AbsGwp(sender).getGWF()   GWF contract, derived from GWP, in this case (hopefully) the caller
-      my_require(sender==address(this)||(getdHash(AbsGwp(sender))!=0x0&&AbsGwf( AbsGwp(sender).getGWF() ).getOwner(getdHash(AbsGwp(sender)))==sender),"M");// the requested GWP owns its own dName, s.a. "silvias-bakery.eth"
+      my_require(_validAddress(sender)&&__callerExists(sender)&&((sender==address(this))||(getdHash(AbsGwp(sender))!=0x0&&AbsGwf( AbsGwp(sender).getGWF() ).getOwner(getdHash(AbsGwp(sender)))==sender)),"M");// the requested GWP owns its own dName, s.a. "silvias-bakery.eth"
     }
     function __calledByGWMember(bytes32 _hash) public view returns (bool) {             // caller MUST BE member of contract, a GroupWalletProxy GWP, belonging to Ungravel
       // used for internal bidders!
@@ -767,7 +773,7 @@ contract AuctionMaster {
       entry_A[hash] = uint256(entry_A[hash] & K_REGDATAMASK3) + uint256(uint256(uint256(regDate & K_REGDATAMASK2)<<160) & K_REGDATAMASK);
     }
     function __finalize(bytes32 hash) private view returns (bool) {
-      return bool(uint256(uint256(entry_A[hash] & K_FINALIZEMASK))>0);
+      return bool(uint256(uint256(entry_A[hash] & K_FINALIZEMASK))!=0);
     }
     function saveFinalize(bytes32 hash,bool finalize) private {
       if ( finalize) entry_A[hash] = uint256(entry_A[hash] & K_FINFLAGMASK) + uint256(K_FINALIZEMASK);
@@ -814,7 +820,7 @@ contract AuctionMaster {
      * @param b A number to compare
      * @return lmax The maximum of two unsigned integers
      */
-    function max(uint a, uint b) internal pure returns (uint lmax) {
+    function max(uint a, uint b) internal pure returns (uint) {
         if (a >= b)
             return a;
         else
@@ -826,7 +832,7 @@ contract AuctionMaster {
      * @param b A number to compare
      * @return lmin The minimum of two unsigned integers
      */
-    function min(uint a, uint b) internal pure returns (uint lmin) {
+    function min(uint a, uint b) internal pure returns (uint) {
         if (a <= b)
             return a;
         else
@@ -846,7 +852,7 @@ contract AuctionMaster {
             ptr := add(s, 1)
             end := add(mload(s), ptr)
         }
-        for (len = 0; ptr < end; len++) {
+        for (; ptr < end; len++) {
             uint8 b;
             assembly { b := and(mload(ptr), 0xFF) }
             if (b < 0x80) {
@@ -923,7 +929,7 @@ contract AuctionMaster {
         if (bArr[i] != 0) rArr[i] = bArr[i];
         off--;
         i++;
-      } while(i<32&&off>0);
+      } while(i<32&&off!=0);
       
       return string(rArr); 
     }
@@ -967,10 +973,8 @@ contract AuctionMaster {
     function getAuctionMinBiddingPrice(bytes32 _hash) external view returns (uint) {
       return __minPrice(_hash);
     }
-    function getGasPrice() private view returns (uint256) {
-      uint256 gasPrice;
+    function getGasPrice() private view returns (uint256 gasPrice) {
       assembly { gasPrice := gasprice() }
-      return gasPrice;
     }
     function calculateMinAuctionPrice() public view returns (uint64 minP) {
       minP = uint64(uint64(getGasPrice()) * uint(2433123) * 100) / getPercentageOfCost();
@@ -1083,7 +1087,7 @@ contract AuctionMaster {
       do {
         i--;
         t = gwp.getTransactionRecord(i);
-      } while( (i>0) && (t>0) && ( (t & K_TYPEMASK) != K_TYPEMASK) );
+      } while( (i!=0) && (t!=0) && ((t & K_TYPEMASK) != K_TYPEMASK) );
 
       my_require(address(uint160(t & K_ADDRESSMASK))==address(this),"n");
       return (address(uint160(t & K_ADDRESSMASK)),i);
@@ -1273,8 +1277,8 @@ contract AuctionMaster {
 
     // CANCEL
     function _transferShares(address _sender, bytes32 _hash, address _bid, bytes32 _seal) internal {
-      if (address(_bid)!=address(0) && _sender!=address(0)) {
-        my_require(__finalize(_hash) && (_timeStamp() > (AbsGenericDeed(_bid).creationDate() + (__revealPeriod(_hash)<<1))),"d"); 
+      if (address(_bid)!=address(0) && address(_sender)!=address(0)) {
+        my_require((__finalize(_hash) || (state_pln(_hash)==Mode.Open)) && (_timeStamp() > (AbsGenericDeed(_bid).creationDate() + (__revealPeriod(_hash)<<1))),"d"); 
         AbsGenericDeed(_bid).closeDeed_igk(K_ADD00); // send back cancelled bid
         saveSealedBid(_sender,_seal,K_ADD00);
 
@@ -1312,11 +1316,8 @@ contract AuctionMaster {
     }
 
 
-    function onERC1155Received(address,address,uint256,uint256,bytes calldata) external pure returns (bytes4) { 
-      return this.onERC1155Received.selector;
-    }
     function _deedDomainName(string memory _prefix) private view returns (string memory) {
-      return string(abi.encodePacked(_prefix,'ternal-deed.ungravel',tld));
+      return string(bytes.concat(bytes(_prefix),bytes('ternal-deed.ungravel'),bytes(tld)));
     }
     function deployExtDeedMaster() external onlyDeployer payable {
       externalDeedMaster = address((new extDeedMaster){value: 0}(_deedDomainName("ex"))); // external-deed.ungravel.tld
@@ -1326,8 +1327,12 @@ contract AuctionMaster {
       internalDeedMaster = address((new intDeedMaster){value: 0}(_deedDomainName("in"))); // internal-deed.ungravel.tld
       emit InternalDeedMaster(internalDeedMaster);
     }
+
+    function onERC1155Received(address,address,uint256,uint256,bytes calldata) external pure returns (bytes4) { 
+      return 0xf23a6e61; // this.onERC1155Received.selector;
+    }
     function version() external pure returns (uint256) { 
-      return 20010179;
+      return 20010181;
     }
     function withdraw() external onlyDeployer payable { 
       payable(msg.sender).transfer(address(this).balance);
@@ -1346,6 +1351,7 @@ contract AuctionMaster {
       tld             = _multifour.tld();
 
       // ENS reverse resolver entry of address(this) ---> "auctionmaster.ungravel.eth" | "auctionmaster.ungravel.lisk"
-      _reverse.setName(string(abi.encodePacked('auctionmaster.ungravel',tld))); // assigning reverse resolver record
+
+      _reverse.setName(string(bytes.concat(bytes('auctionmaster.ungravel'),bytes(tld)))); // assigning reverse resolver record
     }
 }
