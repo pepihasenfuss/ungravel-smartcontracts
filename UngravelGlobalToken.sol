@@ -163,9 +163,9 @@ interface IGAbsGwp {                                                            
   function getTNumberPublic()              external view returns (uint count);
   function getMasterCopy()                                                    external view returns (address);
   function nameAuctionBidBucketLabel(bytes32 labelhash, address deedContract) external;
-  function getIntention()                  external view returns (gAbsInt);
+  function getIntention()                  external view returns (AbsInt);
 }
-contract gAbsBaseR {                                                                             // BaseRegistrar belongs to the ENS - Ethereum Naming Service
+abstract contract AbsBaseR {                                                                     // BaseRegistrar belongs to the ENS - Ethereum Naming Service
   event NameMigrated(uint256 indexed id, address indexed owner, uint expires);
   event NameRegistered(uint256 indexed id, address indexed owner, uint expires);
   event NameRenewed(uint256 indexed id, uint expires);
@@ -202,16 +202,16 @@ interface IGResolver {                                                          
   function setText(bytes32 node, string calldata key, string calldata value) external;
   function setAuthorisation(bytes32 node, address target, bool isAuthorised) external;
 }
-abstract contract gAbsRr {                                                                       // Reverse Resolver and Reverse Default Resolver give access to the domain name, if only an address is given
+abstract contract AbsRr {                                                                        // Reverse Resolver and Reverse Default Resolver give access to the domain name, if only an address is given
   IGResolver public defaultResolver;
   function node(address addr) external virtual pure returns (bytes32);
   function setName(string memory name) external virtual returns (bytes32);
 }
-abstract contract gAbsGwf {                                                                      // Group Wallet Factory, GWF, main Ungravel entry point coordinating Ungravel Groups and all activities, deploying ProxyGroupWallet, GWP, and ProxyToken, aka TokenProxy
+abstract contract AbsGwf {                                                                       // Group Wallet Factory, GWF, main Ungravel entry point coordinating Ungravel Groups and all activities, deploying ProxyGroupWallet, GWP, and ProxyToken, aka TokenProxy
   IGResolver                      public  resolverContract;
   IGAbsEns                        public  ens;
-  gAbsBaseR                       public  base;
-  gAbsRr                          public  reverseContract;
+  AbsBaseR                        public  base;
+  AbsRr                           public  reverseContract;
   function getOwner(bytes32 _domainHash) external view virtual returns (address);
   function getProxyToken(bytes32 _domainHash) external view virtual returns (address p);
   function getGWProxy(bytes32 _dHash) external view virtual returns (address);
@@ -220,7 +220,7 @@ abstract contract gAbsGwf {                                                     
   function getGWF() external view virtual returns (address);
   function tld() public view virtual returns (string memory);
 }
-abstract contract gAbsTpc {                                                                      // TokenProxy gives access to the Group Shares contract, aka TokenProxy contract, that comes with each group, a proxy contract that belongs to TokenMaster
+abstract contract AbsTpc {                                                                       // TokenProxy gives access to the Group Shares contract, aka TokenProxy contract, that comes with each group, a proxy contract that belongs to TokenMaster
   address  public masterCopy;
   function upgrade(address master) external virtual payable;
   function version() public pure virtual returns(uint256 v);
@@ -229,19 +229,19 @@ abstract contract gAbsTpc {                                                     
   function balanceOf(address tokenOwner) external virtual view returns (uint thebalance);
   function transfer_G8l(address toReceiver, uint amount) external virtual;
 }
-abstract contract gAbsAuction {                                                                  // Auction Registrar is Vickrey Auction, controlled by Ungravel GroupWallets, in order to sell group shares to investors and to tame competition
+abstract contract AbsAuction {                                                                   // Auction Registrar is Vickrey Auction, controlled by Ungravel GroupWallets, in order to sell group shares to investors and to tame competition
   enum Mode { Open, Auction, Owned, Forbidden, Reveal, empty, Over }
   function startAuction_ge0(bytes32 _hash, uint revealP) public virtual payable;
   function state_pln(bytes32 _hash) public virtual view returns (Mode);
   function entries(bytes32 _hash) public virtual view returns (Mode, address, uint, uint, uint, uint, uint, uint);
   function calculateMinAuctionPrice() public virtual view returns (uint64);
 }
-abstract contract gAbsExtDeed {                                                                  // External Investor Deed aka BidBucket proxy contract, used to store the deposit of a bidding investor during Funding Auctions
-  gAbsAuction public  registrar;
+abstract contract AbsExtDeed {                                                                   // External Investor Deed aka BidBucket proxy contract, used to store the deposit of a bidding investor during Funding Auctions
+  AbsAuction  public  registrar;
   address     public  beneficiary;
   bytes32     public  lhash;
 }
-abstract contract gAbsInt {                                                                      // Intentions store and provide information about LOIs. LOIs are also important in order to participate in and to profit from Ungravel Global Token, aka Ungravel Global Shares, in the future.
+abstract contract AbsInt {                                                                       // Intentions store and provide information about LOIs. LOIs are also important in order to participate in and to profit from Ungravel Global Token, aka Ungravel Global Shares, in the future.
   function saveLetterOfIntent(address target, uint nbOfShares) public virtual payable;
   function storeInvestment(uint _nbOfShares, address _gwp, uint _pricePaidEth, bytes32 _salt) public virtual payable;
   function getUNGmarketCap() public view virtual returns (uint);
@@ -270,6 +270,7 @@ abstract contract gAbsInt {                                                     
 
 // Today, infrastructure investors are buying user attention anyway, therefore, betting on a radically new concept is reasonable.
 // Ungravel re-invented ICOs - fundamentally modernized and aligned, by applying inventive incentive design.
+// In contrast to an AirDrop, Ungravel Society is far more developed to engage users long-term.
 
 // Today, the dApp runs in beta on 16 different EVM-compatible chains, it is mobile-first and user-friendly.
 // Live tutorials "speak" to users directly, voice recognition is still experimental, but very engaging.
@@ -280,15 +281,15 @@ abstract contract gAbsInt {                                                     
 contract UngravelGlobalShares {
     address internal immutable ungravel_owner;                                  // contract deployer address
 
-    gAbsGwf public GWF;                                                         // current GWF contract of chain, aka GroupWallet Factory
-    gAbsInt internal intent;                                                    // Intention Contract - administers LOIs and investment information, computes marketCap of Ungravel Society on this chain
+    AbsGwf public GWF;                                                          // current GWF contract of chain, aka GroupWallet Factory
+    AbsInt internal intent;                                                     // Intention Contract - administers LOIs and investment information, computes marketCap of Ungravel Society on this chain
 
     uint256 private ownerPrices;                                                // buyPrice, sellPrice, owner address = GWF contract
     uint256 internal supply;                                                    // nb of global shares, held by (this) UngravelGlobalShares contract, available to sell to investors, "available global shares"
     uint256 public numberOfShares = K_INITIALSUPPLY;                            // total number of global shares, number of "global shares minted"
 
-    uint256 constant public K_INITIALSUPPLY     = 100000000000;                 // initial supply of global shares, assigned to this contract, "available global shares" after contract deployment
-    uint256 constant public K_MAXNUMBEROFSHARES = K_INITIALSUPPLY*10;           // max. number of global shares allowed, "maximal number of gobal shares mintable"
+    uint256 constant private K_INITIALSUPPLY     = 1e11;                        // initial supply of global shares, assigned to this contract, "available global shares" after contract deployment
+    uint256 constant private K_MAXNUMBEROFSHARES = K_INITIALSUPPLY*10;          // max. number of global shares allowed, "maximal number of gobal shares mintable"
 
     mapping(address ownerAddr => uint256 balance)                                   private balances; // stores nb of global shares per owner address
     mapping(address ownerAddr => mapping(address benefittingCtr => uint256 amount)) private allowed;  // stores nb of global shares approved to contract, approved by owner address
@@ -305,7 +306,7 @@ contract UngravelGlobalShares {
     uint256 constant K_SPREAD      = 100;                                       // divisor / spread to calculate the sellPrice
     uint256 constant K_PERCENT     = 1;                                         // percent of group market cap that will be paid as a grant
 
-    uint256 constant K_BUYPR       = 1000000000;                                // initial price per share (arbitrary) 1000000000 wei
+    uint256 constant K_BUYPR       = 1e9;                                       // initial price per share (arbitrary) 1000000000 wei
     uint256 constant K_SELLPR      = K_BUYPR - (K_BUYPR/K_SPREAD);              // sell price is 1% less of the buy price to keep global shares liquid; this contract collects small sell token fees to enhance ETH liquidity
 
     uint256 constant K_SELLBUY     = uint256( (uint256(uint256(K_BUYPR)<<160) + uint256(uint256(K_SELLPR)<<208)) & K_PMASK ); // combine sellPrice, buyPrice and GWF in a single word (compatible with TokenMaster and TokenProxy)
@@ -333,6 +334,8 @@ contract UngravelGlobalShares {
     event IncreasedGlobalSharesSupply(uint256 supply, uint256 newShares);
     event AdjustGlobalSharePrice(uint256 buyPrice, uint256 sellPrice);
     event PayForGroupShares(address gwp_funded,address gwp_investor,uint value, uint nbOfShares);
+    event UpdatedGwfAndIntentions(address indexed gwf,address indexed intentions);
+    event WithdrawFunding(address indexed owner, uint amount);
 
     modifier nonReentrant() {
       _guardCounter += 1;
@@ -366,16 +369,19 @@ contract UngravelGlobalShares {
     function _validContract(address ct) private view returns (bool) {
       return ( ct!=address(0) && isContract(ct) );
     }
+    function _castAddressUint256(uint256 _toCast) internal pure returns (address) {
+      return address(uint160(_toCast & K_AMASK));
+    }
 
     function _domHash(IGAbsGwp gw) internal view returns (bytes32) {                                 // provide domain name hash of domain name of the GWP - Group Wallet Proxy contract, s.a. hash("my-company.one")
       address gwfc = gw.getGWF();
       my_require(address(gwfc)!=K_ADD00,"gwfc");
       return bytes32(gw.getTransactionRecord(uint256(uint160(gwfc))));                               // domain hash, s.a. hash of "mygroupwallet.eth"
     }
-    function _reverse(IGAbsGwp gw) internal view returns (gAbsRr) {                                  // returns reverse registry contract using GWF
+    function _reverse(IGAbsGwp gw) internal view returns (AbsRr) {                                   // returns reverse registry contract using GWF
       address lGWF = gw.getGWF();
       my_require(address(lGWF)!=address(0),"revCon");
-      return gAbsGwf(lGWF).reverseContract();
+      return AbsGwf(lGWF).reverseContract();
     }
     function getReverseDNameFromAddress(address _gwp) internal view returns (string memory) {        // returns domain name string from address
       return string(_reverse(IGAbsGwp(_gwp)).defaultResolver().name( _reverse(IGAbsGwp(_gwp)).node(_gwp) ));
@@ -383,15 +389,16 @@ contract UngravelGlobalShares {
     function resolvedAddressFromDName(bytes32 dhash) internal view returns (address) {               // returns resolved address from domain name hash
       return GWF.resolverContract().addr(dhash);
     }
-    function __isGW(address _gw) private view returns(bool) {
+    function __isGW(address _gw) private view returns(bool) {                                        // returns if group wallet contract / proxy contract belongs to Ungravel and UUNS
       bytes32 hsh = _domHash(IGAbsGwp(_gw));
+      AbsGwf lGwf = GWF;
 
       return (
                _validContract(_gw)                               &&  // check is contract && check not 0x00
-               address(IGAbsGwp(_gw).getGWF())==address(GWF)     &&  // check relies on same GWF
+               address(IGAbsGwp(_gw).getGWF())==address(lGwf)    &&  // check relies on same GWF
                hsh!=0x0                                          &&  // does refer to domain name hash
-               GWF.getOwner(hsh)==_gw                            &&  // _gw is owner of hash
-               GWF.getGWProxy(hsh)==_gw                              // hash owned by _gw ---> _gw is Ungravel Group! (qed)
+               lGwf.getOwner(hsh)==_gw                           &&  // _gw is owner of hash
+               lGwf.getGWProxy(hsh)==_gw                             // hash owned by _gw ---> _gw is Ungravel Group! (qed)
              );
     }
     function __calledByUngravelGWP(address sender) private view returns (bool) {                     // caller MUST BE valid contract, a GroupWalletProxy, GWP belonging to Ungravel
@@ -400,23 +407,24 @@ contract UngravelGlobalShares {
       bytes32 hsh = _domHash(IGAbsGwp(sender));                                                      // *** hsh of seed.eth ***  hsh = GroupWallet domain hash, from GWP contract
       my_require(hsh!=0x0,"nU2");                                                                    // valid hsh
 
+      AbsGwf lGwf = GWF;
       address gwfc = IGAbsGwp(sender).getGWF();                                                      // GWF contract, derived from GWP, in this case (hopefully) the caller
-      my_require(_validContract(gwfc)&&address(GWF)==gwfc,"nU3");                                    // GWF contract is contract and we are all part of the same family (society), lead by GWF
+      my_require(_validContract(gwfc)&&address(lGwf)==gwfc,"nU3");                                   // GWF contract is contract and we are all part of the same family (society), lead by GWF
 
-      my_require(GWF.getOwner(hsh)==sender,"nU4");                                                   // requested GWP owns its own dName, s.a. "silvias-bakery.eth", proving that it belongs to Ungravel Society!
+      my_require(lGwf.getOwner(hsh)==sender,"nU4");                                                  // requested GWP owns its own dName, s.a. "silvias-bakery.eth", proving that it belongs to Ungravel Society!
 
       return true;
     }
     function __ungravelGW(bytes32 _hash) private view returns (bool) {                               // checks if _hash is UUNS
       IGAbsGwp gwp  = IGAbsGwp(GWF.getGWProxy(_hash));                                               // *** hash leads to GWP
-      my_require(_validContract(address(gwp)),"U1");                                                    // check if GWP is valid contract address
+      my_require(_validContract(address(gwp)),"U1");                                                 // check if GWP is valid contract address
       bytes32 hsh  = _domHash(gwp);                                                                  // hsh = GroupWallet domain hash
       address gwfc = gwp.getGWF();                                                                   // GWF contract, derived from GWP
       my_require( 
-               _hash!=0x0                               &&  // check if hash is valid
-               hsh!=0x0                                 &&  // check if hsh  is valid
-               _validContract(gwfc)                     &&  // basic check if derived GWF is valid
-               gAbsGwf(gwfc).getOwner(hsh)==address(gwp)    // GWF and hsh assert that gwp belongs to Ungravel
+               _hash!=0x0                               &&                                           // check if hash is valid
+               hsh!=0x0                                 &&                                           // check if hsh  is valid
+               _validContract(gwfc)                     &&                                           // basic check if derived GWF is valid
+               AbsGwf(gwfc).getOwner(hsh)==address(gwp)                                              // GWF and hsh assert that gwp belongs to Ungravel
         ,"U2");
       
       return true;
@@ -433,23 +441,23 @@ contract UngravelGlobalShares {
       return ungravel_owner;
     }
     
-    function owner() external view returns (address ow) {                                            // GWF - GroupWallet Factory contract
-      return address(uint160(ownerPrices & K_AMASK));
+    function owner() external view returns (address) {                                               // GWF - GroupWallet Factory contract
+      return _castAddressUint256(ownerPrices);
     }
     
     function name() external pure returns (string memory) {                                          // Ungravel Global Shares
       return 'Ungravel Global Shares';
     }
     
-    function standard() external pure returns (string memory std) {                                  // erc20
+    function standard() external pure returns (string memory) {                                      // erc20
       return 'ERC-20';
     }
     
-    function symbol() external pure returns (string memory sym) {                                    // symbol = UNGRAVELS
+    function symbol() external pure returns (string memory) {                                        // symbol = UNGRAVELS
       return 'UNGRAVELS';
     }
     
-    function decimals() external pure returns (uint8 dec) {                                          // 2 decimals, mainly due to compatibility with Ungravel Group shares
+    function decimals() external pure returns (uint8) {                                              // 2 decimals, mainly due to compatibility with Ungravel Group shares
       return  2;
     }
     
@@ -457,19 +465,19 @@ contract UngravelGlobalShares {
       return supply;
     }
     
-    function sellPrice() external view returns (uint256 sp) {                                        // return current sellPrice for 1 global share, typically 1% less of buyPrice
+    function sellPrice() public view returns (uint256) {                                             // return current sellPrice for 1 global share, typically 1% less of buyPrice
       return uint256( (uint256( ownerPrices & K_SMASK )>>208) & K_MASK );
     }
     
-    function buyPrice() external view returns (uint256 bp) {                                         // return current buyPrice for 1 global share
+    function buyPrice() public view returns (uint256) {                                              // return current buyPrice for 1 global share
       return uint256( (uint256( ownerPrices & K_BMASK )>>160) & K_MASK );
     }
     
-    function balanceOf(address tokenOwner) external view returns (uint thebalance) {                 // returns balance of global shares of owner
+    function balanceOf(address tokenOwner) external view returns (uint) {                            // returns balance of global shares of owner
       return balances[tokenOwner]>>1;
     }
     
-    function tokenAllow(address tokenOwner,address spender) public view returns (uint256 tokens) {   // allow another contract "spender" to control a nb of tokens owned by "tokenOwner", returning nb of tokens
+    function tokenAllow(address tokenOwner,address spender) public view returns (uint256) {          // allow another contract "spender" to control a nb of tokens owned by "tokenOwner", returning nb of tokens
       return allowed[tokenOwner][spender];
     }
 
@@ -477,12 +485,12 @@ contract UngravelGlobalShares {
        return allowed[own][spender];
     }
     
-    function saveOwner(uint256 buyP,uint256 sellP,address own) private pure returns (uint256 o) {    // may store buyPrice and sellPrice and the owner of this contract in a single bytes32 word
+    function saveOwner(uint256 buyP,uint256 sellP,address own) private pure returns (uint256) {      // may store buyPrice and sellPrice and the owner of this contract in a single bytes32 word
       return uint256( uint256(uint256(buyP)<<160) + uint256(uint256(sellP)<<208) + uint256(uint160(own)) );
     }
     
-    function getIntention() public view returns (gAbsInt) {                                          // provide Intentions contract: Intentions collect relevant data about Funding Auctions and Ungravel Group valuations
-      return gAbsInt(intent);
+    function getIntention() public view returns (AbsInt) {                                           // provide Intentions contract: Intentions collect relevant data about Funding Auctions and Ungravel Group valuations
+      return AbsInt(intent);
     }
 
     function mCapOfUngravelSociety() public view returns (uint) {                                    // return the current market cap of Ungravel on this chain - aka total value of Ungravel Society on xyz-chain
@@ -597,8 +605,7 @@ contract UngravelGlobalShares {
         else return bytes1(uint8(b) + 0x57);
     }
 
-    function strlen(string memory s) internal pure returns (uint) {
-        uint len;
+    function strlen(string memory s) internal pure returns (uint len) {
         uint i = 0;
         uint bytelength = bytes(s).length;
         for(len = 0; i < bytelength; len++) {
@@ -627,14 +634,10 @@ contract UngravelGlobalShares {
       uint8 off2 = 0;
       
       do
-       { 
-        if (_b[i]!=0) { 
-          bArr[i] = _b[i];
-        }
-        else
-        {
-          off = i;
-        }
+      { 
+        if (_b[i]!=0) bArr[i]=_b[i];
+        else off = i;
+        
         i++;
       } while(off==0&&i<32);
 
@@ -643,14 +646,10 @@ contract UngravelGlobalShares {
       i = 0;
 
       do
-       { 
-        if (_c[i]!=0) { 
-          bArr[off+i+1] = _c[i];
-        }
-        else
-        {
-          off2 = i;
-        }
+      { 
+        if (_c[i]!=0) bArr[off+i+1]=_c[i];
+        else off2 = i;
+        
         i++;
       } while(off2==0&&i<32&&(off+i+1)<32);
       
@@ -684,7 +683,7 @@ contract UngravelGlobalShares {
         if (bArr[i] != 0) rArr[i] = bArr[i];
         off--;
         i++;
-      } while(i<32&&off>0);
+      } while(i<32&&off!=0);
       
       return string(rArr); 
     }
@@ -704,7 +703,7 @@ contract UngravelGlobalShares {
         return string(s);
     }
     
-    function toLowerCaseBytes32(bytes32 _in) internal pure returns (bytes32 _out){
+    function toLowerCaseBytes32(bytes32 _in) internal pure returns (bytes32){
       if ( uint256(uint256(uint256(_in) & K_TMASK) >> 252) <= 5 ) return bytes32(uint256(uint256(_in) | 0x2000000000000000000000000000000000000000000000000000000000000000 ));
       return _in;
     }
@@ -712,24 +711,24 @@ contract UngravelGlobalShares {
     // ---------------------------- utils ----------------------------------------
 
     function _getGWFromDHash(bytes32 _dhash) internal view returns (IGAbsGwp) {
-      gAbsGwf gwfc = gAbsGwf(address(uint160(ownerPrices & K_AMASK)));                                      // GWF - GroupWalletFactory contract
-      my_require(address(gwfc)!=K_ADD00&&isContract(address(gwfc))&&uint256(_dhash)>0,"_gGW");
+      AbsGwf gwfc = AbsGwf(_castAddressUint256(ownerPrices));                                                 // GWF - GroupWalletFactory contract
+      my_require(address(gwfc)!=K_ADD00&&isContract(address(gwfc))&&uint256(_dhash)!=0,"_gGW");
 
-      address gwp = gAbsGwf(gwfc).getGWProxy(_dhash);
+      address gwp = AbsGwf(gwfc).getGWProxy(_dhash);
       my_require(gwp!=K_ADD00&&isContract(gwp),"gGW");
       return IGAbsGwp(gwp);
     }
 
-    function _tokenContract(IGAbsGwp gw) internal view returns (gAbsTpc) {
-      gAbsGwf lGWF = gAbsGwf(gw.getGWF());
+    function _tokenContract(IGAbsGwp gw) internal view returns (AbsTpc) {
+      AbsGwf lGWF = AbsGwf(gw.getGWF());
       my_require(address(lGWF)!=K_ADD00,"_tCt");
-      return gAbsTpc(lGWF.getProxyToken(_domHash(gw)));
+      return AbsTpc(lGWF.getProxyToken(_domHash(gw)));
     }
 
     function isContract(address addr) internal view returns (bool) {
       uint size;
       assembly { size := extcodesize(addr) }
-      return size > 0;
+      return size!=0;
     }
 
     function auctionTransactionRecord(IGAbsGwp gwp) internal view returns (address,uint) {                      // returns the first auction address and transId from GWP transactions
@@ -739,10 +738,10 @@ contract UngravelGlobalShares {
       do {
         i--;
         t = gwp.getTransactionRecord(i);
-        if ((t>0) && (t & K_TMASK == K_TMASK)) {     // iterate through auction transactions only
-          return (address(uint160(t & K_AMASK)),i);
+        if ((t!=0) && (t & K_TMASK == K_TMASK)) {     // iterate through auction transactions only
+          return (_castAddressUint256(t),i);          // address(uint160(t & K_AMASK))
         }
-      } while((i>0) && (t>0) && (t & K_TMASK != K_TMASK));
+      } while((i!=0) && (t!=0) && (t & K_TMASK != K_TMASK));
       
       return (K_ADD00,0);
     }
@@ -757,12 +756,12 @@ contract UngravelGlobalShares {
       do {
         i--;
         t = gwp.getTransactionRecord(i);
-        if ((t>0) && (t & K_TMASK==K_TMASK) && (t & K_EXECUTEFLAG==K_EXECUTEFLAG)) {               // iterate through auction transactions only (executed auction trans records)
+        if ((t!=0) && (t & K_TMASK==K_TMASK) && (t & K_EXECUTEFLAG==K_EXECUTEFLAG)) {              // iterate through auction transactions only (executed auction trans records)
           deed = resolvedAddressFromDName(_labelDomainHash(gwp,i));                                // BidBucket of external Deed / Bid / investment *** If not ext. auction, or timedOut, this may be gwp ***
-          if ((deed!=K_ADD00)&&(deed!=address(gwp))&&(gAbsExtDeed(deed).beneficiary()==investGWP)) // return only a auction with a winning deed owned by the investor
-            return (address(uint160(t & K_AMASK)),i);
+          if ((deed!=K_ADD00)&&(deed!=address(gwp))&&(AbsExtDeed(deed).beneficiary()==investGWP))  // return only a auction with a winning deed owned by the investor
+            return (_castAddressUint256(t),i);
         }
-      } while((i>0) && (t>0));
+      } while((i!=0) && (t!=0));
       
       return (K_ADD00,0);
     }
@@ -878,10 +877,10 @@ contract UngravelGlobalShares {
 
     function buy_uae() payable external nonReentrant {
         uint bal = balances[msg.sender];
-        my_require(msg.value>0,"gf!");
+        my_require(msg.value!=0,"gf!");
         
         uint256 bPrice = uint256( (uint256( ownerPrices & K_BMASK )>>160) & K_MASK );
-        my_require(msg.value>0&&bPrice>0,"gv0");
+        my_require(msg.value!=0&&bPrice!=0,"gv0");
         uint amount = uint256(msg.value / bPrice);
         
         totalGlobalInvestments  += msg.value;
@@ -920,7 +919,7 @@ contract UngravelGlobalShares {
         uint bal       = balances[msg.sender];
         uint256 sPrice = uint256( (uint256( ownerPrices & K_SMASK )>>208) & K_MASK );
 
-        my_require(amount>0&&sPrice>0&&bal>>1 >= amount,"gnt");
+        my_require(amount!=0&&sPrice!=0&&bal>>1 >= amount,"gnt");
         
         bal = balances[address(this)]>>1;
         my_require(bal+amount >= bal,"go!");
@@ -948,18 +947,12 @@ contract UngravelGlobalShares {
       uint256 newBuyPrice;
       uint256 newSellPrice;
 
-      uint mCap = mCapOfUngravelSociety();
+      uint mCap   = mCapOfUngravelSociety();
 
-      if (mCap>0) {
-        newBuyPrice  = uint256(mCap / numberOfShares);
-      } else
-      {
-        newBuyPrice  = K_BUYPR;
-      }
-      
+      newBuyPrice = (mCap!=0) ? uint256(mCap/numberOfShares) : K_BUYPR;
       newSellPrice = newBuyPrice - (newBuyPrice/K_SPREAD);
 
-      ownerPrices = saveOwner(newBuyPrice,newSellPrice,address(uint160(ownerPrices & K_AMASK)));
+      ownerPrices = saveOwner(newBuyPrice,newSellPrice,_castAddressUint256(ownerPrices));
 
       emit AdjustGlobalSharePrice(newBuyPrice,newSellPrice);
     }
@@ -967,7 +960,7 @@ contract UngravelGlobalShares {
     // mint global shares
 
     function mint_globalShares(uint shares) internal {                       // mint new global shares if not more than K_MAXNUMBEROFSHARES
-      if (shares<=0)                      return;                            // not possible, return
+      if (shares==0)                      return;                            // not possible, return
       if (totalSupply()>=K_INITIALSUPPLY) return;                            // require available supply to be less than threshold to mint global shares, otherwise return
       if (numberOfShares+shares>K_MAXNUMBEROFSHARES) return;                 // cannot mint more global shares than the max. number of mintable global shares, otherwise return
 
@@ -1024,7 +1017,7 @@ contract UngravelGlobalShares {
     // Domain name hashes 
 
     function getNodeHash(address tp) internal view returns (bytes32) {       // get domain hash of "ethereum-foundation", from tokenProxy
-      return keccak256( abi.encodePacked( gAbsBaseR(GWF.base()).baseNode(), keccak256( abi.encodePacked( bytes32ToStr(toLowerCaseBytes32(mb32(bytes(gAbsTpc(tp).name())))) ) ) ) ); // domain e.g. 'ethereum-foundation'
+      return keccak256( abi.encodePacked( AbsBaseR(GWF.base()).baseNode(), keccak256( abi.encodePacked( bytes32ToStr(toLowerCaseBytes32(mb32(bytes(AbsTpc(tp).name())))) ) ) ) ); // domain e.g. 'ethereum-foundation'
     }
 
     function _labelBytes32(IGAbsGwp gw,uint _tNb) internal view returns (bytes32) {                             // returns label from GWP, transNb
@@ -1062,7 +1055,9 @@ contract UngravelGlobalShares {
       if (loiInvestorArr.length==0) return false;
       if (_investor==K_ADD00)       return false;
 
-      for (uint i=0; i<loiInvestorArr.length; i++) {
+      uint len = loiInvestorArr.length;
+
+      for (uint i=0; i<len; i++) {
         if ((loiInvestorArr[i]!=K_ADD00) && (loiInvestorArr[i]==_investor)) return true;
       }
 
@@ -1071,14 +1066,14 @@ contract UngravelGlobalShares {
 
     function _intentionReportConsistent(address _fund, address _gwp, uint _gShares) internal view returns (bool) {
       (uint256 mCapGWP, bytes32 dhash, uint256 loiShares, uint256 shares, uint256 price, uint256 mcap) = getIntention().getFundingReport(_fund,address(_gwp));
-      my_require(mCapGWP>0,"ina");
+      my_require(mCapGWP!=0,"ina");
       my_require(dhash!=0x0,"inb");
-      my_require(loiShares>0,"inc");
+      my_require(loiShares!=0,"inc");
       my_require(shares==_gShares,"ind");
-      my_require(price>0,"ine");
-      my_require(mcap>0,"inf");
+      my_require(price!=0,"ine");
+      my_require(mcap!=0,"inf");
       my_require(address(GWF.getGWProxy(dhash))==_gwp,"inHsh");
-      return (mCapGWP>0&&dhash!=0x0&&loiShares>0&&shares==_gShares&&price>0&&mcap>0);
+      return (mCapGWP!=0&&dhash!=0x0&&loiShares!=0&&shares==_gShares&&price!=0&&mcap!=0);
     }
 
     function _getMarketCapOfUngravelGroup(address _fundedGWP, address _investor) internal view returns (uint) {
@@ -1093,7 +1088,7 @@ contract UngravelGlobalShares {
 
     // claimGrant
 
-    function claimGlobalGrant(address _gwp, address _groupTokenContract, address _fund, uint gShares) public nonReentrant2 returns (uint) { // identify winning auction, and claim perhaps a grant for an eligible investor _gwp
+    function claimGlobalGrant(address _gwp, address _groupTokenContract, address _fund, uint gShares) public view returns (uint) { // identify winning auction, and claim perhaps a grant for an eligible investor _gwp
       // Background: Ungravel Groups may invest in Funding Auctions of other groups.
       // Funding Auctions sell group shares to groups and to investors, as well as to internal members of the group.
 
@@ -1129,29 +1124,41 @@ contract UngravelGlobalShares {
       // #18 "Funded Group" has a valid domain name, s.a. "we-are-funded.eth" or "my-company.one" to be eligible for a grant                          p
       // #19 _gwp does rely on the same INTENTIONS contract than this contract                                                                        p
       // #20 "Funded Group" does rely on the same INTENTIONS contract than this contract                                                              p
+      // #21,22,23 label of auction valid and existing, label domain name of auction valid                                                            p
+      // #24 BidBucket === deed, can be derived from the winning auction and label domain name, aka is UUNS compliant                                 p
+      // #25 owner of the deed is the winning gwp                                                                                                     p
+      // #26 deed and auction refer to the same, identical AuctionMaster contract                                                                     p
+      // #27 a label hash is identical, the one of the deed, the other one derived from GWP and auction transaction                                   p
+      // #28 hash and contract of funded group belong to a valid project in GroupWalletFactory, GWF                                                   p
+      // #29 hash and contract of investing group are GWF known and valid                                                                             p
+      // #34 no investor must invest in his own group, self-reference check                                                                           p
+      // #35 Ungravel Society matured - total market cap surpassed 10 ETH                                                                             p
+      // #36 Ungravel Funded Group MUST have a market cap of > 2 ETH before investing group may claim any grant                                       p
+      // #37 Ungravel Society Liquidity check: Society needs to be liquid to pay-out a grant of 1% of the mCap of the fundedGroup                     p
+      // #38 balance check: Returns the amount that can be paid, aka, the grant that can be paid-out to the investing group                           p
 
-      my_require(__isGW(_gwp),"glL!");
+      my_require(__isGW(_gwp),"glL!");                                                      // only group wallet proxy contracts, GWP, that belong to UUNS, Ungravel
 
       {
       my_require(_validContract(_groupTokenContract),"claim0");                             // passing: GTP is valid contract
 
-      string memory nameTP = gAbsTpc(_groupTokenContract).name();                           // name of TokenProxy found, s.a. "Rose-ill"
-      my_require(strlen(nameTP)>0,"claimTP");
+      string memory nameTP = AbsTpc(_groupTokenContract).name();                            // name of TokenProxy found, s.a. "Rose-ill"
+      my_require(strlen(nameTP)!=0,"claimTP");                                              // did find token proxy group name
       }
 
       bytes32 fundHash = _domHash(IGAbsGwp(_fund));                                         // dname hash of TP s.a. hash("rose-ill.eth") - of "Funded Group"
       my_require(fundHash!=0x0, "claim1a");                                                 // fundHash required to be valid
 
       my_require(address(_fund)!=K_ADD00,"claim1");
-      my_require(_fund==address(GWF.getGWProxy(fundHash)),"claim31");                       // _fund == GWP of "Funded Group"
+      my_require(_fund==address(GWF.getGWProxy(fundHash)),"claim31");                       // _fund == GWP of "Funded Group", funded group is UUNS
 
       __ungravelGW(fundHash);                                                               // GWP of hash is Ungravel Group
       __calledByUngravelGWP(address(_fund));                                                // passing #2
       my_require(address(_tokenContract(IGAbsGwp(_fund)))==_groupTokenContract,"claim2");   // tokenProxy, GWP and hash are consistent, all belonging to Ungravel
 
-      my_require(gShares>0&&gAbsTpc(_groupTokenContract).balanceOf(_gwp)>=gShares,"claim3");// passing #7 passing #6
+      my_require(gShares!=0&&AbsTpc(_groupTokenContract).balanceOf(_gwp)>=gShares,"claim3");// passing #7 passing #6
 
-      my_require(getIntention().getIntendedLOIShares(address(_fund),_gwp)>0,"claim4");      // passing #3
+      my_require(getIntention().getIntendedLOIShares(address(_fund),_gwp)!=0,"claim4");     // passing #3
       
       (address auct1, uint tNb1) = auctionTransactionRecord(IGAbsGwp(_gwp));                // auction contract and transId of Funding Auction, for investing group
       (address auct2, uint tNb2) = auctionTransactionExternal(IGAbsGwp(_fund),_gwp);        // auction contract and transId of Funding Auction, for funded    group
@@ -1168,13 +1175,13 @@ contract UngravelGlobalShares {
 
       my_require(_intentionReportConsistent(address(_fund),_gwp,gShares*100),"claim10");    // passing #8
 
-      my_require(payable(address(_gwp)).balance>gAbsAuction(auct1).calculateMinAuctionPrice(),"claim12");  // passing #12
-      my_require(payable(address(_fund)).balance>gAbsAuction(auct2).calculateMinAuctionPrice(),"claim13"); // passing #13
+      my_require(payable(address(_gwp)).balance>AbsAuction(auct1).calculateMinAuctionPrice(),"claim12");  // passing #12
+      my_require(payable(address(_fund)).balance>AbsAuction(auct2).calculateMinAuctionPrice(),"claim13"); // passing #13
 
       my_require(IGAbsGwp(_gwp).getTransactionsCount()>5,"claim14");                        // passing #14  passing #10
       my_require(IGAbsGwp(_fund).getTransactionsCount()>5,"claim15");                       // passing #15
 
-      my_require(_getMarketCapOfUngravelGroup(address(_fund),_gwp)>gAbsAuction(auct1).calculateMinAuctionPrice(),"claim16");
+      my_require(_getMarketCapOfUngravelGroup(address(_fund),_gwp)>AbsAuction(auct1).calculateMinAuctionPrice(),"claim16");
 
       {
       require(strlen(getIntention().getLOIInvestorName(address(_fund),_gwp))!=0,"claim30"); // passing #18    "some-group" *** without tld ***
@@ -1185,22 +1192,22 @@ contract UngravelGlobalShares {
 
       _validIntentionsContract(address(_gwp));                                              // passing #19
       _validIntentionsContract(address(_fund));                                             // passing #20
-
+                                                                                            // passing #21,22,23
       my_require(_labelBytes32(IGAbsGwp(_fund),tNb2)!=0x0,"claim21");                       // auction label hash of Funding Auction s.a. hash("label") existing, derived from auction transaction
       my_require(_labelDomainHash(IGAbsGwp(_fund),tNb2)!=0x0,"claim22");                    // label domain name hash s.a. hash("label.some-group.eth") existing | hash("mesh.rose-ill.arb") = auction label domain name, resolved to BidBucket
 
-      my_require(strlen( _labelDomainName(IGAbsGwp(_fund),tNb2) )>0,"claim23");             // string "mesh.rose-ill.arb" | "label.some-group.eth" = auction label domain name existing
+      my_require(strlen( _labelDomainName(IGAbsGwp(_fund),tNb2) )!=0,"claim23");            // string "mesh.rose-ill.arb" | "label.some-group.eth" = auction label domain name existing
 
       {
       (,uint tNb2b) = auctionTransactionExternal(IGAbsGwp(_fund),_gwp);                     // auction contract and transId of Funding Auction, for funded    group
-
+                                                                                            // passing #24
       address deed = resolvedAddressFromDName( _labelDomainHash(IGAbsGwp(_fund),tNb2b) );   // BidBucket === deed, derived from winning auction and label dName
       my_require(deed!=K_ADD00,"claim24");                                                  // label dName of finalized auction gets resolved to BidBucket proxy address of the winning deed
 
-      my_require(gAbsExtDeed(deed).beneficiary()==_gwp,"claim25");                          // passing #5   owner() of winning deed aka BidBucket proxy is the winning investor, in this case _gwp
-      my_require(gAbsExtDeed(deed).registrar()==gAbsAuction(auct1),"claim26");              // registrar() === auction master contract address
+      my_require(AbsExtDeed(deed).beneficiary()==_gwp,"claim25");                           // passing #5   owner() of winning deed aka BidBucket proxy is the winning investor, in this case _gwp
+      my_require(AbsExtDeed(deed).registrar()==AbsAuction(auct1),"claim26");                // registrar() === auction master contract address
 
-      my_require(gAbsExtDeed(deed).lhash()==_labelHash(IGAbsGwp(_fund),tNb2),"claim27");    // passing #8  lhash() === fundHash, hash of target GWP, the "Funded Group", s.a. "some-group.eth" | "rose-ill.arb"
+      my_require(AbsExtDeed(deed).lhash()==_labelHash(IGAbsGwp(_fund),tNb2),"claim27");     // passing #8  lhash() === fundHash, hash of target GWP, the "Funded Group", s.a. "some-group.eth" | "rose-ill.arb"
       }
 
       my_require(address(_getGWFromDHash(fundHash))==_fund,"claim28");                      // double-check valid funded   group using another GWF
@@ -1209,12 +1216,12 @@ contract UngravelGlobalShares {
       {
       my_require(address(_gwp)!=address(_fund),"claim34");                                  // cannot invest in itself!
 
-      my_require(getIntention().getUNGmarketCap()>=10 ether,"claim35");                     // Ungavel Society more matured --> at least 10 ETH mCap Society
+      my_require(getIntention().getUNGmarketCap()>=10 ether,"claim35");                     // Ungravel Society more matured --> at least 10 ETH mCap Society
       }
 
       {
       uint mCap = _getMarketCapOfUngravelGroup(address(_fund),_gwp);                        // mCap of investing group
-      my_require(mCap>=2 ether,"claim36");                                                  // Ungavel Society more matured --> at least 2 ETH mCap of group
+      my_require(mCap>=2 ether,"claim36");                                                  // Ungravel Group more matured --> at least 2 ETH mCap of group
 
       my_require(mCap!=0&&uint(mCap*K_PERCENT/100) <= SocietyLiquidity(),"claim37");        // liquidity check
 
@@ -1224,7 +1231,39 @@ contract UngravelGlobalShares {
       return uint(0);
     }
 
-    function payOutGlobalGrant(address _gwp, address _groupTokenContract, address _fund, uint gShares) public payable nonReentrant onlyWithGWP(_gwp) returns (uint) { // identify winning auction and deed, if eligible, pay out grant to investing _gwp
+    function payOutGlobalGrant(address _gwp, address _groupTokenContract, address _fund, uint gShares) public payable nonReentrant onlyWithGWP(_gwp) returns (uint pay) { // identify winning auction and deed, if eligible, pay out grant to investing _gwp
+      // Explanation: This call may cost almost 2.2m gas! But why is that?
+      // https://sepolia.arbiscan.io/tx/0x500a3cae9c19ccd0f2272e52d1d3d50cd9648e706c64e90b8f67ea49e55d3454
+
+      // It calls claimGlobalGrant() to check if a calling group is eligible to a Grant. The function performs are
+      // thorough consistency check that is very expensive. On the one hand, it has to double check all relevant
+      // requirements, until a Grant gets payed. On the other hand, "Claiming and Receiving a Grant" is an 
+      // important cornerstone of Ungravel Incentive Design. It is THE pre-requisite to convert group shares
+      // into liquid currency, e.g. Ether. In other words, claimGlobalGrant() guarantees that any calling group
+      // is actually entitled to claim a grant and later on will convert acquired group shares into Ether.
+
+      // At a second glance, claimGlobalGrant() MUST be expensive on a purpose, this is intentionally, by design:
+      //
+      // It prohibits grant spammers and granting farms. It prohibits countless grants with fractional, tiny amounts,
+      // therefore, it incentivizes that only valuable conversions will be executed and relevant grants will be claimed.
+      // On-chain infrastructure that distributes value, global shares, scarce assets, VC-investment, will always be subject
+      // of spammers and bonus farmers, grant farmers, trolls or all kind of bots that challenge the protocol.
+      //
+      // This is OK, as long as they pay 2.2m for gas, only to claim a grant!
+      //
+      // Ultimately, this follows one of the most important and basic principles of Ungravel Society: No bullshit required!
+      // If Ungravel auctions, grants & asset conversions are substantial, relevant and mostly reach a certain, relevant value,
+      // Ungravel Society will grow as a whole and become more valuable itself. Less bullshit pays off.
+
+      // Technical detail for Solidity developers and auditors (and geeks):
+      //
+      // Just for fun, take a look at the vmtrace and witness that the smart contract performs a lot of work, in deed:
+      // https://sepolia.arbiscan.io/vmtrace?txhash=0x500a3cae9c19ccd0f2272e52d1d3d50cd9648e706c64e90b8f67ea49e55d3454&type=gethtrace2
+      // Basically, claimGlobalGrant() assures that all relevant parties involved, such as Ungravel Groups, members, investors, contracts, proxies
+      // and master contracts, that all of acting parties are operating inside of UUNS, the Ungravel Unified Name Space.
+      // Consequently, this function is the ultimate UUNS authentication test, running where needed.
+
+
       // get auction contract address and transactionId of relevant last auction that gwp "_fund" did organize and got funding from
       // get deed of winner, where the investing group did deposit deed / bid
 
@@ -1236,31 +1275,32 @@ contract UngravelGlobalShares {
 
       if (grants[deed]==_gwp) return 0;                                                     // a grant can only be paid once for 1 winning BidBucket, otherwise return
 
-      uint pay = claimGlobalGrant(_gwp,_groupTokenContract,_fund,gShares);                  // check if _gwp is eligible for a grant (really expensive method: 900.000 gas)
+      pay = claimGlobalGrant(_gwp,_groupTokenContract,_fund,gShares);                       // check if _gwp is eligible for a grant (really expensive method: 900.000 gas)
       if (pay==0) return 0;                                                                 // if not, return
 
       grants[deed]      = _gwp;                                                             // store investing _gwp - this group did receive a grant for BidBucket "deed"
       grantShares[deed] = gShares;                                                          // store nb of group shares involved *****  compute mCap/value of group shares in relation to the grant *****
 
-      (bool succ,bytes memory returnData) = _gwp.call{ value: pay }("");                    // pay-out grant to investing group
-      my_require(succ,string(abi.encode( returnData, returnData.length )));
+      payable(_gwp).transfer(pay);                                                          // pay-out grant to investing group
 
       emit PayOutGrant(_gwp, pay);                                                          // issue a pay-out event
       return pay;
     }
 
-    function didPayOutGrantYet(address _gwp, address _funded) public view returns (uint shares) {             // if investing _gwp did invest in _funded group and if _gwp did claim a Grant yet, return nb of shares of auction won, otherwise returns 0
+    function didPayOutGrantYet(address _gwp, address _funded) public view returns (uint shares) {             // if investing _gwp did invest in _funded group and 
+      // if _gwp did claim a Grant yet, return nb of shares of auction won, otherwise returns 0
+
       // * returns the nb of shares acquired in a successfully completed Funding Auction
       // * in case didPayOutGrantYet() returns 0, the investing group _gwp "investor" may claim a Grant,
       // * otherwise, returning the nb of shares acquired in Funding Auction.
       // * A grant can only be claimed once for each Funding Auction.
       
-      (address auct2, uint tNb2) = auctionTransactionExternal(IGAbsGwp(_funded),_gwp);                        // auction contract and transId of Funding Auction, for funded    group
-      if ((tNb2==0) || (auct2==K_ADD00)) return 0;
+      (address auct2, uint tNb2) = auctionTransactionExternal(IGAbsGwp(_funded),_gwp);                        // auction contract and transId of Funding Auction, 
+      if ((tNb2==0) || (auct2==K_ADD00)) return 0;                                                            // for funded group
 
       address deed = resolvedAddressFromDName( _labelDomainHash(IGAbsGwp(_funded),tNb2) );                    // BidBucket of external Deed / Bid / investment
-      if (deed!=K_ADD00&&auct2!=K_ADD00&&grants[deed]==_gwp&&grantShares[deed]>0) return grantShares[deed];   // a grant can only be paid once for 1 winning BidBucket, having completed a Funding Auction successfully
-      else return 0;
+      if (deed!=K_ADD00&&auct2!=K_ADD00&&grants[deed]==_gwp&&grantShares[deed]!=0) return grantShares[deed];  // a grant can only be paid once for 1 winning BidBucket,
+      else return 0;                                                                                          // having completed a Funding Auction successfully
     }
 
     function isGlobalTokenLiquid(address _gwp, address _fundedGWP) public view returns (uint) {  // return liquidity in ETH
@@ -1286,32 +1326,33 @@ contract UngravelGlobalShares {
       return address(GWF.getGWProxy(_hash));
     }
 
-    function convertGroupSharesToEther(address _groupTokenContract, uint gShares) public nonReentrant onlyGWP payable {  // 0x03425baf *** can only be called by a GroupWallet Proxy, the investing GWP, typically ***
+    function convertGroupSharesToEther(address _groupTokenContract, uint gShares) public nonReentrant onlyGWP payable {  // 0x03425baf 
+      // *** can only be called by a GroupWallet Proxy, the investing GWP, typically ***
+
       address fundedGWP = getGWPfromTokenProxy(_groupTokenContract);
       __calledByUngravelGWP(fundedGWP);
 
-      my_require(gShares>0&&gAbsTpc(_groupTokenContract).balanceOf(address(this))>=gShares,"c61"); // gShares = shares * 100
+      my_require(gShares!=0&&AbsTpc(_groupTokenContract).balanceOf(address(this))>=gShares,"c61"); // gShares = shares * 100
 
-      uint liquid = isGlobalTokenLiquid(msg.sender,fundedGWP);                                 // value of a typical Grant
+      uint liquid = isGlobalTokenLiquid(msg.sender,fundedGWP);                                     // value of a typical Grant
 
       (uint256 mCapGWP, bytes32 dhash, uint256 loiShares, uint256 shares, uint256 pricePaid, uint256 mcap) = getIntention().getFundingReport(fundedGWP,msg.sender);
-      my_require(dhash!=0x0&&loiShares>0&&shares>=gShares&&pricePaid>0,"c62");                 // silencing compiler warnings
+      my_require(dhash!=0x0&&loiShares!=0&&shares>=gShares&&pricePaid!=0,"c62");                   // silencing compiler warnings
 
-      uint vSharesPaym = uint(mCapGWP*(gShares/100)) / 1.2e6;                                  // compute current value of gShares related to mCap of funded group
+      uint vSharesPaym = uint(mCapGWP*gShares) / 1.2e8;                                            // compute current value of gShares related to mCap of funded group
       
-      my_require(vSharesPaym<payable(this).balance,"c63");                                     // check global shares contract balance
-      my_require(vSharesPaym<SocietyLiquidity(),"c64");                                        // check SocietyLiquidity() 
-      my_require(uint(SocietyLiquidity()/50)>liquid,"c65");                                    // check if SocietyLiquidity() may pay-out at least 50 or more Grants
-      my_require(vSharesPaym>0,"c66");                                                         // buy-back price for group shares cannot be 0
-      my_require(((gShares/100)*(pricePaid/(shares/100)))<=vSharesPaym,"c67");                 // buy-back price for group shares cannot be less than Funding Auction bidding price
-      my_require(uint(mCapGWP*35)>mcap||mcap>100 ether,"c68");                                 // check if mCap(group) * 35 > mCap(Ungravel Society)
+      my_require(vSharesPaym<payable(this).balance,"c63");                                         // check global shares contract balance
+      my_require(vSharesPaym<SocietyLiquidity(),"c64");                                            // check SocietyLiquidity() 
+      my_require(uint(SocietyLiquidity()/50)>liquid,"c65");                                        // check if SocietyLiquidity() may pay-out at least 50 or more Grants
+      my_require(vSharesPaym!=0,"c66");                                                            // buy-back price for group shares cannot be 0
+      my_require((1000*gShares*pricePaid/shares)/1e7<=vSharesPaym,"c67");                          // buy-back price for group shares cannot < Auction bidding price
+      my_require(uint(mCapGWP*35)>mcap||mcap>100 ether,"c68");                                     // check if mCap(group) * 35 > mCap(Ungravel Society)
 
-      (bool success,) = payable(msg.sender).call{value: vSharesPaym}("");
-      my_require(success,"paym");                                                              // pay-out payment for shares **** investing GWP cannot be used here, probably cyclic function call and reverts ***
+      payable(msg.sender).transfer(vSharesPaym);                                                   // pay-out payment for shares
 
-      gAbsTpc(_groupTokenContract).transfer_G8l(address(1),gShares);                           // "burn" group shares immediately by sending them to 0x0000000000000000000000000000000000000001
-
-      emit PayForGroupShares(fundedGWP,msg.sender,vSharesPaym,gShares);                        // report buy-back conversion
+      AbsTpc(_groupTokenContract).transfer_G8l(address(1),gShares);                                // "burn" group shares immediately by sending them
+                                                                                                   // to 0x0000000000000000000000000000000000000001
+      emit PayForGroupShares(fundedGWP,msg.sender,vSharesPaym,gShares);                            // reporting buy-back conversion, emit event
     }
 
 
@@ -1319,7 +1360,7 @@ contract UngravelGlobalShares {
 
     // collecting 11 properties of given investment = recent investment of investor _gwp acquiring _groupTokenContract group shares
 
-    function __collectInvestmentsReport(address _gwp,address _groupTokenContract) internal view returns (uint256[] memory r) { // 0x3c396866
+    function __collectInvestmentsReport(address _gwp,address _groupTokenContract) internal view returns (uint256[] memory) { // 0x3c396866
       uint256[] memory resultArr = new uint256[](11);
 
       address fundedGWP  = getGWPfromTokenProxy(_groupTokenContract);                      // can be checked via block explorer: OK
@@ -1336,21 +1377,22 @@ contract UngravelGlobalShares {
       resultArr[ 6]      = uint256(dhash);                                                 // dhash           - domain name hash of investing group GWP
       resultArr[ 7]      = uint256(loiShares);                                             // loiShares       - nb of shares intented to acquire, LOI
       resultArr[ 8]      = uint256(shares);                                                // shares          - nb of shares offered and sold in auction
-      resultArr[ 9]      = uint256(price);                                                 // price           - price offered and deposited during bidding, actually deposited amount in BidBucket
-      resultArr[10]      = uint256(mcap);                                                  // mcap            - marketCap of entire Ungravel Society, i.e. the total sum of all mCaps of all Groups
-
+      resultArr[ 9]      = uint256(price);                                                 // price           - price offered and deposited during bidding,
+                                                                                           //                   actually deposited amount in BidBucket 
+      resultArr[10]      = uint256(mcap);                                                  // mcap            - marketCap of entire Ungravel Society, i.e. 
+                                                                                           //                   the total sum of all mCaps of all Groups
       return resultArr;
     }
 
     // returns one investment report
-    function collectAInvestmentReport(address _gwp,address _tokenC) public view returns (uint256[] memory r) {
+    function collectAInvestmentReport(address _gwp,address _tokenC) public view returns (uint256[] memory) {
      return __collectInvestmentsReport(_gwp,_tokenC);
     }
 
     // returns n investment reports
-    function collectAllInvestmentReports(address[] calldata _gwpArr, address[] calldata _tokenContractArr) public view returns (uint256[] memory r) { // 0x3c396866
+    function collectAllInvestmentReports(address[] calldata _gwpArr, address[] calldata _tokenContractArr) public view returns (uint256[] memory) { // 0x3c396866
       uint nb = _gwpArr.length;
-      my_require(nb>0&&nb==_tokenContractArr.length,"len!");
+      my_require(nb!=0&&nb==_tokenContractArr.length,"len!");
 
       uint256[] memory resultArr = new uint256[](11*nb);
       uint256[] memory reportArr = new uint256[](11);
@@ -1376,29 +1418,42 @@ contract UngravelGlobalShares {
 
     // --------------------- Ungravel Global Token aka Ungravel Global Shares ------------------------------------
 
-    function setIntentionGWFContract(gAbsInt intCtr, gAbsGwf gwfCtr) external payable onlyOwner {      // 0xaca2dfbb 
+    function setIntentionGWFContract(AbsInt intCtr, AbsGwf gwfCtr) external payable onlyOwner {      // 0xaca2dfbb 
       // Only the deployer of this contract may update the GroupWalletFactory and Intentions contracts.
 
       my_require(isContract(address(intCtr))&&isContract(address(gwfCtr)),"Int");
       intent = intCtr;
       GWF    = gwfCtr;
+
+      ownerPrices = saveOwner(buyPrice(),sellPrice(),address(gwfCtr)); // owner gets updated, is also GWF
+
+      emit UpdatedGwfAndIntentions(address(gwfCtr),address(intCtr));
     }
 
     function withdraw() external nonReentrant onlyOwner payable  {
       // Withdrawal of funding is only possible in the beginning of the Ungravel Society.
       // It cannot be done after contract did increase the MintFactor twice.
-      // This is a security feature only accessable to the contract owner in case of
+      // This is a security feature only accessible to the contract owner in case of
       // a serious problem during testing and debugging. Later, this feature will be removed.
+      // If Ungravel Global once reaches a MintFactor >= 1199, it is NOT possible to withdraw funds.
+      // This factor represents minting beyond 1,090,000,000 UNGRAVELS.
+      // In other words: As long as less than 90,000,000 shares are sold, this contract balance
+      // can BE WITHDRAWN by owner. If more than 90,000,000 shares are sold, no-one may
+      // withdraw contract funding or any assets. 
 
       if (__selfbalance()==0) return;
       my_require(getMintFactor()<1199,"oOgT!");
 
-      (bool success,) = payable(msg.sender).call{value: __selfbalance()-1}("");
-      my_require(success,"WgT");
+      uint amount = __selfbalance()-1;
+
+      payable(msg.sender).transfer(amount);
+      my_require(__selfbalance()==1,"WgT");
+
+      emit WithdrawFunding(msg.sender,amount);
     }
 
     function version() public pure returns(uint256) {
-      return 20010117;
+      return 20010125;
     }
 
     receive() external payable {
@@ -1409,20 +1464,20 @@ contract UngravelGlobalShares {
     { 
       my_require(_gwf!=K_ADD00,"g1");
       my_require(ownerPrices==0x0,"g2");
-
-      supply                    = K_INITIALSUPPLY;                              // nb of global shares, held by (this) contract, available to sell, "available global shares"
-      ungravel_owner            = msg.sender;
-      GWF                       = gAbsGwf(_gwf);
-      intent                    = gAbsInt(_intentions);
-      ownerPrices               = K_SELLBUY + uint256(uint160(_gwf) & K_AMASK); // store sellPrice, buyPrice and GWF in a single byte32 slot (compatible with Ungravel TokenMaster and TokenProxy)
-      balances[address(this)]   = supply<<1;
+                                                                                // "available global shares"
+      supply                    = K_INITIALSUPPLY;                              // nb of global shares, held by (this) contract, available to sell,
+      ungravel_owner            = msg.sender;                                   // deployer
+      GWF                       = AbsGwf(_gwf);                                 // GWF = GroupWalletFactory, main entry point for Ungravel Groups
+      intent                    = AbsInt(_intentions);                          // Intentions - contract for external Funding Auctions, investments and LOIs
+      ownerPrices               = K_SELLBUY + uint256(uint160(_gwf) & K_AMASK); // store sellPrice, buyPrice and GWF in a single byte32 slot 
+      balances[address(this)]   = supply<<1;                                    // (compatible with Ungravel TokenMaster and TokenProxy)
 
       numberOfShares            = supply;                                       // total number of global shares, number of "global shares minted"
 
       InvestorLiquidityOfPeriod = 0;                                            // ETH reserved to investors during current investment period
       SocietyLiquidityOfPeriod  = 0;                                            // ETH reserved to be claimed by Ungravel Groups during current investment period
 
-      gAbsRr(GWF.reverseContract()).setName(string(abi.encodePacked('global.ungravel',intent.tld()))); // assigning reverse resolver record
+      AbsRr(GWF.reverseContract()).setName(string(bytes.concat(bytes('global.ungravel'),bytes(intent.tld())))); // assigning reverse resolver record
 
       emit Deployment(msg.sender, address(this));
       emit Transfer(K_ADD00, address(this), supply);
