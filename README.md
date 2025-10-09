@@ -605,6 +605,52 @@ arbitrumOne<br>
 <br><br>
 
 
+arbitrum sepolia<br>
+
+<a href="https://sepolia.arbiscan.io/address/0x0c26900dd6b58e744cb9a19521df023684d8790c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x0c26900dd6b58e744cb9a19521df023684d8790c]<br>
+<a href="https://sepolia.arbiscan.io/address/0x1e7c7e7d0263d39ff6262fd87e89e564b4dbb2ac#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x1e7c7e7d0263d39ff6262fd87e89e564b4dbb2ac]<br>
+<a href="https://sepolia.arbiscan.io/address/0xbf11ac30261fa03e189440829d501c425dcbf5a4#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0xbf11ac30261fa03e189440829d501c425dcbf5a4]<br>
+<a href="https://sepolia.arbiscan.io/address/0xa4b2595845c17d170f5339a30de4cb9a66f1a954#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0xa4b2595845c17d170f5339a30de4cb9a66f1a954]<br>
+<a href="https://sepolia.arbiscan.io/address/0x3f7c250241e04aaa5c2e52be235768314cc7bf65#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0x3f7c250241e04aaa5c2e52be235768314cc7bf65]<br>
+<a href="https://sepolia.arbiscan.io/address/0x79719daef676a7878b55240af8b0fb90ac375830#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0x79719daef676a7878b55240af8b0fb90ac375830]<br>
+<a href="https://sepolia.arbiscan.io/address/0xc12dc05d5d93c7bb2237757cac0d9989d6ba9bcd#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0xc12dc05d5d93c7bb2237757cac0d9989d6ba9bcd]<br>
+<a href="https://sepolia.arbiscan.io/address/0x0637aa2907574e1a6eee88f113a0f9566608e4ae#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0x0637aa2907574e1a6eee88f113a0f9566608e4ae]<br>
+<a href="https://sepolia.arbiscan.io/address/0x4e8e24e430f91869be89d571525770683e4e6b9b#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0x4e8e24e430f91869be89d571525770683e4e6b9b]<br>
+<a href="https://sepolia.arbiscan.io/address/0xa1c37c639732a4a82ec62962da91c1dae09da2b7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0xa1c37c639732a4a82ec62962da91c1dae09da2b7]<br>
+<a href="https://sepolia.arbiscan.io/address/0x4ac5b5df5c3095c87c06ff96302ec7f662a0537a#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0x4ac5b5df5c3095c87c06ff96302ec7f662a0537a]<br>
+<a href="https://sepolia.arbiscan.io/address/0x5080528a194ab2eec715699f7ba661f281f546f8#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0x5080528a194ab2eec715699f7ba661f281f546f8]<br>
+<a href="https://sepolia.arbiscan.io/address/0x2cdceb4ca33fd435a1e789bef28d18941b834e8a#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0x2cdceb4ca33fd435a1e789bef28d18941b834e8a]<br>
+<a href="https://sepolia.arbiscan.io/address/0x9c9e37126a75737a60c25f4ff676f42c9e43f52e#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0x9c9e37126a75737a60c25f4ff676f42c9e43f52e]<br>
+<a href="https://sepolia.arbiscan.io/address/0x5fce9204f897dc73f61badf6f14d9a1297249aa7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x5fce9204f897dc73f61badf6f14d9a1297249aa7]<br>
+<a href="https://sepolia.arbiscan.io/address/0x7a49b53631e1a72447db343ef6995daf12b76cbe#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0x7a49b53631e1a72447db343ef6995daf12b76cbe]<br>
+<a href="https://sepolia.arbiscan.io/address/0xb6fac2e4a275d147c926e033f6f492827a8272fd#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0xb6fac2e4a275d147c926e033f6f492827a8272fd]<br>
+<a href="https://sepolia.arbiscan.io/address/0x7f8af531fc69f47002f7469ab9ea3bf6768879a4#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0x7f8af531fc69f47002f7469ab9ea3bf6768879a4]<br>
+
+<a href="https://sepolia.arbiscan.io/address/0x642bcc6bb06ff581147fb46c8c3cc7b377c8ee5d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0x642bcc6bb06ff581147fb46c8c3cc7b377c8ee5d]<br>
+<a href="https://sepolia.arbiscan.io/address/0x1781e5482d52d6675677d4bea573b290fbe56f17#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0x1781e5482d52d6675677d4bea573b290fbe56f17]<br>
+<a href="https://sepolia.arbiscan.io/address/0x8436e41dd5ddc0e87b97f32aadfcb8701af727d8#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0x8436e41dd5ddc0e87b97f32aadfcb8701af727d8]<br>
+<a href="https://sepolia.arbiscan.io/address/0xfc027e2a6db1e336996b64636e0502eaa97f89cb#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0xfc027e2a6db1e336996b64636e0502eaa97f89cb]<br>
+<a href="https://sepolia.arbiscan.io/address/0x2edc9c9b8c0b09ecdfd3139a61b1ae35a30eb814#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0x2edc9c9b8c0b09ecdfd3139a61b1ae35a30eb814]<br>
+<a href="https://sepolia.arbiscan.io/address/0x46a9c13aa43540cea5fe97ac2c7952009975d5d4#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0x46a9c13aa43540cea5fe97ac2c7952009975d5d4]<br>
+<a href="https://sepolia.arbiscan.io/address/0x55d10bb9e6cfd1dd967ee854964c34fe2d1e85b6#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0x55d10bb9e6cfd1dd967ee854964c34fe2d1e85b6]<br>
+<a href="https://sepolia.arbiscan.io/address/0x5a7644f64214bea6676bf1a52f9ebd6cf9196eb5#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0x5a7644f64214bea6676bf1a52f9ebd6cf9196eb5]<br>
+<a href="https://sepolia.arbiscan.io/address/0x5fce9204f897dc73f61badf6f14d9a1297249aa7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x5fce9204f897dc73f61badf6f14d9a1297249aa7]<br>
+<a href="https://sepolia.arbiscan.io/address/0x82a1fc995373f05a23a679da6d630793786e7018#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0x82a1fc995373f05a23a679da6d630793786e7018]<br>
+<a href="https://sepolia.arbiscan.io/address/0x143d53a2fe7f567b43b7e53449591ab20cb280c7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x143d53a2fe7f567b43b7e53449591ab20cb280c7]<br>
+<a href="https://sepolia.arbiscan.io/address/0xe4861ec4983cba3efd1335fac9ebc3c68bd9d558#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0xe4861ec4983cba3efd1335fac9ebc3c68bd9d558]<br>
+
+<a href="https://sepolia.arbiscan.io/address/0xb9c1964cc4eeecc3c29b072eac92485dabdaa737#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0xb9c1964cc4eeecc3c29b072eac92485dabdaa737]<br>
+<a href="https://sepolia.arbiscan.io/address/0x97eb8d23b03715f50d6462d8a49619ea6db3d809#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x97eb8d23b03715f50d6462d8a49619ea6db3d809]<br>
+<a href="https://sepolia.arbiscan.io/address/0xa3c7706a45ad73e40805e495a0b190bda4484080#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0xa3c7706a45ad73e40805e495a0b190bda4484080]<br>
+<a href="https://sepolia.arbiscan.io/address/0x973dbbf18f86b36a20041e79441cd7f4e6f1fcfa#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0x973dbbf18f86b36a20041e79441cd7f4e6f1fcfa]<br>
+<a href="https://sepolia.arbiscan.io/address/0x00feb6a477d98e547af9956eeeb930304748aaf8#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0x00feb6a477d98e547af9956eeeb930304748aaf8]<br>
+<a href="https://sepolia.arbiscan.io/address/0x840bde1fee864775f89e82fcd935d0cc48bc9f1e#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0x840bde1fee864775f89e82fcd935d0cc48bc9f1e]<br>
+<a href="https://sepolia.arbiscan.io/address/0x143d53a2fe7f567b43b7e53449591ab20cb280c7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x143d53a2fe7f567b43b7e53449591ab20cb280c7]<br>
+<a href="https://sepolia.arbiscan.io/address/0xe4861ec4983cba3efd1335fac9ebc3c68bd9d558#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0xe4861ec4983cba3efd1335fac9ebc3c68bd9d558]<br>
+
+<br><br>
+
+
 optimism<br>
 
 <a href="https://optimistic.etherscan.io/address/0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502]<br>
