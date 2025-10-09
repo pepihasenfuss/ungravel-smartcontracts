@@ -59,24 +59,24 @@ http://lisk.ungravel.org lisk                          ( level-2 chain )
 
 
 blast<br><br>
-[0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502]   UNG  registryAddressesurl: https://blastscan.io/address/0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502#code
-[0x00ef1de390cba56c46e0e790ee1ef4f89d6717f0]   UNG  resolverAddressesurl: https://blastscan.io/address/0x00ef1de390cba56c46e0e790ee1ef4f89d6717f0#code
-[0x9098dfe84e624021d890909eec300a761cc1f05d]   UNG  testRegistrarAddressesurl: https://blastscan.io/address/0x9098dfe84e624021d890909eec300a761cc1f05d#code
-[0x39191b451966996a5352f58ad395bc2e84c1492f]   UNG  reverseDefaultAddressesurl: https://blastscan.io/address/0x39191b451966996a5352f58ad395bc2e84c1492f#code
-[0x124bb8e8c994a107c0fab0337311547f217cfa89]   UNG  reverseAddressesurl: https://blastscan.io/address/0x124bb8e8c994a107c0fab0337311547f217cfa89#code
-[0x2ae1f932718da8157a8c27a926dbbbfeae668259]   UNG  priceOracleurl: https://blastscan.io/address/0x2ae1f932718da8157a8c27a926dbbbfeae668259#code
-[0xd6d08bd18e814e92ecf69d492fc0a4f822658db1]   UNG  ownedResolverurl: https://blastscan.io/address/0xd6d08bd18e814e92ecf69d492fc0a4f822658db1#code
-[0xaa8499cd38ba0b6c122523ee7b41f29733aaf08e]   UNG  resolverAddresses2url: https://blastscan.io/address/0xaa8499cd38ba0b6c122523ee7b41f29733aaf08e#code
-[0x58b5a738d2e263f1588a3ba6123cdfda517df9a6]   UNG  baseRegistrarAddressesurl: https://blastscan.io/address/0x58b5a738d2e263f1588a3ba6123cdfda517df9a6#code
-[0x154239797693937f67a4746a7d3b19978bff4806]   UNG  subdomainRegistrarurl: https://blastscan.io/address/0x154239797693937f67a4746a7d3b19978bff4806#code
-[0x8a76dbdeaba77b6dca26fd52a04546881171311c]   UNG  ethRegControllerAddressesurl: https://blastscan.io/address/0x8a76dbdeaba77b6dca26fd52a04546881171311c#code
-[0xa222540ceac5dc28460bc8554646d833fda2e10c]   UNG  customRegistrarAddressesurl: https://blastscan.io/address/0xa222540ceac5dc28460bc8554646d833fda2e10c#code
-[0x3ccc16899c2df17d0e8b40800f7dbb57e2c043ef]   UNG  rooturl: https://blastscan.io/address/0x3ccc16899c2df17d0e8b40800f7dbb57e2c043ef#code
-[0xcc20a2a0558c4c8d04266ae66f8acdb575e9d9ed]   UNG  bulkRenewalurl: https://blastscan.io/address/0xcc20a2a0558c4c8d04266ae66f8acdb575e9d9ed#code
-[0x96750a75376f4393ba02c5e1066aed232cb65b6c]   UNG  TLDPublicSuffixAddressesurl: https://blastscan.io/address/0x96750a75376f4393ba02c5e1066aed232cb65b6c#code
-[0xd7bfbc6cd9da96041ac87e504954489bebdebcb7]   UNG  expPriceOracleAddressesurl: https://blastscan.io/address/0xd7bfbc6cd9da96041ac87e504954489bebdebcb7#code
-[0xc39afb9d7648256f6a706868c908896e079510c1]   UNG  nameWrapperAddressesurl: https://blastscan.io/address/0xc39afb9d7648256f6a706868c908896e079510c1#code
-[0x1effb9ab223c4ea18e11927bac0ef4fddda89671]   UNG  ethControllerAddressesurl: https://blastscan.io/address/0x1effb9ab223c4ea18e11927bac0ef4fddda89671#code
+[0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502] https://blastscan.io/address/0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502#code registryAddresses
+[0x00ef1de390cba56c46e0e790ee1ef4f89d6717f0] https://blastscan.io/address/0x00ef1de390cba56c46e0e790ee1ef4f89d6717f0#code resolverAddresses
+[0x9098dfe84e624021d890909eec300a761cc1f05d] https://blastscan.io/address/0x9098dfe84e624021d890909eec300a761cc1f05d#code testRegistrarAddresses
+[0x39191b451966996a5352f58ad395bc2e84c1492f] https://blastscan.io/address/0x39191b451966996a5352f58ad395bc2e84c1492f#code reverseDefaultAddresses
+[0x124bb8e8c994a107c0fab0337311547f217cfa89] https://blastscan.io/address/0x124bb8e8c994a107c0fab0337311547f217cfa89#code reverseAddresses
+[0x2ae1f932718da8157a8c27a926dbbbfeae668259] https://blastscan.io/address/0x2ae1f932718da8157a8c27a926dbbbfeae668259#code priceOracle
+[0xd6d08bd18e814e92ecf69d492fc0a4f822658db1] https://blastscan.io/address/0xd6d08bd18e814e92ecf69d492fc0a4f822658db1#code ownedResolver
+[0xaa8499cd38ba0b6c122523ee7b41f29733aaf08e] https://blastscan.io/address/0xaa8499cd38ba0b6c122523ee7b41f29733aaf08e#code resolverAddresses2
+[0x58b5a738d2e263f1588a3ba6123cdfda517df9a6] https://blastscan.io/address/0x58b5a738d2e263f1588a3ba6123cdfda517df9a6#code baseRegistrarAddresses
+[0x154239797693937f67a4746a7d3b19978bff4806] https://blastscan.io/address/0x154239797693937f67a4746a7d3b19978bff4806#code subdomainRegistrar
+[0x8a76dbdeaba77b6dca26fd52a04546881171311c] https://blastscan.io/address/0x8a76dbdeaba77b6dca26fd52a04546881171311c#code ethRegControllerAddresses
+[0xa222540ceac5dc28460bc8554646d833fda2e10c] https://blastscan.io/address/0xa222540ceac5dc28460bc8554646d833fda2e10c#code customRegistrarAddresses
+[0x3ccc16899c2df17d0e8b40800f7dbb57e2c043ef] https://blastscan.io/address/0x3ccc16899c2df17d0e8b40800f7dbb57e2c043ef#code root
+[0xcc20a2a0558c4c8d04266ae66f8acdb575e9d9ed] https://blastscan.io/address/0xcc20a2a0558c4c8d04266ae66f8acdb575e9d9ed#code bulkRenewal
+[0x96750a75376f4393ba02c5e1066aed232cb65b6c] https://blastscan.io/address/0x96750a75376f4393ba02c5e1066aed232cb65b6c#code TLDPublicSuffixAddresses
+[0xd7bfbc6cd9da96041ac87e504954489bebdebcb7] https://blastscan.io/address/0xd7bfbc6cd9da96041ac87e504954489bebdebcb7#code expPriceOracleAddresses
+[0xc39afb9d7648256f6a706868c908896e079510c1] https://blastscan.io/address/0xc39afb9d7648256f6a706868c908896e079510c1#code nameWrapperAddresses
+[0x1effb9ab223c4ea18e11927bac0ef4fddda89671] https://blastscan.io/address/0x1effb9ab223c4ea18e11927bac0ef4fddda89671#code ethControllerAddresses
 
 <br><br>
 
