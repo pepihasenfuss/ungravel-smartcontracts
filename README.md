@@ -649,6 +649,54 @@ unichain<br>
 <br><br>
 
 
+linea<br>
+
+<a href="https://lineascan.build/address/0x21f71275edb2e8bbac49975b3b7999005340f7ff#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x21f71275edb2e8bbac49975b3b7999005340f7ff]<br>
+<a href="https://lineascan.build/address/0x575ffdffb6b322b5d28b3c0edeccba24020102c8#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x575ffdffb6b322b5d28b3c0edeccba24020102c8]<br>
+<a href="https://lineascan.build/address/0xdfc47977b8de864aafe85c53028c3c777dc432de#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0xdfc47977b8de864aafe85c53028c3c777dc432de]<br>
+<a href="https://lineascan.build/address/0xc39afb9d7648256f6a706868c908896e079510c1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0xc39afb9d7648256f6a706868c908896e079510c1]<br>
+<a href="https://lineascan.build/address/0x827ad71b2118225eeea9e3ed36ac7b2900d82633#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0x827ad71b2118225eeea9e3ed36ac7b2900d82633]<br>
+<a href="https://lineascan.build/address/0xc7346582ecda765a198b9554ad0ec1e6bd91f58d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0xc7346582ecda765a198b9554ad0ec1e6bd91f58d]<br>
+<a href="https://lineascan.build/address/0x82301243198e208b90e1bbfe3d134d0c4a86c2b1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0x82301243198e208b90e1bbfe3d134d0c4a86c2b1]<br>
+<a href="https://lineascan.build/address/0x2ae1f932718da8157a8c27a926dbbbfeae668259#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0x2ae1f932718da8157a8c27a926dbbbfeae668259]<br>
+<a href="https://lineascan.build/address/0xd6d08bd18e814e92ecf69d492fc0a4f822658db1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0xd6d08bd18e814e92ecf69d492fc0a4f822658db1]<br>
+<a href="https://lineascan.build/address/0xa45d1747645996dca6d0fd836dbebb4dad8574d1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0xa45d1747645996dca6d0fd836dbebb4dad8574d1]<br>
+<a href="https://lineascan.build/address/0x9fab241a2035b33e4327c9c6074b211a939b4007#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0x9fab241a2035b33e4327c9c6074b211a939b4007]<br>
+<a href="https://lineascan.build/address/0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc]<br>
+<a href="https://lineascan.build/address/0x376224e09bf72b5b16586ccc78dbe53444221b54#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0x376224e09bf72b5b16586ccc78dbe53444221b54]<br>
+<a href="https://lineascan.build/address/0xa938506250e156e86514d55a1ccb0cd6eef8c560#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0xa938506250e156e86514d55a1ccb0cd6eef8c560]<br>
+<a href="https://lineascan.build/address/0x2d7b51a6fe81d8b4546872a46166e4d6e45e0f9d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x2d7b51a6fe81d8b4546872a46166e4d6e45e0f9d]<br>
+<a href="https://lineascan.build/address/0xafe96ad86a9b10834cb02ebe083c4044e27be623#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0xafe96ad86a9b10834cb02ebe083c4044e27be623]<br>
+<a href="https://lineascan.build/address/0x124bb8e8c994a107c0fab0337311547f217cfa89#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0x124bb8e8c994a107c0fab0337311547f217cfa89]<br>
+<a href="https://lineascan.build/address/0x6e720f0f882ef04db76282b71f59f4e28f2f39ae#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0x6e720f0f882ef04db76282b71f59f4e28f2f39ae]<br>
+
+<a href="https://lineascan.build/address/0x98907cb3106e122eb9ff2154ebacd3ec436d35a2#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0x98907cb3106e122eb9ff2154ebacd3ec436d35a2]<br>
+<a href="https://lineascan.build/address/0x769074deb813c99b5da9b29a4340996f5e3c343c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0x769074deb813c99b5da9b29a4340996f5e3c343c]<br>
+<a href="https://lineascan.build/address/0x5164ab7725bc1f58ff2b63b6cbbb2d5d8c5f056c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0x5164ab7725bc1f58ff2b63b6cbbb2d5d8c5f056c]<br>
+<a href="https://lineascan.build/address/0xf6b64dfeb46ce2b1793d03e070bd44510e02d116#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0xf6b64dfeb46ce2b1793d03e070bd44510e02d116]<br>
+<a href="https://lineascan.build/address/0x96750a75376f4393ba02c5e1066aed232cb65b6c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0x96750a75376f4393ba02c5e1066aed232cb65b6c]<br>
+<a href="https://lineascan.build/address/0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d]<br>
+<a href="https://lineascan.build/address/0xb24a8c178cf81d35e38683012e786e3231cb950b#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0xb24a8c178cf81d35e38683012e786e3231cb950b]<br>
+<a href="https://lineascan.build/address/0x2c804ca3604771eb71210736f9cab91c984b57ea#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0x2c804ca3604771eb71210736f9cab91c984b57ea]<br>
+<a href="https://lineascan.build/address/0x2d7b51a6fe81d8b4546872a46166e4d6e45e0f9d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x2d7b51a6fe81d8b4546872a46166e4d6e45e0f9d]<br>
+<a href="https://lineascan.build/address/0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8]<br>
+<a href="https://lineascan.build/address/0x20c43ecfb55176caeffa693e6f76977021df91df#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x20c43ecfb55176caeffa693e6f76977021df91df]<br>
+<a href="https://lineascan.build/address/0x288f07b287780f92deb9a45f21639b2dc51ffaf0#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x288f07b287780f92deb9a45f21639b2dc51ffaf0]<br>
+
+<a href="https://lineascan.build/address/0x91a23e21a94b1b6734286c883e2114bb6a3d6ff2#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0x91a23e21a94b1b6734286c883e2114bb6a3d6ff2]<br>
+<a href="https://lineascan.build/address/0x4a01c11f0aae888649a9bfbbaa321cc54007f84f#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x4a01c11f0aae888649a9bfbbaa321cc54007f84f]<br>
+<a href="https://lineascan.build/address/0x10d32b459c7d64e3385531f3ab75845ee30ee3f9#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0x10d32b459c7d64e3385531f3ab75845ee30ee3f9]<br>
+<a href="https://lineascan.build/address/0x164b131e545ef956801a9b95db58ce66c58267ed#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0x164b131e545ef956801a9b95db58ce66c58267ed]<br>
+<a href="https://lineascan.build/address/0x0054dd9e91a681be3dad694219938bccf450fc7d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0x0054dd9e91a681be3dad694219938bccf450fc7d]<br>
+<a href="https://lineascan.build/address/0xa68b1a57b1013048789b014be0d20a2aaa16c2c4#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0xa68b1a57b1013048789b014be0d20a2aaa16c2c4]<br>
+<a href="https://lineascan.build/address/0x20c43ecfb55176caeffa693e6f76977021df91df#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x20c43ecfb55176caeffa693e6f76977021df91df]<br>
+<a href="https://lineascan.build/address/0x288f07b287780f92deb9a45f21639b2dc51ffaf0#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x288f07b287780f92deb9a45f21639b2dc51ffaf0]<br>
+<a href="https://lineascan.build/address/0x779f54d5acaa4c0e8ff739010638c9c6d7f747a5#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletAddresses [0x779f54d5acaa4c0e8ff739010638c9c6d7f747a5]<br>
+<a href="https://lineascan.build/address/0x006f85e314c14487ea8e2500851d2dddf7843976#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenProxyContract [0x006f85e314c14487ea8e2500851d2dddf7843976]<br>
+
+<br><br>
+
+
 
 
 
