@@ -58,7 +58,7 @@ http://lisk.ungravel.org lisk                          ( level-2 chain )
 <br><br>
 
 
-blast
+blast<br><br>
 [0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502]   UNG  registryAddressesurl: https://blastscan.io/address/0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502#code
 [0x00ef1de390cba56c46e0e790ee1ef4f89d6717f0]   UNG  resolverAddressesurl: https://blastscan.io/address/0x00ef1de390cba56c46e0e790ee1ef4f89d6717f0#code
 [0x9098dfe84e624021d890909eec300a761cc1f05d]   UNG  testRegistrarAddressesurl: https://blastscan.io/address/0x9098dfe84e624021d890909eec300a761cc1f05d#code
