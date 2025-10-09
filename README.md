@@ -192,6 +192,50 @@ lisk<br>
 
 <br><br>
 
+scroll<br>
+
+<a href="https://scrollscan.com/address/0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502]<br>
+<a href="https://scrollscan.com/address/0x00ef1de390cba56c46e0e790ee1ef4f89d6717f0#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x00ef1de390cba56c46e0e790ee1ef4f89d6717f0]<br>
+<a href="https://scrollscan.com/address/0x9098dfe84e624021d890909eec300a761cc1f05d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0x9098dfe84e624021d890909eec300a761cc1f05d]<br>
+<a href="https://scrollscan.com/address/0x39191b451966996a5352f58ad395bc2e84c1492f#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0x39191b451966996a5352f58ad395bc2e84c1492f]<br>
+<a href="https://scrollscan.com/address/0x124bb8e8c994a107c0fab0337311547f217cfa89#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0x124bb8e8c994a107c0fab0337311547f217cfa89]<br>
+<a href="https://scrollscan.com/address/0x2ae1f932718da8157a8c27a926dbbbfeae668259#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0x2ae1f932718da8157a8c27a926dbbbfeae668259]<br>
+<a href="https://scrollscan.com/address/0xd6d08bd18e814e92ecf69d492fc0a4f822658db1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0xd6d08bd18e814e92ecf69d492fc0a4f822658db1]<br>
+<a href="https://scrollscan.com/address/0xaa8499cd38ba0b6c122523ee7b41f29733aaf08e#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0xaa8499cd38ba0b6c122523ee7b41f29733aaf08e]<br>
+<a href="https://scrollscan.com/address/0x58b5a738d2e263f1588a3ba6123cdfda517df9a6#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0x58b5a738d2e263f1588a3ba6123cdfda517df9a6]<br>
+<a href="https://scrollscan.com/address/0x154239797693937f67a4746a7d3b19978bff4806#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0x154239797693937f67a4746a7d3b19978bff4806]<br>
+<a href="https://scrollscan.com/address/0x8a76dbdeaba77b6dca26fd52a04546881171311c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0x8a76dbdeaba77b6dca26fd52a04546881171311c]<br>
+<a href="https://scrollscan.com/address/0xa222540ceac5dc28460bc8554646d833fda2e10c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0xa222540ceac5dc28460bc8554646d833fda2e10c]<br>
+<a href="https://scrollscan.com/address/0x3ccc16899c2df17d0e8b40800f7dbb57e2c043ef#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0x3ccc16899c2df17d0e8b40800f7dbb57e2c043ef]<br>
+<a href="https://scrollscan.com/address/0x90b1d8faac4f1a31a68013277c5f273ef4f5f7f4#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0x90b1d8faac4f1a31a68013277c5f273ef4f5f7f4]<br>
+<a href="https://scrollscan.com/address/0x96750a75376f4393ba02c5e1066aed232cb65b6c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x96750a75376f4393ba02c5e1066aed232cb65b6c]<br>
+<a href="https://scrollscan.com/address/0xd7bfbc6cd9da96041ac87e504954489bebdebcb7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0xd7bfbc6cd9da96041ac87e504954489bebdebcb7]<br>
+<a href="https://scrollscan.com/address/0xc39afb9d7648256f6a706868c908896e079510c1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0xc39afb9d7648256f6a706868c908896e079510c1]<br>
+<a href="https://scrollscan.com/address/0x1effb9ab223c4ea18e11927bac0ef4fddda89671#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0x1effb9ab223c4ea18e11927bac0ef4fddda89671]<br>
+
+<a href="https://scrollscan.com/address/0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d]<br>
+<a href="https://scrollscan.com/address/0x8e29abb3fa7458ff72db7ed3453c22830bb224d9#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0x8e29abb3fa7458ff72db7ed3453c22830bb224d9]<br>
+<a href="https://scrollscan.com/address/0xb24a8c178cf81d35e38683012e786e3231cb950b#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0xb24a8c178cf81d35e38683012e786e3231cb950b]<br>
+<a href="https://scrollscan.com/address/0x2c804ca3604771eb71210736f9cab91c984b57ea#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0x2c804ca3604771eb71210736f9cab91c984b57ea]<br>
+<a href="https://scrollscan.com/address/0xeb9a1effe5bd833dfaefb761b59ddec33370bc04#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0xeb9a1effe5bd833dfaefb761b59ddec33370bc04]<br>
+<a href="https://scrollscan.com/address/0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7]<br>
+<a href="https://scrollscan.com/address/0xeb2027f460cfa975c1eb0340068a6d100a75a1ba#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0xeb2027f460cfa975c1eb0340068a6d100a75a1ba]<br>
+<a href="https://scrollscan.com/address/0x4ed0a0cc6a2c8f7aa2bca7e8f0a704eb76347260#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0x4ed0a0cc6a2c8f7aa2bca7e8f0a704eb76347260]<br>
+<a href="https://scrollscan.com/address/0x96750a75376f4393ba02c5e1066aed232cb65b6c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x96750a75376f4393ba02c5e1066aed232cb65b6c]<br>
+<a href="https://scrollscan.com/address/0x6e720f0f882ef04db76282b71f59f4e28f2f39ae#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0x6e720f0f882ef04db76282b71f59f4e28f2f39ae]<br>
+<a href="https://scrollscan.com/address/0x81d9643c1ba0601d4a97118d94c88c5cb7bae122#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x81d9643c1ba0601d4a97118d94c88c5cb7bae122]<br>
+<a href="https://scrollscan.com/address/0x2342fae02ee4a712f6ddcbe795c6b83991b28091#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x2342fae02ee4a712f6ddcbe795c6b83991b28091]<br>
+
+<a href="https://scrollscan.com/address/0xf231ef4e4983eacb144ce7fa3884270b6a4d4fa2#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0xf231ef4e4983eacb144ce7fa3884270b6a4d4fa2]<br>
+<a href="https://scrollscan.com/address/0x0615ad37d5d6b34631f2980f8e87206ae8c55932#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x0615ad37d5d6b34631f2980f8e87206ae8c55932]<br>
+<a href="https://scrollscan.com/address/0x76d61db30bde5b08cb8cde00b3a42ef3867bc4fe#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0x76d61db30bde5b08cb8cde00b3a42ef3867bc4fe]<br>
+<a href="https://scrollscan.com/address/0x279bdd14a19e37553b5c9d1aa076d4f7f74dba23#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0x279bdd14a19e37553b5c9d1aa076d4f7f74dba23]<br>
+<a href="https://scrollscan.com/address/0x872f0d00ef7f981e7a71c3cd28242e28b0510b95#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0x872f0d00ef7f981e7a71c3cd28242e28b0510b95]<br>
+<a href="https://scrollscan.com/address/0x5b5d92373733e40feaebb730e8d4b69f46722c2b#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0x5b5d92373733e40feaebb730e8d4b69f46722c2b]<br>
+<a href="https://scrollscan.com/address/0x81d9643c1ba0601d4a97118d94c88c5cb7bae122#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x81d9643c1ba0601d4a97118d94c88c5cb7bae122]<br>
+<a href="https://scrollscan.com/address/0x2342fae02ee4a712f6ddcbe795c6b83991b28091#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x2342fae02ee4a712f6ddcbe795c6b83991b28091]<br>
+
+<br><br>
 
 
 If you want to be included in the Google Play test, send your gmail address to one@ungravel.com to get a pre-release access to "Ungravel on Android".
