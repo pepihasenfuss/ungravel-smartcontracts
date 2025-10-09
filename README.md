@@ -24,7 +24,7 @@ Watch these contracts in action on ethereum mainnet  http://ethereum.ungravel.or
 or explore the testnet landing page, such as http://arbitrum.ungravel.org on arbitrum sepolia testnet.
 <br><br>
 
-Ungravel on mainnet chains:
+Ungravel live installation on mainnet chains:
 
 http://ethereum.ungravel.org ethereum mainnet          ( thanks to Infura, integrating with ENS-Manager, expensive )
 
