@@ -50,7 +50,7 @@ http://optimism.ungravel.org optimism                  ( I cannot get enough tes
 
 http://gnosis.ungravel.org gnosis                      ( super cheap, a bit like a testchain )
 
-http://taiko.ungravel.org taiko                        ( faster since the chain upgrade )
+https://www.ungravel.com/?bd?64  taiko                 ( faster since the chain upgrade )
 
 http://lisk.ungravel.org lisk                          ( level-2 chain )
 
