@@ -902,55 +902,6 @@ zora<br>
 <br><br>
 
 
-avalanche<br>
-
-<a href="https://snowscan.xyz/address/0x2ae1f932718da8157a8c27a926dbbbfeae668259#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x2ae1f932718da8157a8c27a926dbbbfeae668259]<br>
-<a href="https://snowscan.xyz/address/0x7255fc0384f58d875946aba8956028ef2906ffb3#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x7255fc0384f58d875946aba8956028ef2906ffb3]<br>
-<a href="https://snowscan.xyz/address/0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc]<br>
-<a href="https://snowscan.xyz/address/0x1effb9ab223c4ea18e11927bac0ef4fddda89671#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0x1effb9ab223c4ea18e11927bac0ef4fddda89671]<br>
-<a href="https://snowscan.xyz/address/0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8]<br>
-<a href="https://snowscan.xyz/address/0x82301243198e208b90e1bbfe3d134d0c4a86c2b1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0x82301243198e208b90e1bbfe3d134d0c4a86c2b1]<br>
-<a href="https://snowscan.xyz/address/0x42f136303a16281d17be4a8c338ddd2fb357a337#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0x42f136303a16281d17be4a8c338ddd2fb357a337]<br>
-<a href="https://snowscan.xyz/address/0xd6d08bd18e814e92ecf69d492fc0a4f822658db1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0xd6d08bd18e814e92ecf69d492fc0a4f822658db1]<br>
-<a href="https://snowscan.xyz/address/0x1ee35f96b80d40c00e4725c773edcbcd0dcc0306#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0x1ee35f96b80d40c00e4725c773edcbcd0dcc0306]<br>
-<a href="https://snowscan.xyz/address/0x9fab241a2035b33e4327c9c6074b211a939b4007#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0x9fab241a2035b33e4327c9c6074b211a939b4007]<br>
-<a href="https://snowscan.xyz/address/0xea5ef72bfda032f440f8ae0dc9b06435938e6472#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0xea5ef72bfda032f440f8ae0dc9b06435938e6472]<br>
-<a href="https://snowscan.xyz/address/0xc90e88e9019c985a155c996e05903605d1995cb6#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0xc90e88e9019c985a155c996e05903605d1995cb6]<br>
-<a href="https://snowscan.xyz/address/0x1ae129d0a2f3d267030e1839a9815a83c56f1ce9#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0x1ae129d0a2f3d267030e1839a9815a83c56f1ce9]<br>
-<a href="https://snowscan.xyz/address/0x2be652818873a05e6ae111a4619e9b3ae6a14146#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0x2be652818873a05e6ae111a4619e9b3ae6a14146]<br>
-<a href="https://snowscan.xyz/address/0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d]<br>
-<a href="https://snowscan.xyz/address/0x124bb8e8c994a107c0fab0337311547f217cfa89#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0x124bb8e8c994a107c0fab0337311547f217cfa89]<br>
-<a href="https://snowscan.xyz/address/0x6e720f0f882ef04db76282b71f59f4e28f2f39ae#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0x6e720f0f882ef04db76282b71f59f4e28f2f39ae]<br>
-<a href="https://snowscan.xyz/address/0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f]<br>
-
-<a href="https://snowscan.xyz/address/0xb24a8c178cf81d35e38683012e786e3231cb950b#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0xb24a8c178cf81d35e38683012e786e3231cb950b]<br>
-<a href="https://snowscan.xyz/address/0x8f314a485b6a95836bf745c8b73a54458f5783df#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0x8f314a485b6a95836bf745c8b73a54458f5783df]<br>
-<a href="https://snowscan.xyz/address/0x2c804ca3604771eb71210736f9cab91c984b57ea#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0x2c804ca3604771eb71210736f9cab91c984b57ea]<br>
-<a href="https://snowscan.xyz/address/0xeb9a1effe5bd833dfaefb761b59ddec33370bc04#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0xeb9a1effe5bd833dfaefb761b59ddec33370bc04]<br>
-<a href="https://snowscan.xyz/address/0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7]<br>
-<a href="https://snowscan.xyz/address/0xeb2027f460cfa975c1eb0340068a6d100a75a1ba#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0xeb2027f460cfa975c1eb0340068a6d100a75a1ba]<br>
-<a href="https://snowscan.xyz/address/0x4ed0a0cc6a2c8f7aa2bca7e8f0a704eb76347260#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0x4ed0a0cc6a2c8f7aa2bca7e8f0a704eb76347260]<br>
-<a href="https://snowscan.xyz/address/0x38b3fa728cc12b6d92fa753bad22294588c6a3a1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0x38b3fa728cc12b6d92fa753bad22294588c6a3a1]<br>
-<a href="https://snowscan.xyz/address/0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d]<br>
-<a href="https://snowscan.xyz/address/0x3033edfcc0424743a9cbdcff91771a75990539e9#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0x3033edfcc0424743a9cbdcff91771a75990539e9]<br>
-<a href="https://snowscan.xyz/address/0xb07c9afeaf9d4046dd7b30b73635994da1c34169#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0xb07c9afeaf9d4046dd7b30b73635994da1c34169]<br>
-<a href="https://snowscan.xyz/address/0x7382aa0db46c60a7ccc2a48a3cedd534c7edf2fe#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x7382aa0db46c60a7ccc2a48a3cedd534c7edf2fe]<br>
-
-<a href="https://snowscan.xyz/address/0x872f0d00ef7f981e7a71c3cd28242e28b0510b95#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0x872f0d00ef7f981e7a71c3cd28242e28b0510b95]<br>
-<a href="https://snowscan.xyz/address/0x1116d568c45d5bd525895da250d7ceb22b0a0e20#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x1116d568c45d5bd525895da250d7ceb22b0a0e20]<br>
-<a href="https://snowscan.xyz/address/0xcd8e01061476554fe6dcab175bbd1391c5a6e0ef#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0xcd8e01061476554fe6dcab175bbd1391c5a6e0ef]<br>
-<a href="https://snowscan.xyz/address/0xc18482866c5e3b5b3ed84cc967f3f902d59a31ba#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0xc18482866c5e3b5b3ed84cc967f3f902d59a31ba]<br>
-<a href="https://snowscan.xyz/address/0x185ba83e3f37de291a7c395bbc72828e4b1774bd#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0x185ba83e3f37de291a7c395bbc72828e4b1774bd]<br>
-<a href="https://snowscan.xyz/address/0x044a7f7f34e5ce9a6bf3b37c827a9d901ead9dbf#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0x044a7f7f34e5ce9a6bf3b37c827a9d901ead9dbf]<br>
-<a href="https://snowscan.xyz/address/0xb07c9afeaf9d4046dd7b30b73635994da1c34169#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0xb07c9afeaf9d4046dd7b30b73635994da1c34169]<br>
-<a href="https://snowscan.xyz/address/0x7382aa0db46c60a7ccc2a48a3cedd534c7edf2fe#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x7382aa0db46c60a7ccc2a48a3cedd534c7edf2fe]<br>
-<a href="https://snowscan.xyz/address/0xe2b4b3bc7d1ce27eea40939b189458db21eee3fb#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletAddresses [0xe2b4b3bc7d1ce27eea40939b189458db21eee3fb]<br>
-<a href="https://snowscan.xyz/address/0xb46b0e565adda4a9a21bf25be35beb0ef36c6f5c#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenProxyContract [0xb46b0e565adda4a9a21bf25be35beb0ef36c6f5c]<br>
-<a href="https://snowscan.xyz/address/0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> swapUSDC_contract [0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E]<br>
-<a href="https://snowscan.xyz/address/0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> swapWETH_contract [0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7]<br>
-<a href="https://snowscan.xyz/address/0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> swapNATIVE_contract [0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7]<br>
-<a href="https://snowscan.xyz/address/0x1b02da8cb0d097eb8d57a175b88c7d8b47997506#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> swapRouter [0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506]<br>
-
 <br><br>
 
 
