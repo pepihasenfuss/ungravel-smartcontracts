@@ -59,6 +59,54 @@ soon: soneium,worldchain,zora and celo
 
 <br><br>
 
+
+Example EVM-Names dApp with a sample domain name "block-explorer.tld" on all 20 chains:
+
+https://www.ungravel.me/?bd?3?bs?base.eth
+
+https://www.ungravel.me/?bd?15?bs?block-explorer.scroll
+
+https://www.ungravel.me/?bd?24?bs?block-explorer.lisk
+
+https://www.ungravel.me/?bd?35?bs?block-explorer.sepeth
+
+https://www.ungravel.me/?bd?36?bs?block-explorer.matic
+
+https://www.ungravel.me/?bd?40?bs?block-explorer.bsc
+
+https://www.ungravel.me/?bd?42?bs?block-explorer.gnosis
+
+https://www.ungravel.me/?bd?44?bs?block-explorer.arb
+
+https://www.ungravel.me/?bd?64?bs?block-explorer.tko
+
+https://www.ungravel.me/?bd?74?bs?block-explorer.base
+
+https://www.ungravel.me/?bd?84?bs?block-explorer.one
+
+https://www.ungravel.me/?bd?94?bs?block-explorer.op
+
+https://www.ungravel.me/?bd?104?bs?block-explorer.blast
+
+https://www.ungravel.me/?bd?114?bs?block-explorer.uni
+
+https://www.ungravel.me/?bd?124?bs?block-explorer.linea
+
+https://www.ungravel.me/?bd?134?bs?block-explorer.ava
+
+https://www.ungravel.me/?bd?144?bs?block-explorer.son
+
+https://www.ungravel.me/?bd?154?bs?block-explorer.wc
+
+https://www.ungravel.me/?bd?164?bs?block-explorer.zora
+
+https://www.ungravel.me/?bd?174?bs?block-explorer.celo
+
+
+<br><br>
+
+
+
 mainnet - ungravel.eth<br>
 
 <a href="https://etherscan.io/address/0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e#readContract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> <a href="https://repo.sourcify.dev/1/0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e" target="_blank" style="color:#6892ed;font-weight:500;">repo</a> registryAddresses [0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e]<br>
