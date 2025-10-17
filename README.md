@@ -62,7 +62,7 @@ https://www.ungravel.com/?bd?164                       ( ZORA )
 
 https://www.ungravel.com/?bd?174                       ( CELO )
 
-http://sepolia.ungravel.org sepolia                    ( very slow - test chain)
+http://www.ungravel.com/?bd?35                         ( sepolia - very slow - test chain)
 
 
 <br><br>
