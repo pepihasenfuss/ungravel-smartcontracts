@@ -54,7 +54,13 @@ https://www.ungravel.com/?bd?64  taiko                 ( faster since the chain 
 
 http://lisk.ungravel.org lisk                          ( level-2 chain )
 
-soon: soneium,worldchain,zora and celo
+https://www.ungravel.com/?bd?144                       ( SONEIUM )
+
+https://www.ungravel.com/?bd?154                       ( WorldChain )
+
+https://www.ungravel.com/?bd?164                       ( ZORA )
+
+https://www.ungravel.com/?bd?174                       ( CELO )
 
 
 <br><br>
