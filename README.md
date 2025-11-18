@@ -64,6 +64,7 @@ https://www.ungravel.com/?bd?174                       ( CELO )
 
 http://www.ungravel.com/?bd?35                         ( sepolia - very slow - test chain)
 
+http://www.ungravel.com/?bd?184                        ( arc-testnet - native USDC ! )
 
 <br><br>
 
