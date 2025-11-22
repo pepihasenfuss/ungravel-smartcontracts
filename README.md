@@ -34,12 +34,13 @@ http://polygon.ungravel.org polygon                    ( live on mainnet, fast )
 
 http://unichain.ungravel.org unichain                  ( fast, not yet fully supported, promising )
 
+http://arbitrum.ungravel.org arbitrum                  ( super fast and really good user experience, thanks to BlockPi! )
+
+<br><br>
 
 * deprecated http://ethereum.ungravel.org ethereum mainnet          ( thanks to Infura, integrating with ENS-Manager, expensive )
 
 * deprecated http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
-
-* deprecated http://arbitrum.ungravel.org arbitrum                  ( super fast and really good user experience, thanks to BlockPi! )
 
 * deprecated http://linea.ungravel.org linea                        ( consensys / metamask chain, promising )
 
