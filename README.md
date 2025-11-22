@@ -38,11 +38,11 @@ http://arbitrum.ungravel.org arbitrum                  ( super fast and really g
 
 <br><br>
 
-* deprecated http://ethereum.ungravel.org ethereum mainnet          ( thanks to Infura, integrating with ENS-Manager, expensive )
+* deprecated http://ethereum.ungravel.org ethereum mainnet          ( thanks to Infura, too expensive, too slow! )
 
 * deprecated http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
 
-* deprecated http://linea.ungravel.org linea                        ( consensys / metamask chain, promising )
+* deprecated http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
 
 * deprecated http://avalanche.ungravel.org avalanche                ( level-2 chain )
 
@@ -56,7 +56,7 @@ http://arbitrum.ungravel.org arbitrum                  ( super fast and really g
 
 * deprecated https://www.ungravel.com/?bd?64  taiko                 ( faster since the chain upgrade )
 
-* deprecated http://lisk.ungravel.org lisk                          ( level-2 chain )
+* deprecated http://lisk.ungravel.org lisk                          ( level-2 chain, not relevant anymore )
 
 * deprecated https://www.ungravel.com/?bd?144                       ( SONEIUM )
 
@@ -66,7 +66,7 @@ http://arbitrum.ungravel.org arbitrum                  ( super fast and really g
 
 * deprecated https://www.ungravel.com/?bd?174                       ( CELO )
 
-* deprecated http://www.ungravel.com/?bd?35                         ( sepolia - very slow - test chain)
+* deprecated http://www.ungravel.com/?bd?35                         ( sepolia - very slow - deprecated )
 
 
 <br><br>
