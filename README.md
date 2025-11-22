@@ -27,8 +27,11 @@ or explore the testnet landing page, such as http://arbitrum-sepolia.ungravel.or
 Ungravel live installation on mainnet chains:
 
 http://www.ungravel.com/?bd?184                        ( arc-testnet - native USDC ! )
+
 http://base.ungravel.org base                          ( pretty fast! Promising. Cheap transactions.)
-http://polygon.ungravel.org polygon                    ( live on mainnet, fast, although a bit spooky )
+
+http://polygon.ungravel.org polygon                    ( live on mainnet, fast )
+
 http://unichain.ungravel.org unichain                  ( fast, not yet fully supported, promising )
 
 
