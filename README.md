@@ -26,45 +26,44 @@ or explore the testnet landing page, such as http://arbitrum-sepolia.ungravel.or
 
 Ungravel live installation on mainnet chains:
 
-http://ethereum.ungravel.org ethereum mainnet          ( thanks to Infura, integrating with ENS-Manager, expensive )
-
-http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
-
-http://arbitrum.ungravel.org arbitrum                  ( super fast and really good user experience, thanks to BlockPi! )
-
-http://polygon.ungravel.org polygon                    ( live on mainnet, fast, although a bit spooky )
-
+http://www.ungravel.com/?bd?184                        ( arc-testnet - native USDC ! )
 http://base.ungravel.org base                          ( pretty fast! Promising. Cheap transactions.)
-
-http://linea.ungravel.org linea                        ( consensys / metamask chain, promising )
-
+http://polygon.ungravel.org polygon                    ( live on mainnet, fast, although a bit spooky )
 http://unichain.ungravel.org unichain                  ( fast, not yet fully supported, promising )
 
-http://avalanche.ungravel.org avalanche                ( level-2 chain )
 
-http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
+* deprecated http://ethereum.ungravel.org ethereum mainnet          ( thanks to Infura, integrating with ENS-Manager, expensive )
 
-http://scroll.ungravel.org scroll                      ( zk-roll-up SCROLL, pretty fast )
+* deprecated http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
 
-http://optimism.ungravel.org optimism                  ( I cannot get enough test ether! Otherwise fast )
+* deprecated http://arbitrum.ungravel.org arbitrum                  ( super fast and really good user experience, thanks to BlockPi! )
 
-http://gnosis.ungravel.org gnosis                      ( super cheap, a bit like a testchain )
+* deprecated http://linea.ungravel.org linea                        ( consensys / metamask chain, promising )
 
-https://www.ungravel.com/?bd?64  taiko                 ( faster since the chain upgrade )
+* deprecated http://avalanche.ungravel.org avalanche                ( level-2 chain )
 
-http://lisk.ungravel.org lisk                          ( level-2 chain )
+* deprecated http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
 
-https://www.ungravel.com/?bd?144                       ( SONEIUM )
+* deprecated http://scroll.ungravel.org scroll                      ( zk-roll-up SCROLL, pretty fast )
 
-https://www.ungravel.com/?bd?154                       ( WorldChain )
+* deprecated http://optimism.ungravel.org optimism                  ( I cannot get enough test ether! Otherwise fast )
 
-https://www.ungravel.com/?bd?164                       ( ZORA )
+* deprecated http://gnosis.ungravel.org gnosis                      ( super cheap, a bit like a testchain )
 
-https://www.ungravel.com/?bd?174                       ( CELO )
+* deprecated https://www.ungravel.com/?bd?64  taiko                 ( faster since the chain upgrade )
 
-http://www.ungravel.com/?bd?35                         ( sepolia - very slow - test chain)
+* deprecated http://lisk.ungravel.org lisk                          ( level-2 chain )
 
-http://www.ungravel.com/?bd?184                        ( arc-testnet - native USDC ! )
+* deprecated https://www.ungravel.com/?bd?144                       ( SONEIUM )
+
+* deprecated https://www.ungravel.com/?bd?154                       ( WorldChain )
+
+* deprecated https://www.ungravel.com/?bd?164                       ( ZORA )
+
+* deprecated https://www.ungravel.com/?bd?174                       ( CELO )
+
+* deprecated http://www.ungravel.com/?bd?35                         ( sepolia - very slow - test chain)
+
 
 <br><br>
 
