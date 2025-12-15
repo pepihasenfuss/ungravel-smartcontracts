@@ -16,12 +16,8 @@ global         https://app.ens.domains/global.ungravel.eth
 
 multicall4     https://app.ens.domains/multifour.ungravel.eth
 
-<br>
 
 
-Watch these contracts in action on ethereum mainnet  http://ethereum.ungravel.org
-
-or explore the testnet landing page, such as http://arbitrum-sepolia.ungravel.org on arbitrum sepolia testnet.
 <br><br>
 
 Ungravel live installation on mainnet chains:
