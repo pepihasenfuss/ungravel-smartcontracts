@@ -26,7 +26,7 @@ or explore the testnet landing page, such as http://arbitrum-sepolia.ungravel.or
 
 Ungravel live installation on mainnet chains:
 
-http://www.ungravel.com/?bd?184                        ( arc-testnet - native USDC ! )
+http://www.ungravel.lat/?bd?184                        ( arc-testnet - native USDC ! )
 
 http://base.ungravel.org base                          ( pretty fast! Promising. Cheap transactions.)
 
