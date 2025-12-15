@@ -34,7 +34,7 @@ http://arbitrum.ungravel.org arbitrum                  ( super fast and really g
 
 Ungravel - other chains - ask to get access
 
- http://ethereum.ungravel.org ethereum mainnet          ( thanks to Infura, too expensive, too slow! )
+ http://ethereum.ungravel.org ethereum mainnet          ( too expensive, too slow! )
 
  http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
 
