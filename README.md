@@ -36,37 +36,39 @@ http://arbitrum.ungravel.org arbitrum                  ( super fast and really g
 
 <br><br>
 
-* deprecated http://ethereum.ungravel.org ethereum mainnet          ( thanks to Infura, too expensive, too slow! )
+Ungravel - other chains - ask to get access
 
-* deprecated http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
+ http://ethereum.ungravel.org ethereum mainnet          ( thanks to Infura, too expensive, too slow! )
 
-* deprecated http://polygon.ungravel.org polygon                    ( live on mainnet, fast )
+ http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
 
-* deprecated http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
+ http://polygon.ungravel.org polygon                    ( live on mainnet, fast )
 
-* deprecated http://avalanche.ungravel.org avalanche                ( level-2 chain )
+ http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
 
-* deprecated http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
+ http://avalanche.ungravel.org avalanche                ( level-2 chain )
 
-* deprecated http://scroll.ungravel.org scroll                      ( zk-roll-up SCROLL, pretty fast )
+ http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
 
-* deprecated http://optimism.ungravel.org optimism                  ( I cannot get enough test ether! Otherwise fast )
+ http://scroll.ungravel.org scroll                      ( zk-roll-up SCROLL, pretty fast )
 
-* deprecated http://gnosis.ungravel.org gnosis                      ( super cheap, a bit like a testchain )
+ http://optimism.ungravel.org optimism                  ( I cannot get enough test ether! Otherwise fast )
 
-* deprecated https://www.ungravel.com/?bd?64  taiko                 ( faster since the chain upgrade )
+ http://gnosis.ungravel.org gnosis                      ( super cheap, a bit like a testchain )
 
-* deprecated http://lisk.ungravel.org lisk                          ( level-2 chain, not relevant anymore )
+ https://www.ungravel.com/?bd?64  taiko                 ( faster since the chain upgrade )
 
-* deprecated https://www.ungravel.com/?bd?144                       ( SONEIUM )
+ http://lisk.ungravel.org lisk                          ( level-2 chain, not relevant anymore )
 
-* deprecated https://www.ungravel.com/?bd?154                       ( WorldChain )
+ https://www.ungravel.com/?bd?144                       ( SONEIUM )
 
-* deprecated https://www.ungravel.com/?bd?164                       ( ZORA )
+ https://www.ungravel.com/?bd?154                       ( WorldChain )
 
-* deprecated https://www.ungravel.com/?bd?174                       ( CELO )
+ https://www.ungravel.com/?bd?164                       ( ZORA )
 
-* deprecated http://www.ungravel.com/?bd?35                         ( sepolia - very slow - deprecated )
+ https://www.ungravel.com/?bd?174                       ( CELO )
+
+ http://www.ungravel.com/?bd?35                         ( sepolia - very slow - deprecated )
 
 
 <br><br>
