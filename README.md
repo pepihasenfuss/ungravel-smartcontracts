@@ -26,8 +26,6 @@ http://www.ungravel.lat/?bd?184?first                  ( arc-testnet - native US
 
 http://base.ungravel.org base                          ( pretty fast! Promising. Cheap transactions.)
 
-http://unichain.ungravel.org unichain                  ( fast, not yet fully supported, promising )
-
 http://arbitrum.ungravel.org arbitrum                  ( super fast and really good user experience, thanks to BlockPi! )
 
 http://polygon.ungravel.org polygon                    ( live on mainnet, fast )
@@ -43,6 +41,8 @@ Ungravel - other chains - ask to get access
  http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
 
  http://avalanche.ungravel.org avalanche                ( level-2 chain )
+
+ http://unichain.ungravel.org unichain                  ( very fast )
 
  http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
 
