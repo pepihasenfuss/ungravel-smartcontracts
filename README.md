@@ -30,6 +30,8 @@ http://unichain.ungravel.org unichain                  ( fast, not yet fully sup
 
 http://arbitrum.ungravel.org arbitrum                  ( super fast and really good user experience, thanks to BlockPi! )
 
+http://polygon.ungravel.org polygon                    ( live on mainnet, fast )
+
 <br><br>
 
 Ungravel - other chains - ask to get access
@@ -37,8 +39,6 @@ Ungravel - other chains - ask to get access
  http://ethereum.ungravel.org ethereum mainnet          ( too expensive, too slow! )
 
  http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
-
- http://polygon.ungravel.org polygon                    ( live on mainnet, fast )
 
  http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
 
