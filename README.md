@@ -30,11 +30,12 @@ http://arbitrum.ungravel.org arbitrum                  ( super fast and really g
 
 http://polygon.ungravel.org polygon                    ( live on mainnet, fast )
 
+http://ethereum.ungravel.org ethereum mainnet          ( too expensive, slow )
+
+
 <br><br>
 
 Ungravel - other chains - ask to get access
-
- http://ethereum.ungravel.org ethereum mainnet          ( too expensive, too slow! )
 
  http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
 
