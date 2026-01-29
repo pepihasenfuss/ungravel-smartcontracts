@@ -46,7 +46,7 @@ http://ethereum.ungravel.org ethereum mainnet          ( too expensive, slow )
 
 <br><br>
 
-Ungravel - other chains - ask to get access
+Ungravel - other chains - ask to get access - all are live, yet discontinued ***
 
  http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
 
