@@ -17,11 +17,11 @@ global         https://app.ens.domains/global.ungravel.eth
 multicall4     https://app.ens.domains/multifour.ungravel.eth
 
 <br>
-*************************************************************************************************************************************
+**************************************************************************************************************
 <br>
 ***** Unfortunately, ungravel.com management decided to cease all operations & the business, effective, January 31th, 2026 *****
 <br>
-*************************************************************************************************************************************
+**************************************************************************************************************
 <br>
 **** This source code of our smart contracts can be used elsewhere, it is open-source without any further notice. (on 21 chains) ****
 <br>
