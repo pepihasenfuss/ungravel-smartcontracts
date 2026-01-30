@@ -19,7 +19,8 @@ multicall4     https://app.ens.domains/multifour.ungravel.eth
 <br>
 **************************************************************************************************************
 <br>
-***** Unfortunately, ungravel.com management decided to cease all operations & the business, effective, January 31th, 2026 *****
+***** Unfortunately, ungravel management/team decided to cease operations & shut down business, <br>
+effective, January 31th, 2026 *****
 <br>
 **************************************************************************************************************
 <br>
