@@ -23,12 +23,12 @@ multicall4     https://app.ens.domains/multifour.ungravel.eth
 effective, January 31th, 2026 *****
 <br>
 **************************************************************************************************************
-<br>
-**** This source code of our smart contracts can be used elsewhere, it is open-source without any further notice. (on 21 chains) ****
+<br><br>
+**** Source code of smart contracts can be used elsewhere, it is open-source without any further notice. (on 21 chains) ****
 <br>
 **** In case your company is interested in acquiring the source code of our dApp and the front-end, contact ungravel.com ****
 <br> All services have been cancelled, contracts and third-party agreements, services stopped.
-<br> Source code & IP of the "Ungravel GroupWallet", "ChainScript", will be sold in an IP / asset deal to a competitor. 
+<br> Source code & IP of the "Ungravel GroupWallet", "ChainScript", are being sold in an IP / asset deal to a competitor. 
 
 <br><br>
 
