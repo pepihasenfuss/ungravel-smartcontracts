@@ -114,8 +114,7 @@ STABLE.xyz mainnet<br>
  <a href="https://stablescan.xyz/address/0x012ef5dd2c92be3bf3fdcdb2dde6d30a72df3966#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> <a href="https://solidityscan.com/quickscan/0x012ef5dd2c92be3bf3fdcdb2dde6d30a72df3966/stable/mainnet" target="_blank" style="color:#6892ed;font-weight:500;">solid</a> globalTokenAddresses [0x012ef5dd2c92be3bf3fdcdb2dde6d30a72df3966]<br> 
 
 
-
-
+<br><br>
 
 
 arc-testnet - ARC<br>
