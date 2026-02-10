@@ -26,6 +26,8 @@ multicall4     https://app.ens.domains/multifour.ungravel.eth
 
 Ungravel live installation on mainnet chains:
 
+http://www.ungravel.lat/?bd?194?first                  ( STABLE - native USDT - mainnet! )
+
 http://www.ungravel.lat/?bd?184?first                  ( arc-testnet - native USDC - super-fast )
 
 http://base.ungravel.org base                          ( pretty fast! Promising. Cheap transactions.)
