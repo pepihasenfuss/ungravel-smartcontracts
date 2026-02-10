@@ -21,8 +21,6 @@ multicall4     https://app.ens.domains/multifour.ungravel.eth
 
 <br><br>
 **** Source code of smart contracts can be used elsewhere, it is open-source without any further notice. (on 21 chains) ****
-<br>
-**** In case your company is interested in acquiring the source code of our dApp and the front-end, contact ungravel.com **** 
 
 <br><br>
 
