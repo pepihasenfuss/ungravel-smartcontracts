@@ -8,7 +8,7 @@ gwallet        https://app.ens.domains/gwallet.ungravel.eth
 
 tokenMaster    https://app.ens.domains/tokenmaster.ungravel.eth
 
-auctionMaster  https://app.ens.domains/auctionmaster.ungravel.eth
+auctionMaster  https://app.ens.domains/auctionmaster.ungravel.eth ---> auditing report https://solidityscan.com/published-report/project/bb7e4d829bcdc4eb
 
 intentions     https://app.ens.domains/intentions.ungravel.eth
 
