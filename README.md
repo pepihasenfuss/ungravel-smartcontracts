@@ -22,7 +22,7 @@ Source code of this dApp (JavaScript), roughly 120k lines, highly modular, runni
 Our dApp front-end is NOT open-sourced, yet, it may be licensed with source-code to any competitor, customer,<br>
 or any other company. Sources are well-documented, this dApp is a jump-start for group-related custom<br>
 development, s.a. p2p-investing, p2p-loans, p2p-auctions, group voting. The entire dApp can be deployed on any EVM<br>
-withing 48 hours, including appr. 40 smart contracts and infrastructure. This entire dApp stack is for sale!
+withing 48 hours, including appr. 40 smart contracts and infrastructure. The entire dApp stack is for sale!
 **************************************************************************************************************<br>
 
 <br><br>
