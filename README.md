@@ -1,5 +1,5 @@
 # smartcontracts
-Ungravel is based on 7 different smart contracts and lots of proxy contracts that depend on ENS/EVM Names.
+Ungravel is mainly based on 7 different smart contracts & lots of proxy contracts that depend on ENS/UUNS/EVM Names.
 
 
 factory        https://app.ens.domains/factory.ungravel.eth
