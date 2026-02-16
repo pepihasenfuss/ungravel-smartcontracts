@@ -19,10 +19,14 @@ multicall4     https://app.ens.domains/multifour.ungravel.eth
 <br>
 **************************************************************************************************************<br>
 Source code of this dApp (JavaScript), roughly 120k lines, highly modular, running live on 22+ EVMs.<br>
-Our dApp front-end is NOT open-sourced, yet, it may be licensed with source-code to any competitor, customer,<br>
-or any other company. Sources are well-documented, this dApp is a jump-start for group-related custom<br>
-development, s.a. p2p-investing, p2p-loans, p2p-auctions, group voting. The entire dApp can be deployed on any EVM<br>
-withing 48 hours, including appr. 40 smart contracts and infrastructure. The entire dApp stack is for sale!
+Our dApp front-end is NOT open-sourced, yet, it may be licensed including source-code to any competitor, customer,<br>
+or to any company. Sources are well-documented, this dApp is a jump-start for group-related custom<br>
+development, s.a. p2p-investing, p2p-loans, p2p-auctions, group voting, mobile wallets, group wallets. <br>
+The entire dApp can be deployed on any EVM withing 48 hours, including appr. 40 smart contracts & infrastructure.<br>
+The entire dApp stack is for sale!
+The Lead Developer, the main architect of almost 1 decade of man work that went into our product stack,<br>
+is applying to support integration & customization into your environment. He will manage the transition from our <br>
+internal repository into your github or repository to jump-start your product, soon!
 **************************************************************************************************************<br>
 
 <br><br>
