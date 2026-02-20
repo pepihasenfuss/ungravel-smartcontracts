@@ -36,14 +36,14 @@ http://arbitrum.ungravel.org arbitrum                  ( super fast and really g
 
 http://polygon.ungravel.org polygon                    ( live on mainnet, fast )
 
+http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
+
 http://ethereum.ungravel.org ethereum mainnet          ( too expensive, slow )
 
 
 <br><br>
 
 Ungravel - other chains - ask to get access - all are live, yet discontinued ***
-
- http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
 
  http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
 
