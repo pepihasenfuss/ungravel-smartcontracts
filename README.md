@@ -12,7 +12,7 @@ Ungravel is mainly based on 7 major smart contracts & lots of proxy contracts th
 
 "intentions" === Intentions collects Letters of Intent (LOI), investment activities and successful Funding Auctions. Computes market caps. <br> https://app.ens.domains/intentions.ungravel.eth audit https://solidityscan.com/published-report/block/dd2953a74c465986 <br>
 
-"globalShares" === Ungravel Global provides liquidity to Ungravel Groups & paying grants & converting group shares. Token contract "UNGRAVELS" for investing into the "space". <br> https://app.ens.domains/global.ungravel.eth audit https://solidityscan.com/published-report/block/9aa443e675c65972 <br>
+"globalShares" === Ungravel Global provides liquidity to Ungravel Groups & paying grants & converting group shares. Token contract "UNGRAVELS" for investing into the "space". Main "market" for VCs to buy GlobalShares or the sell them again. <br> https://app.ens.domains/global.ungravel.eth audit https://solidityscan.com/published-report/block/9aa443e675c65972 <br>
 
 "multicall4" === Custom MultiCall4 contract to batch ChainScript commands. Tackles MEV related risks while batching. <br> https://app.ens.domains/multifour.ungravel.eth <br>
 
