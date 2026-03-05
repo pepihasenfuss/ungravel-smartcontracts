@@ -16,6 +16,8 @@ globalShares   https://app.ens.domains/global.ungravel.eth audit https://solidit
 
 multicall4     https://app.ens.domains/multifour.ungravel.eth
 
+BiddingProxy   https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code audit xxx
+
 <br>
 **************************************************************************************************************<br>
 Source code of this dApp (JavaScript), roughly 120k lines, highly modular, live on 22+ EVM chains.<br>
