@@ -4,7 +4,7 @@ Ungravel is mainly based on 7 different smart contracts & lots of proxy contract
 
 "factory"        GroupWalletFactory is the main entry point for Ungravel Groups. <br> https://app.ens.domains/factory.ungravel.eth audit https://solidityscan.com/published-report/block/b24929666392ddec
 
-"gwallet"        https://app.ens.domains/gwallet.ungravel.eth audit https://solidityscan.com/published-report/block/47355066d8afb97f
+"gwallet"        GroupWalletMaster organizes group assets and group voting by majority decision. <br> https://app.ens.domains/gwallet.ungravel.eth audit https://solidityscan.com/published-report/block/47355066d8afb97f
 
 tokenMaster    https://app.ens.domains/tokenmaster.ungravel.eth audit https://solidityscan.com/published-report/block/846b64b874c2b652
 
