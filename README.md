@@ -6,7 +6,7 @@ factory        https://app.ens.domains/factory.ungravel.eth
 
 gwallet        https://app.ens.domains/gwallet.ungravel.eth
 
-tokenMaster    https://app.ens.domains/tokenmaster.ungravel.eth
+tokenMaster    https://app.ens.domains/tokenmaster.ungravel.eth audit https://solidityscan.com/published-report/block/846b64b874c2b652
 
 auctionMaster  https://app.ens.domains/auctionmaster.ungravel.eth audit https://solidityscan.com/published-report/project/bb7e4d829bcdc4eb
 
