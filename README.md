@@ -19,8 +19,8 @@ multicall4     https://app.ens.domains/multifour.ungravel.eth
 <br>
 Proxies / Bidding / Auctions
 <br>
-BiddingProxy   https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code proxy external biddings = groups invest into groups     audit xxx <br>
-IntDeedProxy   https://stablescan.xyz/address/0x13ba99b5f14d2937d188d1ebff0d2b9d6b20e968#code proxy internal biddings = members invest into own group audit xxx <br>
+BiddingProxy   https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code proxy external biddings = groups invest into groups     audit xxx <br><br>
+IntDeedProxy   https://stablescan.xyz/address/0x13ba99b5f14d2937d188d1ebff0d2b9d6b20e968#code proxy internal biddings = members invest into own group audit xxx <br><br>
 
 <br>
 **************************************************************************************************************<br>
