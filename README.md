@@ -8,11 +8,11 @@ gwallet        https://app.ens.domains/gwallet.ungravel.eth
 
 tokenMaster    https://app.ens.domains/tokenmaster.ungravel.eth
 
-auctionMaster  https://app.ens.domains/auctionmaster.ungravel.eth <br>audit https://solidityscan.com/published-report/project/bb7e4d829bcdc4eb
+auctionMaster  https://app.ens.domains/auctionmaster.ungravel.eth audit https://solidityscan.com/published-report/project/bb7e4d829bcdc4eb
 
 intentions     https://app.ens.domains/intentions.ungravel.eth
 
-globalShares   https://app.ens.domains/global.ungravel.eth <br>audit https://solidityscan.com/published-report/block/9aa443e675c65972
+globalShares   https://app.ens.domains/global.ungravel.eth audit https://solidityscan.com/published-report/block/9aa443e675c65972
 
 multicall4     https://app.ens.domains/multifour.ungravel.eth
 
