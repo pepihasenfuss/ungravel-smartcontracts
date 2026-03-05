@@ -1,5 +1,5 @@
 # smartcontracts
-Ungravel is mainly based on 7 different smart contracts & lots of proxy contracts that depend on ENS/UUNS/EVM Names.
+Ungravel is mainly based on 7 major smart contracts & lots of proxy contracts that build on top of ENS/UUNS/EVM Names.
 
 
 "factory" ===       GroupWalletFactory is the main entry point for Ungravel Groups. <br> https://app.ens.domains/factory.ungravel.eth audit https://solidityscan.com/published-report/block/b24929666392ddec <br>
