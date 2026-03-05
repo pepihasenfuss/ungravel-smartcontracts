@@ -50,6 +50,8 @@ http://bscmain.ungravel.org binance                    ( live on mainnet, super 
 
 http://ethereum.ungravel.org ethereum mainnet          ( too expensive, slow )
 
+http://gnosis.ungravel.org gnosis                      ( super cheap, a bit like a testchain )
+
 
 <br><br>
 
@@ -66,8 +68,6 @@ Ungravel - other chains - ask to get access - all are live, yet discontinued ***
  http://scroll.ungravel.org scroll                      ( zk-roll-up SCROLL, pretty fast )
 
  http://optimism.ungravel.org optimism                  ( I cannot get enough test ether! Otherwise fast )
-
- http://gnosis.ungravel.org gnosis                      ( super cheap, a bit like a testchain )
 
  https://www.ungravel.com/?bd?64  taiko                 ( faster since the chain upgrade )
 
