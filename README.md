@@ -16,6 +16,8 @@ globalShares   https://app.ens.domains/global.ungravel.eth audit https://solidit
 
 multicall4     https://app.ens.domains/multifour.ungravel.eth
 
+<br>
+
 BiddingProxy   https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code proxy external biddings = groups invest into groups     audit xxx
 IntDeedProxy   https://stablescan.xyz/address/0x13ba99b5f14d2937d188d1ebff0d2b9d6b20e968#code proxy internal biddings = members invest into own group audit xxx
 
