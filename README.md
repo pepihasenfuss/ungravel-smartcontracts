@@ -26,7 +26,7 @@ intDeedMaster  https://stablescan.xyz/address/0x1f602e77581eef054514af158c1c69ad
 
 <br>
 **************************************************************************************************************<br>
-Source code of this dApp (JavaScript), roughly 120k lines, highly modular, live on 22+ EVM chains.<br>
+Source code of this dApp (JavaScript), roughly 120k lines, highly modular, live on 23+ EVM chains.<br>
 Our dApp front-end is NOT open-sourced, it may be licensed including source-code - for your chain.<br>
 **************************************************************************************************************<br>
 
