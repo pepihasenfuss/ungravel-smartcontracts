@@ -14,7 +14,7 @@ Ungravel is mainly based on 7 major smart contracts & lots of proxy contracts th
 
 "globalShares" === Ungravel Global provides liquidity to Ungravel Groups & paying grants & converting group shares. Token contract "UNGRAVELS" for investing into the "space". <br> https://app.ens.domains/global.ungravel.eth audit https://solidityscan.com/published-report/block/9aa443e675c65972 <br>
 
-"multicall4" === Custom MultiCall4 contract to batch ChainScript commands. <br> https://app.ens.domains/multifour.ungravel.eth <br>
+"multicall4" === Custom MultiCall4 contract to batch ChainScript commands. Tackles MEV related risks while batching. <br> https://app.ens.domains/multifour.ungravel.eth <br>
 
 <br>
 Proxies / Bidding / Auctions
