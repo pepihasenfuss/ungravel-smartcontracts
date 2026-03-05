@@ -12,7 +12,7 @@ auctionMaster  https://app.ens.domains/auctionmaster.ungravel.eth <br>audit http
 
 intentions     https://app.ens.domains/intentions.ungravel.eth
 
-global         https://app.ens.domains/global.ungravel.eth
+globalShares   https://app.ens.domains/global.ungravel.eth <br>audit https://solidityscan.com/published-report/block/9aa443e675c65972
 
 multicall4     https://app.ens.domains/multifour.ungravel.eth
 
