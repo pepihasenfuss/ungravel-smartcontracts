@@ -8,7 +8,7 @@ Ungravel is mainly based on 7 different smart contracts & lots of proxy contract
 
 "tokenMaster" === TokenMaster enables group shares and Prepaid Accounts. <br> https://app.ens.domains/tokenmaster.ungravel.eth audit https://solidityscan.com/published-report/block/846b64b874c2b652 <br>
 
-auctionMaster  https://app.ens.domains/auctionmaster.ungravel.eth audit https://solidityscan.com/published-report/project/bb7e4d829bcdc4eb <br>
+"auctionMaster" === AuctionMaster performs safe Funding Auctions and creates BidBuckets. <br>  https://app.ens.domains/auctionmaster.ungravel.eth audit https://solidityscan.com/published-report/project/bb7e4d829bcdc4eb <br>
 
 intentions     https://app.ens.domains/intentions.ungravel.eth audit https://solidityscan.com/published-report/block/dd2953a74c465986 <br>
 
