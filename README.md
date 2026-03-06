@@ -4,7 +4,7 @@ Ungravel is mainly based on 7 major smart contracts & lots of proxy contracts th
 
 "factory" ===       GroupWalletFactory is the main entry point for Ungravel Groups. Collecting Ungravel license fees.<br> UUNS name on STABLE: "factory.ungravel.stable"  <br> explorer: https://stablescan.xyz/address/0x164b131e545ef956801a9b95db58ce66c58267ed#code <br> audit: https://solidityscan.com/published-report/block/b24929666392ddec <br>
 
-"gwallet" ===       GroupWalletMaster organizes group assets and group voting by majority decision. A Multi-Party-Vault. <br> https://app.ens.domains/gwallet.ungravel.eth audit https://solidityscan.com/published-report/block/47355066d8afb97f <br>
+"gwallet" ===       GroupWalletMaster organizes group assets and group voting by majority decision. A Multi-Party-Vault. <br> UUNS name on STABLE: "gwallet.ungravel.stable" <br> explorer: https://stablescan.xyz/address/0xe01848c6a71017f2769d5d0b0c076ad79438a277#code <br> audit: https://solidityscan.com/published-report/block/47355066d8afb97f <br>
 
 "tokenMaster" === TokenMaster enables group shares and Prepaid Accounts. For every single group. <br> https://app.ens.domains/tokenmaster.ungravel.eth audit https://solidityscan.com/published-report/block/846b64b874c2b652 <br>
 
