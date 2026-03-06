@@ -10,7 +10,7 @@ Ungravel is mainly based on 7 major smart contracts & lots of proxy contracts th
 
 "auctionMaster" === AuctionMaster performs safe Funding Auctions and deploys BidBuckets/internal deedProxies. <br> UUNS name on STABLE: "auctionmaster.ungravel.stable" <br> explorer: https://stablescan.xyz/address/0x558adbe685751bc5590e4790025e8cf09ecea4aa#code <br> audit: https://solidityscan.com/published-report/block/a878d5ff3f2aba1b <br>
 
-"intentions" === Intentions collects Letters of Intent (LOI), investment activities and successful Funding Auctions. Computes market caps. <br> https://app.ens.domains/intentions.ungravel.eth audit https://solidityscan.com/published-report/block/dd2953a74c465986 <br>
+"intentions" === Intentions collects Letters of Intent (LOI), investment activities and successful Funding Auctions. Computes market caps. <br> UUNS name on STABLE: "intentions.ungravel.stable" <br> explorer:  https://stablescan.xyz/address/0x888fb48448580dd95cac7ae29edd98dc9624cc88#code <br> audit: https://solidityscan.com/published-report/block/dd2953a74c465986 <br>
 
 "globalShares" === Ungravel Global provides liquidity to Ungravel Groups & paying grants & converting group shares. Token contract "UNGRAVELS" for investing into the "space". Main "market" for VCs to buy GlobalShares or the sell them again. <br> https://app.ens.domains/global.ungravel.eth audit https://solidityscan.com/published-report/block/9aa443e675c65972 <br>
 
