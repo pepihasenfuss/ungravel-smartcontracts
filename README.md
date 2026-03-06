@@ -24,6 +24,13 @@ Proxies for Bidding / internal & external Auction Bidding Masters - 4 contracts<
 "extDeedMaster" === master contract for external bids = master logic implementation for groups investing into other groups <br>  explorer: https://stablescan.xyz/address/0xda6196e1b9a31243ce61acc93bd8328489f02d58#code <br> audit: https://solidityscan.com/published-report/block/54eb4a1430fbfe49 <br><br>
 "intDeedMaster" === master contract for internal bids = group members deposit assets, investing into her/his/its own group, compensated with group shares <br> explorer: https://stablescan.xyz/address/0x1f602e77581eef054514af158c1c69adcbc26b61#code <br> audit: https://solidityscan.com/published-report/block/77203fbec1d4211f <br><br>
 
+
+<br><br>
+Proxies for Bidding / internal & external Auction Bidding Masters - 4 contracts<br>
+<br>
+"tokenProxy", TP === proxy for group shares, each Ungravel Group deploys a proxy for group shares <br> explorer: https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code <br> audit: https://solidityscan.com/published-report/block/3d57e1da1a09fa4e <br><br>
+"groupWalletProxy", GWP === proxy for GroupWallet, the Multi-Party-Vault proxy for voting and deciding on how to spend common group assets <br> explorer: https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code <br> audit: https://solidityscan.com/published-report/block/3d57e1da1a09fa4e <br><br>
+
 <br>
 **************************************************************************************************************<br>
 Source code of this dApp (JavaScript), roughly 120k lines, highly modular, live on 23+ EVM chains.<br>
