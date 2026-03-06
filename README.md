@@ -29,7 +29,7 @@ Proxies for Bidding / internal & external Auction Bidding Masters - 4 contracts<
 Proxies for Bidding / internal & external Auction Bidding Masters - 4 contracts<br>
 <br>
 "tokenProxy", TP === proxy for group shares, each Ungravel Group deploys a proxy for group shares <br> explorer: https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code <br> audit: https://solidityscan.com/published-report/block/3d57e1da1a09fa4e <br><br>
-"groupWalletProxy", GWP === proxy for GroupWallet, the Multi-Party-Vault proxy for voting and deciding on how to spend common group assets <br> explorer: https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code <br> audit: https://solidityscan.com/published-report/block/3d57e1da1a09fa4e <br><br>
+"groupWalletProxy", GWP === GroupWallet proxy, Multi-Party-Vault proxy for voting and deciding on how to spend common group assets <br> explorer: https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code <br> audit: https://solidityscan.com/published-report/block/3d57e1da1a09fa4e <br><br>
 
 <br>
 **************************************************************************************************************<br>
