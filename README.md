@@ -17,7 +17,7 @@ Ungravel is mainly based on 7 major smart contracts & lots of proxy contracts th
 "multicall4" === Custom MultiCall4 contract to batch ChainScript commands. Tackles MEV related risks while batching. <br> https://app.ens.domains/multifour.ungravel.eth scan https://solidityscan.com/quickscan/0xa68B1A57B1013048789B014be0d20A2Aaa16c2c4/stable/mainnet <br>
 
 <br>
-Proxies / Bidding / Auctions
+Proxies for Bidding / internal & external Auction Bidding Masters
 <br>
 BiddingProxy   https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code proxy external biddings = groups invest into groups     audit xxx <br><br>
 IntDeedProxy   https://stablescan.xyz/address/0x13ba99b5f14d2937d188d1ebff0d2b9d6b20e968#code proxy internal biddings = members invest into own group audit xxx <br><br>
