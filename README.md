@@ -19,7 +19,7 @@ Ungravel is mainly based on 7 major smart contracts & lots of proxy contracts th
 <br>
 Proxies for Bidding / internal & external Auction Bidding Masters
 <br>
-"BiddingProxy" === proxy external biddings = groups invest into groups <br> explorer: https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code <br> audit: https://solidityscan.com/published-report/block/3d57e1da1a09fa4e <br><br>
+"BiddingProxy" === proxy for external biddings = groups invest into groups, group deploys one proxy for each bid <br> explorer: https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code <br> audit: https://solidityscan.com/published-report/block/3d57e1da1a09fa4e <br><br>
 IntDeedProxy   https://stablescan.xyz/address/0x13ba99b5f14d2937d188d1ebff0d2b9d6b20e968#code proxy internal biddings = members invest into own group audit xxx <br><br>
 "extDeedMaster" === master contract for external bids = master logic implementation for groups investing into other groups <br>  explorer: https://stablescan.xyz/address/0xda6196e1b9a31243ce61acc93bd8328489f02d58#code <br> audit: https://solidityscan.com/published-report/block/54eb4a1430fbfe49 <br><br>
 "intDeedMaster" === master contract for internal bids = group members deposit assets, investing into her/his/its own group, compensated with group shares <br> explorer: https://stablescan.xyz/address/0x1f602e77581eef054514af158c1c69adcbc26b61#code <br> audit: https://solidityscan.com/published-report/block/77203fbec1d4211f <br><br>
