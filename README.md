@@ -21,7 +21,7 @@ Proxies / Bidding / Auctions
 <br>
 BiddingProxy   https://stablescan.xyz/address/0x0f65b640e0de36854c15c706560bdcfe0cfaf4bf#code proxy external biddings = groups invest into groups     audit xxx <br><br>
 IntDeedProxy   https://stablescan.xyz/address/0x13ba99b5f14d2937d188d1ebff0d2b9d6b20e968#code proxy internal biddings = members invest into own group audit xxx <br><br>
-extDeedMaster:  https://stablescan.xyz/address/0xda6196e1b9a31243ce61acc93bd8328489f02d58#code master contract for external bids = master logic for groups investing into groups audit xxx <br><br>
+extDeedMaster:  https://stablescan.xyz/address/0xda6196e1b9a31243ce61acc93bd8328489f02d58#code master contract for external bids = master logic for groups investing into groups <br> audit: https://solidityscan.com/published-report/block/54eb4a1430fbfe49 <br><br>
 intDeedMaster:  https://stablescan.xyz/address/0x1f602e77581eef054514af158c1c69adcbc26b61#code master contract for internal bids = group member deposits assets, thus investing into her own group audit xxx <br><br>
 
 <br>
