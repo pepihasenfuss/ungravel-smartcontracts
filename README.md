@@ -31,11 +31,6 @@ Proxies for group shares and group voting - 2 contracts<br>
 "tokenProxy", TP === proxy for group shares, each Ungravel Group deploys a proxy for group shares <br> explorer: https://stablescan.xyz/address/0xac6911f491f1690091dc5fc10440281e556fa039#code <br> audit: https://solidityscan.com/published-report/block/318f3db30c64726c <br><br>
 "groupWalletProxy", GWP === GroupWallet proxy, Multi-Party-Vault proxy for voting and deciding on how to spend common group assets <br> explorer: https://stablescan.xyz/address/0x504259950bc817bc75d5f2ed7c17aea7b6a63b7e#code <br> audit: https://solidityscan.com/published-report/block/9e5225bc9a68c7e4 <br><br>
 
-<br>
-**************************************************************************************************************<br>
-Source code of this dApp (JavaScript), roughly 120k lines, highly modular, live on 23+ EVM chains.<br>
-Our dApp front-end is NOT open-sourced, it may be licensed including source-code - for your chain.<br>
-**************************************************************************************************************<br>
 
 <br><br>
 
