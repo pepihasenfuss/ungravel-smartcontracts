@@ -36,7 +36,9 @@ Proxies for group shares and group voting - 2 contracts<br>
 
 Ungravel live installation on mainnet chains:
 
-http://www.ungravel.lat/?bd?194?first                  ( STABLE - native USDT - mainnet! )
+http://gnosis.ungravel.org gnosis                      ( super cheap, important in LATAM )
+
+http://www.ungravel.lat/?bd?194?first                  ( STABLE - native USDT mainnet, paywall! )
 
 http://www.ungravel.lat/?bd?204                        ( PLASMA - XPL / USDT - mainnet )
 
@@ -51,8 +53,6 @@ http://polygon.ungravel.org polygon                    ( live on mainnet, fast )
 http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
 
 http://ethereum.ungravel.org ethereum mainnet          ( too expensive, slow )
-
-http://gnosis.ungravel.org gnosis                      ( super cheap, a bit like a testchain )
 
 
 <br><br>
