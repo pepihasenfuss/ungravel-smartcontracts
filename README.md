@@ -62,6 +62,8 @@ http://avalanche.ungravel.org avalanche                ( level-2 chain / mainnet
 
 http://unichain.ungravel.org unichain                  ( very fast )
 
+http://optimism.ungravel.org optimism                  ( I cannot get test ether! Otherwise fast. )
+
 
 <br><br>
 
@@ -72,8 +74,6 @@ Ungravel - other chains - ask to get access - all are live, yet discontinued ***
  http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
 
  http://scroll.ungravel.org scroll                      ( zk-roll-up SCROLL, pretty fast )
-
- http://optimism.ungravel.org optimism                  ( I cannot get enough test ether! Otherwise fast )
 
  https://www.ungravel.com/?bd?64  taiko                 ( faster since the chain upgrade )
 
