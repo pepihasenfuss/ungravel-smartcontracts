@@ -58,16 +58,16 @@ http://bscmain.ungravel.org binance                    ( live on mainnet, super 
 
 http://ethereum.ungravel.org ethereum mainnet          ( too expensive, slow )
 
+http://avalanche.ungravel.org avalanche                ( level-2 chain / mainnet )
+
+http://unichain.ungravel.org unichain                  ( very fast )
+
 
 <br><br>
 
 Ungravel - other chains - ask to get access - all are live, yet discontinued ***
 
  http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
-
- http://avalanche.ungravel.org avalanche                ( level-2 chain )
-
- http://unichain.ungravel.org unichain                  ( very fast )
 
  http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
 
