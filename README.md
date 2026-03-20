@@ -36,6 +36,8 @@ Proxies for group shares and group voting - 2 contracts<br>
 
 Ungravel live installation on mainnet chains:
 
+http://hyper.ungravel.org hyper                        ( HyperLiquid EVM )
+
 http://gnosis.ungravel.org gnosis                      ( super cheap, important in LATAM )
 
 http://www.ungravel.lat/?bd?194?first                  ( STABLE - native USDT mainnet, paywall! )
