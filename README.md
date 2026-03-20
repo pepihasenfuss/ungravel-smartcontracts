@@ -40,6 +40,8 @@ http://hyper.ungravel.org hyper                        ( HyperLiquid EVM )
 
 http://gnosis.ungravel.org gnosis                      ( super cheap, important in LATAM )
 
+http://stable.ungravel.org stable                      ( STABLE mainnet )
+
 http://www.ungravel.lat/?bd?194?first                  ( STABLE - native USDT mainnet, paywall! )
 
 http://www.ungravel.lat/?bd?204                        ( PLASMA - XPL / USDT - mainnet )
