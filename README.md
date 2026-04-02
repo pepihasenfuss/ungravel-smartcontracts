@@ -35,7 +35,7 @@ Proxies for group shares and group voting - 2 contracts<br>
 
 <br><br>
 
-Ungravel live installation on mainnet chains:
+Ungravel live installations on EVM mainnet chains:
 
 http://kaia.ungravel.org kaia                          ( KAIA stablecoin mainnet )
 
