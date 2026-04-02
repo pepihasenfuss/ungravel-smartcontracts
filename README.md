@@ -1,6 +1,6 @@
 # smartcontracts
 Ungravel is mainly based on 7 major smart contracts & lots of proxy contracts that build on top of ENS/UUNS/EVM Names.
-The following audits have been applied on STABLE mainnet, but (almost) the same Solidity code is live on all other 25+ EVMs. <br>
+The following audits have been applied & published on STABLE mainnet, but (almost) the same Solidity code is live on all other 25+ EVMs. <br>
 
 
 #1 "factory" ===       GroupWalletFactory is the main entry point for Ungravel Groups. Collecting Ungravel license fees.<br> UUNS name on STABLE: "factory.ungravel.stable"  <br> explorer: https://stablescan.xyz/address/0x164b131e545ef956801a9b95db58ce66c58267ed#code <br> audit: https://solidityscan.com/published-report/block/b24929666392ddec <br> <br>
