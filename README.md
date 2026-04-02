@@ -96,7 +96,7 @@ Ungravel - other chains - ask to get access - all are live, yet discontinued ***
 <br><br>
 
 
-STABLE.xyz mainnet<br>
+STABLE.xyz mainnet === ungravel.stable<br>
 
 
  <a href="https://stablescan.xyz/address/0x2ae1f932718da8157a8c27a926dbbbfeae668259#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> <a href="https://solidityscan.com/quickscan/0x2ae1f932718da8157a8c27a926dbbbfeae668259/stable/mainnet" target="_blank" style="color:#6892ed;font-weight:500;">solid</a> registryAddresses [0x2ae1f932718da8157a8c27a926dbbbfeae668259]<br> 
@@ -139,7 +139,7 @@ STABLE.xyz mainnet<br>
 <br><br>
 
 
-arc-testnet - ARC<br>
+arc-testnet - ARC === ungravel.arc<br>
 
 
 <a href="https://testnet.arcscan.app/address/0x60f3c3fda90dd75b999b2aacc4f216be4a8c9d3a?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> <a href="https://repo.sourcify.dev/5042002/0x60f3c3fda90dd75b999b2aacc4f216be4a8c9d3a" target="_blank" style="color:#6892ed;font-weight:500;">repo</a> registryAddresses [0x60f3c3fda90dd75b999b2aacc4f216be4a8c9d3a]<br>
@@ -188,7 +188,7 @@ arc-testnet - ARC<br>
 
 <br><br>
 
-kaia <br>
+kaia mainnet === ungravel.kaia<br>
 
 <a href="https://kaiascan.io/address/0xaa8499cd38ba0b6c122523ee7b41f29733aaf08e?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0xaa8499cd38ba0b6c122523ee7b41f29733aaf08e]<br>
 <a href="https://kaiascan.io/address/0x372dfbe5f4ee377e83e843cdadb27e376e0592dc?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x372dfbe5f4ee377e83e843cdadb27e376e0592dc]<br>
@@ -234,7 +234,7 @@ kaia <br>
 
 
 
-mainnet - ungravel.eth<br>
+mainnet - ETHEREUM === ungravel.eth<br>
 
 
 <a href="https://etherscan.io/address/0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> <a href="https://repo.sourcify.dev/1/0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e" target="_blank" style="color:#6892ed;font-weight:500;">repo</a> <a href="https://solidityscan.com/quickscan/0x00000000000c2e074ec69a0dfb2997ba6c7d2e1e/etherscan/mainnet" target="_blank" style="color:#6892ed;font-weight:500;">solid</a> registryAddresses [0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e]<br>
