@@ -45,7 +45,7 @@ http://gnosis.ungravel.org gnosis                      ( super cheap, important 
 
 http://stable.ungravel.org stable                      ( STABLE mainnet )
 
-http://www.ungravel.lat/?bd?194?first                  ( STABLE - native USDT mainnet, paywall! )
+http://www.ungravel.lat/?bd?194?first                  ( STABLE - native USDT mainnet, Paypal paywall )
 
 http://www.ungravel.lat/?bd?204                        ( PLASMA - XPL / USDT - mainnet )
 
