@@ -36,6 +36,8 @@ Proxies for group shares and group voting - 2 contracts<br>
 
 Ungravel live installation on mainnet chains:
 
+http://kaia.ungravel.org kaia                          ( KAIA stablecoin mainnet )
+
 http://hyper.ungravel.org hyper                        ( HyperLiquid EVM )
 
 http://gnosis.ungravel.org gnosis                      ( super cheap, important in LATAM )
@@ -64,6 +66,8 @@ http://unichain.ungravel.org unichain                  ( very fast )
 
 http://optimism.ungravel.org optimism                  ( I cannot get test ether! Otherwise fast. )
 
+http://scroll.ungravel.org scroll                      ( zk-roll-up SCROLL, pretty fast )
+
 
 <br><br>
 
@@ -72,8 +76,6 @@ Ungravel - other chains - ask to get access - all are live, yet discontinued ***
  http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
 
  http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
-
- http://scroll.ungravel.org scroll                      ( zk-roll-up SCROLL, pretty fast )
 
  https://www.ungravel.com/?bd?64  taiko                 ( faster since the chain upgrade )
 
