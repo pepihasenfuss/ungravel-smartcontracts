@@ -188,6 +188,51 @@ arc-testnet - ARC<br>
 
 <br><br>
 
+kaia <br>
+
+<a href="https://kaiascan.io/address/0xaa8499cd38ba0b6c122523ee7b41f29733aaf08e?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0xaa8499cd38ba0b6c122523ee7b41f29733aaf08e]<br>
+<a href="https://kaiascan.io/address/0x372dfbe5f4ee377e83e843cdadb27e376e0592dc?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x372dfbe5f4ee377e83e843cdadb27e376e0592dc]<br>
+<a href="https://kaiascan.io/address/0xa222540ceac5dc28460bc8554646d833fda2e10c?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0xa222540ceac5dc28460bc8554646d833fda2e10c]<br>
+<a href="https://kaiascan.io/address/0x20c43ecfb55176caeffa693e6f76977021df91df?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0x20c43ecfb55176caeffa693e6f76977021df91df]<br>
+<a href="https://kaiascan.io/address/0x5b618fcf47afcf06a654394d5164d6ed35045b01?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> extDeedMaster [0x5b618fcf47afcf06a654394d5164d6ed35045b01]<br>
+<a href="https://kaiascan.io/address/0x647bec4a7d5098e5cd3eb79ebd9354c61b3219d9?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intDeedMaster [0x647bec4a7d5098e5cd3eb79ebd9354c61b3219d9]<br>
+<a href="https://kaiascan.io/address/0x6f6cb58e1aec63130b4f937ee7052f4970da4549?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0x6f6cb58e1aec63130b4f937ee7052f4970da4549]<br>
+<a href="https://kaiascan.io/address/0x6e720f0f882ef04db76282b71f59f4e28f2f39ae?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0x6e720f0f882ef04db76282b71f59f4e28f2f39ae]<br>
+<a href="https://kaiascan.io/address/0xd6d08bd18e814e92ecf69d492fc0a4f822658db1?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0xd6d08bd18e814e92ecf69d492fc0a4f822658db1]<br>
+<a href="https://kaiascan.io/address/0x1ee35f96b80d40c00e4725c773edcbcd0dcc0306?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0x1ee35f96b80d40c00e4725c773edcbcd0dcc0306]<br>
+<a href="https://kaiascan.io/address/0x58b5a738d2e263f1588a3ba6123cdfda517df9a6?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0x58b5a738d2e263f1588a3ba6123cdfda517df9a6]<br>
+<a href="https://kaiascan.io/address/0xee47eb57b777ecc66ea1ea92378bbbd0c1af884f?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0xee47eb57b777ecc66ea1ea92378bbbd0c1af884f]<br>
+<a href="https://kaiascan.io/address/0x8a76dbdeaba77b6dca26fd52a04546881171311c?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0x8a76dbdeaba77b6dca26fd52a04546881171311c]<br>
+<a href="https://kaiascan.io/address/0xdfc47977b8de864aafe85c53028c3c777dc432de?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0xdfc47977b8de864aafe85c53028c3c777dc432de]<br>
+<a href="https://kaiascan.io/address/0x827ad71b2118225eeea9e3ed36ac7b2900d82633?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0x827ad71b2118225eeea9e3ed36ac7b2900d82633]<br>
+<a href="https://kaiascan.io/address/0x03ebf0882401ca3e5bd506fc87cdb99f71ff6d1f?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0x03ebf0882401ca3e5bd506fc87cdb99f71ff6d1f]<br>
+<a href="https://kaiascan.io/address/0x575ffdffb6b322b5d28b3c0edeccba24020102c8?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0x575ffdffb6b322b5d28b3c0edeccba24020102c8]<br>
+<a href="https://kaiascan.io/address/0xb24a8c178cf81d35e38683012e786e3231cb950b?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0xb24a8c178cf81d35e38683012e786e3231cb950b]<br>
+<a href="https://kaiascan.io/address/0x8f314a485b6a95836bf745c8b73a54458f5783df?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0x8f314a485b6a95836bf745c8b73a54458f5783df]<br>
+<a href="https://kaiascan.io/address/0x2c804ca3604771eb71210736f9cab91c984b57ea?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0x2c804ca3604771eb71210736f9cab91c984b57ea]<br>
+<a href="https://kaiascan.io/address/0xeb9a1effe5bd833dfaefb761b59ddec33370bc04?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0xeb9a1effe5bd833dfaefb761b59ddec33370bc04]<br>
+<a href="https://kaiascan.io/address/0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7]<br>
+<a href="https://kaiascan.io/address/0xeb2027f460cfa975c1eb0340068a6d100a75a1ba?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0xeb2027f460cfa975c1eb0340068a6d100a75a1ba]<br>
+<a href="https://kaiascan.io/address/0x4ed0a0cc6a2c8f7aa2bca7e8f0a704eb76347260?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0x4ed0a0cc6a2c8f7aa2bca7e8f0a704eb76347260]<br>
+<a href="https://kaiascan.io/address/0x38b3fa728cc12b6d92fa753bad22294588c6a3a1?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0x38b3fa728cc12b6d92fa753bad22294588c6a3a1]<br>
+<a href="https://kaiascan.io/address/0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d]<br>
+<a href="https://kaiascan.io/address/0x889bfd39342feabfdb18b649131e2e2e28b92a2e?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x889bfd39342feabfdb18b649131e2e2e28b92a2e]<br>
+<a href="https://kaiascan.io/address/0xa77c4ba3cf1ef9f654676445aa1798370d0a0b61?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0xa77c4ba3cf1ef9f654676445aa1798370d0a0b61]<br>
+<a href="https://kaiascan.io/address/0x18a90dccfd140aba71299334a16a8c4a3309e39f?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0x18a90dccfd140aba71299334a16a8c4a3309e39f]<br>
+<a href="https://kaiascan.io/address/0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f]<br>
+<a href="https://kaiascan.io/address/0xc39afb9d7648256f6a706868c908896e079510c1?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0xc39afb9d7648256f6a706868c908896e079510c1]<br>
+<a href="https://kaiascan.io/address/0x1effb9ab223c4ea18e11927bac0ef4fddda89671?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0x1effb9ab223c4ea18e11927bac0ef4fddda89671]<br>
+<a href="https://kaiascan.io/address/0x1e2803c47532a31d1282c65589644670e0675a26?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0x1e2803c47532a31d1282c65589644670e0675a26]<br>
+<a href="https://kaiascan.io/address/0xff644a703ecb2f7c67d5a27e544c9873e5414bdb?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0xff644a703ecb2f7c67d5a27e544c9873e5414bdb]<br>
+<a href="https://kaiascan.io/address/0x888fb48448580dd95cac7ae29edd98dc9624cc88?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x888fb48448580dd95cac7ae29edd98dc9624cc88]<br>
+<a href="https://kaiascan.io/address/0x86dced891a0349b42b24b0b912553863dfed69e5?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0x86dced891a0349b42b24b0b912553863dfed69e5]<br>
+<a href="https://kaiascan.io/address/0xb495a08d5baf7bb96de3acc2b82f180c944bb5f0?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0xb495a08d5baf7bb96de3acc2b82f180c944bb5f0]<br>
+<a href="https://kaiascan.io/address/0x0000000000000000000000000000000000000000?tabId=contract&page=1" target="_blank" style="color:#6892ed;font-weight:500;">url</a> swapRouter [0x0000000000000000000000000000000000000000]<br>
+
+
+<br><br>
+
+
 
 mainnet - ungravel.eth<br>
 
