@@ -277,6 +277,48 @@ hyper - HyperLiquid mainnet === ungravel.hyper<br>
 
 <br><br>
 
+plasma mainnet === ungrvel.plasma<br>
+
+<a href="https://plasmaexplorer.com/address/0xd6d08bd18e814e92ecf69d492fc0a4f822658db1/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0xd6d08bd18e814e92ecf69d492fc0a4f822658db1]<br>
+<a href="https://plasmaexplorer.com/address/0x95f44acd7dca92fdd5652e634c29daf3a06101f6/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x95f44acd7dca92fdd5652e634c29daf3a06101f6]<br>
+<a href="https://plasmaexplorer.com/address/0xc90e88e9019c985a155c996e05903605d1995cb6/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0xc90e88e9019c985a155c996e05903605d1995cb6]<br>
+<a href="https://plasmaexplorer.com/address/0xb8d5f6005e8e3e9cbcc2c349c256084a861874dd/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0xb8d5f6005e8e3e9cbcc2c349c256084a861874dd]<br>
+<a href="https://plasmaexplorer.com/address/0xdc0bbc3b04d6d052b3eeed8c25235967bbcf2c56/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> extDeedMaster [0xdc0bbc3b04d6d052b3eeed8c25235967bbcf2c56]<br>
+<a href="https://plasmaexplorer.com/address/0xf45a3010daf068965122dcf95e5791914e2c1bd0/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intDeedMaster [0xf45a3010daf068965122dcf95e5791914e2c1bd0]<br>
+<a href="https://plasmaexplorer.com/address/0x1e2803c47532a31d1282c65589644670e0675a26/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0x1e2803c47532a31d1282c65589644670e0675a26]<br>
+<a href="https://plasmaexplorer.com/address/0x3033edfcc0424743a9cbdcff91771a75990539e9/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0x3033edfcc0424743a9cbdcff91771a75990539e9]<br>
+<a href="https://plasmaexplorer.com/address/0x42f136303a16281d17be4a8c338ddd2fb357a337/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0x42f136303a16281d17be4a8c338ddd2fb357a337]<br>
+<a href="https://plasmaexplorer.com/address/0x21f71275edb2e8bbac49975b3b7999005340f7ff/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0x21f71275edb2e8bbac49975b3b7999005340f7ff]<br>
+<a href="https://plasmaexplorer.com/address/0x1ee35f96b80d40c00e4725c773edcbcd0dcc0306/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0x1ee35f96b80d40c00e4725c773edcbcd0dcc0306]<br>
+<a href="https://plasmaexplorer.com/address/0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0x8f8cb580eb98d749bd3ad0c402fc789ab42ba502]<br>
+<a href="https://plasmaexplorer.com/address/0xea5ef72bfda032f440f8ae0dc9b06435938e6472/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0xea5ef72bfda032f440f8ae0dc9b06435938e6472]<br>
+<a href="https://plasmaexplorer.com/address/0xbd1b249bd6ebb59ee203d132f6d9167a66c0a496/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0xbd1b249bd6ebb59ee203d132f6d9167a66c0a496]<br>
+<a href="https://plasmaexplorer.com/address/0x375a965329cca6be5b4a4b736659c0f7cd19899d/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0x375a965329cca6be5b4a4b736659c0f7cd19899d]<br>
+<a href="https://plasmaexplorer.com/address/0xa0ff5708c58c3ff12e6fdb0d7caa4b22cfa2b38b/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0xa0ff5708c58c3ff12e6fdb0d7caa4b22cfa2b38b]<br>
+<a href="https://plasmaexplorer.com/address/0x78dcd24552c21d81741fe95b103648cb7d8b3213/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0x78dcd24552c21d81741fe95b103648cb7d8b3213]<br>
+<a href="https://plasmaexplorer.com/address/0xf6b64dfeb46ce2b1793d03e070bd44510e02d116/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0xf6b64dfeb46ce2b1793d03e070bd44510e02d116]<br>
+<a href="https://plasmaexplorer.com/address/0x9fba5f9e6c5a703731bc9e7bddaf8c33caa7cbe9/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0x9fba5f9e6c5a703731bc9e7bddaf8c33caa7cbe9]<br>
+<a href="https://plasmaexplorer.com/address/0x96750a75376f4393ba02c5e1066aed232cb65b6c/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0x96750a75376f4393ba02c5e1066aed232cb65b6c]<br>
+<a href="https://plasmaexplorer.com/address/0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d]<br>
+<a href="https://plasmaexplorer.com/address/0xb24a8c178cf81d35e38683012e786e3231cb950b/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0xb24a8c178cf81d35e38683012e786e3231cb950b]<br>
+<a href="https://plasmaexplorer.com/address/0x2c804ca3604771eb71210736f9cab91c984b57ea/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0x2c804ca3604771eb71210736f9cab91c984b57ea]<br>
+<a href="https://plasmaexplorer.com/address/0xeb9a1effe5bd833dfaefb761b59ddec33370bc04/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0xeb9a1effe5bd833dfaefb761b59ddec33370bc04]<br>
+<a href="https://plasmaexplorer.com/address/0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7]<br>
+<a href="https://plasmaexplorer.com/address/0x5164ab7725bc1f58ff2b63b6cbbb2d5d8c5f056c/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x5164ab7725bc1f58ff2b63b6cbbb2d5d8c5f056c]<br>
+<a href="https://plasmaexplorer.com/address/0x4ef8b6b810dfb4f12b64647b3d96719ac1ebb127/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x4ef8b6b810dfb4f12b64647b3d96719ac1ebb127]<br>
+<a href="https://plasmaexplorer.com/address/0x7afb57b4419487210e2406e6b16f93e7b377a3d2/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0x7afb57b4419487210e2406e6b16f93e7b377a3d2]<br>
+<a href="https://plasmaexplorer.com/address/0x4de73b65f4de780a03dd87e0063012846892f68b/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0x4de73b65f4de780a03dd87e0063012846892f68b]<br>
+<a href="https://plasmaexplorer.com/address/0xafe96ad86a9b10834cb02ebe083c4044e27be623/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0xafe96ad86a9b10834cb02ebe083c4044e27be623]<br>
+<a href="https://plasmaexplorer.com/address/0x6e720f0f882ef04db76282b71f59f4e28f2f39ae/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0x6e720f0f882ef04db76282b71f59f4e28f2f39ae]<br>
+<a href="https://plasmaexplorer.com/address/0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f]<br>
+<a href="https://plasmaexplorer.com/address/0xd7bfbc6cd9da96041ac87e504954489bebdebcb7/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0xd7bfbc6cd9da96041ac87e504954489bebdebcb7]<br>
+<a href="https://plasmaexplorer.com/address/0xd1f01d6e20059098f95a06e130ff462f153423af/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0xd1f01d6e20059098f95a06e130ff462f153423af]<br>
+<a href="https://plasmaexplorer.com/address/0x90b1d8faac4f1a31a68013277c5f273ef4f5f7f4/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x90b1d8faac4f1a31a68013277c5f273ef4f5f7f4]<br>
+<a href="https://plasmaexplorer.com/address/0xb4663dbd3b73466e101b05a25ebd443bb45d9945/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0xb4663dbd3b73466e101b05a25ebd443bb45d9945]<br>
+<a href="https://plasmaexplorer.com/address/0x888fb48448580dd95cac7ae29edd98dc9624cc88/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0x888fb48448580dd95cac7ae29edd98dc9624cc88]<br>
+<a href="https://plasmaexplorer.com/address/0x0000000000000000000000000000000000000000/contract/9745/code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> swapRouter [0x0000000000000000000000000000000000000000]<br>
+
+<br><br>
 
 
 
