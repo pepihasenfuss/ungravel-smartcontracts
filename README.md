@@ -92,6 +92,7 @@ Ungravel - other chains - ask to get access - all are live, yet discontinued ***
 
  http://www.ungravel.com/?bd?35                         ( sepolia - very slow - deprecated )
 
+ https://www.ungravel.com/?bd?224                       ( PHAROS - atlantic testnet - deprecated: Impossible to get enough PHRS )
 
 <br><br>
 
