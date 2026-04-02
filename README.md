@@ -233,6 +233,51 @@ kaia mainnet === ungravel.kaia<br>
 
 <br><br>
 
+hyper - HyperLiquid mainnet === ungravel.hyper<br>
+
+<a href="https://hyperevmscan.io/address/0x58b5a738d2e263f1588a3ba6123cdfda517df9a6#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x58b5a738d2e263f1588a3ba6123cdfda517df9a6]<br>
+<a href="https://hyperevmscan.io/address/0x438f87d4e2be50f79ba975ebb3381b42e70360d1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x438f87d4e2be50f79ba975ebb3381b42e70360d1]<br>
+<a href="https://hyperevmscan.io/address/0x827ad71b2118225eeea9e3ed36ac7b2900d82633#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0x827ad71b2118225eeea9e3ed36ac7b2900d82633]<br>
+<a href="https://hyperevmscan.io/address/0x20c43ecfb55176caeffa693e6f76977021df91df#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0x20c43ecfb55176caeffa693e6f76977021df91df]<br>
+<a href="https://hyperevmscan.io/address/0x5b618fcf47afcf06a654394d5164d6ed35045b01#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> extDeedMaster [0x5b618fcf47afcf06a654394d5164d6ed35045b01]<br>
+<a href="https://hyperevmscan.io/address/0x647bec4a7d5098e5cd3eb79ebd9354c61b3219d9#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intDeedMaster [0x647bec4a7d5098e5cd3eb79ebd9354c61b3219d9]<br>
+<a href="https://hyperevmscan.io/address/0x1f5fc6d81edeec54e4708b98ede09eea74287629#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0x1f5fc6d81edeec54e4708b98ede09eea74287629]<br>
+<a href="https://hyperevmscan.io/address/0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f]<br>
+<a href="https://hyperevmscan.io/address/0x82301243198e208b90e1bbfe3d134d0c4a86c2b1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0x82301243198e208b90e1bbfe3d134d0c4a86c2b1]<br>
+<a href="https://hyperevmscan.io/address/0x42f136303a16281d17be4a8c338ddd2fb357a337#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0x42f136303a16281d17be4a8c338ddd2fb357a337]<br>
+<a href="https://hyperevmscan.io/address/0xee47eb57b777ecc66ea1ea92378bbbd0c1af884f#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0xee47eb57b777ecc66ea1ea92378bbbd0c1af884f]<br>
+<a href="https://hyperevmscan.io/address/0x001e8c75e9ec330f397f76fcad1a910735be4946#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0x001e8c75e9ec330f397f76fcad1a910735be4946]<br>
+<a href="https://hyperevmscan.io/address/0xdfc47977b8de864aafe85c53028c3c777dc432de#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0xdfc47977b8de864aafe85c53028c3c777dc432de]<br>
+<a href="https://hyperevmscan.io/address/0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc]<br>
+<a href="https://hyperevmscan.io/address/0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8]<br>
+<a href="https://hyperevmscan.io/address/0xc0a39e40ed07e435868caf4c408dc857906a0fda#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0xc0a39e40ed07e435868caf4c408dc857906a0fda]<br>
+<a href="https://hyperevmscan.io/address/0x7255fc0384f58d875946aba8956028ef2906ffb3#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0x7255fc0384f58d875946aba8956028ef2906ffb3]<br>
+<a href="https://hyperevmscan.io/address/0x2c804ca3604771eb71210736f9cab91c984b57ea#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0x2c804ca3604771eb71210736f9cab91c984b57ea]<br>
+<a href="https://hyperevmscan.io/address/0x01a44aa667d0000d5ee30145f12d7069f5595bd5#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0x01a44aa667d0000d5ee30145f12d7069f5595bd5]<br>
+<a href="https://hyperevmscan.io/address/0xeb9a1effe5bd833dfaefb761b59ddec33370bc04#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0xeb9a1effe5bd833dfaefb761b59ddec33370bc04]<br>
+<a href="https://hyperevmscan.io/address/0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7]<br>
+<a href="https://hyperevmscan.io/address/0xeb2027f460cfa975c1eb0340068a6d100a75a1ba#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0xeb2027f460cfa975c1eb0340068a6d100a75a1ba]<br>
+<a href="https://hyperevmscan.io/address/0x4ed0a0cc6a2c8f7aa2bca7e8f0a704eb76347260#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0x4ed0a0cc6a2c8f7aa2bca7e8f0a704eb76347260]<br>
+<a href="https://hyperevmscan.io/address/0x38b3fa728cc12b6d92fa753bad22294588c6a3a1#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0x38b3fa728cc12b6d92fa753bad22294588c6a3a1]<br>
+<a href="https://hyperevmscan.io/address/0x385a20720614a15f0f33cfe542391c380340fcff#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0x385a20720614a15f0f33cfe542391c380340fcff]<br>
+<a href="https://hyperevmscan.io/address/0xb24a8c178cf81d35e38683012e786e3231cb950b#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0xb24a8c178cf81d35e38683012e786e3231cb950b]<br>
+<a href="https://hyperevmscan.io/address/0x889bfd39342feabfdb18b649131e2e2e28b92a2e#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x889bfd39342feabfdb18b649131e2e2e28b92a2e]<br>
+<a href="https://hyperevmscan.io/address/0xa77c4ba3cf1ef9f654676445aa1798370d0a0b61#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0xa77c4ba3cf1ef9f654676445aa1798370d0a0b61]<br>
+<a href="https://hyperevmscan.io/address/0x18a90dccfd140aba71299334a16a8c4a3309e39f#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0x18a90dccfd140aba71299334a16a8c4a3309e39f]<br>
+<a href="https://hyperevmscan.io/address/0xd7bfbc6cd9da96041ac87e504954489bebdebcb7#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0xd7bfbc6cd9da96041ac87e504954489bebdebcb7]<br>
+<a href="https://hyperevmscan.io/address/0x1effb9ab223c4ea18e11927bac0ef4fddda89671#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0x1effb9ab223c4ea18e11927bac0ef4fddda89671]<br>
+<a href="https://hyperevmscan.io/address/0x1e2803c47532a31d1282c65589644670e0675a26#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0x1e2803c47532a31d1282c65589644670e0675a26]<br>
+<a href="https://hyperevmscan.io/address/0x014646a9e13d4ddaba25556695990a966728a0fe#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0x014646a9e13d4ddaba25556695990a966728a0fe]<br>
+<a href="https://hyperevmscan.io/address/0x3896df7a88f211e509b8b30b6fca1fb1499bcc38#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0x3896df7a88f211e509b8b30b6fca1fb1499bcc38]<br>
+<a href="https://hyperevmscan.io/address/0x75114401118c5041b13c075a305ae5f4c641a7b9#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x75114401118c5041b13c075a305ae5f4c641a7b9]<br>
+<a href="https://hyperevmscan.io/address/0x185ba83e3f37de291a7c395bbc72828e4b1774bd#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0x185ba83e3f37de291a7c395bbc72828e4b1774bd]<br>
+<a href="https://hyperevmscan.io/address/0x880b49efd322c223e1083260106fb9ddf9df4789#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0x880b49efd322c223e1083260106fb9ddf9df4789]<br>
+<a href="https://hyperevmscan.io/address/0x0000000000000000000000000000000000000000#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> swapRouter [0x0000000000000000000000000000000000000000]<br>
+
+
+<br><br>
+
+
 
 
 mainnet - ETHEREUM === ungravel.eth<br>
