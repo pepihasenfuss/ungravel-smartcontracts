@@ -78,21 +78,21 @@ Ungravel - other chains - ask to get access - all are live, yet discontinued ***
 
  http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
 
- https://www.ungravel.com/?bd?64  taiko                 ( faster since the chain upgrade )
+ https://www.ungravel.lat/?bd?64  taiko                 ( faster since the chain upgrade )
 
  http://lisk.ungravel.org lisk                          ( level-2 chain, not relevant anymore )
 
- https://www.ungravel.com/?bd?144                       ( SONEIUM )
+ https://www.ungravel.lat/?bd?144                       ( SONEIUM )
 
- https://www.ungravel.com/?bd?154                       ( WorldChain )
+ https://www.ungravel.lat/?bd?154                       ( WorldChain )
 
- https://www.ungravel.com/?bd?164                       ( ZORA )
+ https://www.ungravel.lat/?bd?164                       ( ZORA )
 
- https://www.ungravel.com/?bd?174                       ( CELO )
+ https://www.ungravel.lat/?bd?174                       ( CELO )
 
  http://www.ungravel.com/?bd?35                         ( sepolia - very slow - deprecated )
 
- https://www.ungravel.com/?bd?224                       ( PHAROS - atlantic testnet - deprecated: Impossible to get enough PHRS )
+ https://www.ungravel.lat/?bd?224                       ( PHAROS - atlantic testnet - deprecated: Impossible to get enough PHRS )
 
 <br><br>
 
