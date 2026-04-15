@@ -67,7 +67,7 @@ http://unichain.ungravel.org unichain                  ( very fast )
 
 http://optimism.ungravel.org optimism                  ( I cannot get test ether! Otherwise fast. )
 
-https://www.ungravel.lat/?bd?24 scroll                 ( zk-roll-up SCROLL, pretty fast )
+https://www.ungravel.lat/?bd?14 scroll                 ( zk-roll-up SCROLL, pretty fast )
 
 http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
 
