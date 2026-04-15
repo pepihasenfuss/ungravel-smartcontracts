@@ -75,7 +75,7 @@ https://www.ungravel.lat/?bd?104 blast                 ( live on mainnet, quite 
 
 https://www.ungravel.lat/?bd?64  taiko                 ( faster since the chain upgrade )
 
-http://lisk.ungravel.org lisk                          ( level-2 chain )
+https://www.ungravel.lat/?bd?24 lisk                   ( level-2 chain )
 
 https://www.ungravel.lat/?bd?144                       ( SONEIUM - powered by SONY )
 
