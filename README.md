@@ -71,7 +71,7 @@ https://www.ungravel.lat/?bd?14 scroll                 ( zk-roll-up SCROLL, pret
 
 http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
 
-http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
+https://www.ungravel.lat/?bd?104 blast                 ( live on mainnet, quite cheap, fast )
 
 https://www.ungravel.lat/?bd?64  taiko                 ( faster since the chain upgrade )
 
