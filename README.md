@@ -69,26 +69,26 @@ http://optimism.ungravel.org optimism                  ( I cannot get test ether
 
 http://scroll.ungravel.org scroll                      ( zk-roll-up SCROLL, pretty fast )
 
+http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
+
+http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
+
+https://www.ungravel.lat/?bd?64  taiko                 ( faster since the chain upgrade )
+
+http://lisk.ungravel.org lisk                          ( level-2 chain )
+
+https://www.ungravel.lat/?bd?144                       ( SONEIUM - powered by SONY )
+
+https://www.ungravel.lat/?bd?154                       ( WorldChain )
+
+https://www.ungravel.lat/?bd?164                       ( ZORA )
+
+https://www.ungravel.lat/?bd?174                       ( CELO )
 
 <br><br>
 
 Ungravel - other chains - ask to get access - all are live, yet discontinued ***
 
- http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
-
- http://blast.ungravel.org blast                        ( live on mainnet, quite cheap, fast )
-
- https://www.ungravel.lat/?bd?64  taiko                 ( faster since the chain upgrade )
-
- http://lisk.ungravel.org lisk                          ( level-2 chain, not relevant anymore )
-
- https://www.ungravel.lat/?bd?144                       ( SONEIUM )
-
- https://www.ungravel.lat/?bd?154                       ( WorldChain )
-
- https://www.ungravel.lat/?bd?164                       ( ZORA )
-
- https://www.ungravel.lat/?bd?174                       ( CELO )
 
  http://www.ungravel.com/?bd?35                         ( sepolia - very slow - deprecated )
 
