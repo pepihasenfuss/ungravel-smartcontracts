@@ -46,7 +46,7 @@ http://kaia.ungravel.org kaia                          ( KAIA stablecoin mainnet
 
 http://hyper.ungravel.org hyper                        ( HyperLiquid EVM )
 
-http://gnosis.ungravel.org gnosis                      ( super cheap, important in LATAM ) ***
+http://gnosis.ungravel.org gnosis                      ( super cheap, discontinued ) ***
 
 http://stable.ungravel.org stable                      ( STABLE mainnet )
 
@@ -64,7 +64,7 @@ http://polygon.ungravel.org polygon                    ( live on mainnet, fast )
 
 http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
 
-http://ethereum.ungravel.org ethereum mainnet          ( too expensive, slow ) ***
+http://ethereum.ungravel.org ethereum mainnet          ( too expensive, slow, deprecated ) ***
 
 http://avalanche.ungravel.org avalanche                ( level-2 chain / mainnet )
 
@@ -72,15 +72,15 @@ http://unichain.ungravel.org unichain                  ( very fast )
 
 http://optimism.ungravel.org optimism                  ( I cannot get test ether! Otherwise fast. )
 
-https://www.ungravel.lat/?bd?14 scroll                 ( zk-roll-up SCROLL, pretty fast ) ***
+https://www.ungravel.lat/?bd?14 scroll                 ( zk-roll-up SCROLL, deprecated ) ***
 
 http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant )
 
-https://www.ungravel.lat/?bd?104 blast                 ( live on mainnet, quite cheap, fast ) ***
+https://www.ungravel.lat/?bd?104 blast                 ( live on mainnet, quite cheap, deprecated ) ***
 
 https://www.ungravel.lat/?bd?64  taiko                 ( faster since the chain upgrade )
 
-https://www.ungravel.lat/?bd?24 lisk                   ( level-2 chain ) ***
+https://www.ungravel.lat/?bd?24 lisk                   ( level-2 chain, deprecated ) ***
 
 https://www.ungravel.lat/?bd?144                       ( SONEIUM - powered by SONY )
 
