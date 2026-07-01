@@ -1,4 +1,6 @@
 # smartcontracts
+"Virtual Enterprises" / "Ungravel GroupWallet" / "ARC-GroupWallet" / "GroupWallet" are different production names for one dApp:
+
 Ungravel is based on 7 major smart contracts & lots of proxy contracts that build on top of ENS/UUNS/EVM Names.
 The following audits have been applied & published on STABLE mainnet, but (almost) the same Solidity code is live on all other 25+ EVMs. <br>
 
