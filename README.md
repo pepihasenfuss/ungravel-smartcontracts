@@ -42,6 +42,8 @@ Ungravel live installations on EVM mainnet chains:
 
 https://www.ungravel.lat/?bd?244                       ( ROBINHOOD testnet )
 
+https://www.ungravel.lat/?bd?254                       ( ROBINHOOD chain | mainnet )
+
 http://www.ungravel.lat/?bd?264 ink                    ( INK mainnet (kraken) )
 
 http://kaia.ungravel.org kaia                          ( KAIA stablecoin mainnet )
