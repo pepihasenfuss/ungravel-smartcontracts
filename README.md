@@ -104,7 +104,6 @@ Ungravel - other chains - ask to get access - all are live, yet discontinued ***
 
 STABLE.xyz mainnet === ungravel.stable<br>
 
-
  <a href="https://stablescan.xyz/address/0x2ae1f932718da8157a8c27a926dbbbfeae668259#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> <a href="https://solidityscan.com/quickscan/0x2ae1f932718da8157a8c27a926dbbbfeae668259/stable/mainnet" target="_blank" style="color:#6892ed;font-weight:500;">solid</a> registryAddresses [0x2ae1f932718da8157a8c27a926dbbbfeae668259]<br> 
  <a href="https://stablescan.xyz/address/0x7255fc0384f58d875946aba8956028ef2906ffb3#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> <a href="https://solidityscan.com/quickscan/0x7255fc0384f58d875946aba8956028ef2906ffb3/stable/mainnet" target="_blank" style="color:#6892ed;font-weight:500;">solid</a> resolverAddresses [0x7255fc0384f58d875946aba8956028ef2906ffb3]<br> 
  <a href="https://stablescan.xyz/address/0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc#code" target="_blank" style="color:#6892ed;font-weight:500;">url</a> <a href="https://solidityscan.com/quickscan/0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc/stable/mainnet" target="_blank" style="color:#6892ed;font-weight:500;">solid</a> testRegistrarAddresses [0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc]<br> 
@@ -239,7 +238,51 @@ robinhood testnet === ungravel.robin<br>
  <a href="https://explorer.testnet.chain.robinhood.com/address/0x0000000000000000000000000000000000000000?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> accrossWETH_SpokePool [0x0000000000000000000000000000000000000000]<br>
 
 
+<br><br>
 
+ink === ungravel.ink<br>
+
+ <a href="https://explorer.inkonchain.com/address/0x2ae1f932718da8157a8c27a926dbbbfeae668259?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> registryAddresses [0x2ae1f932718da8157a8c27a926dbbbfeae668259]<br>
+ <a href="https://explorer.inkonchain.com/address/0x7255fc0384f58d875946aba8956028ef2906ffb3?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses [0x7255fc0384f58d875946aba8956028ef2906ffb3]<br>
+ <a href="https://explorer.inkonchain.com/address/0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> testRegistrarAddresses [0x295a6dcc640b76c1d8a3b0cfb35a23a8b8f7eafc]<br>
+ <a href="https://explorer.inkonchain.com/address/0x3d763fbf7fe041bd7c0b80a3aec8f6872e0b462f?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> auctionAddresses [0x3d763fbf7fe041bd7c0b80a3aec8f6872e0b462f]<br>
+ <a href="https://explorer.inkonchain.com/address/0x9e3888f65126883b5bb72e7a0d1a72e64dba329b?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> extDeedMaster [0x9e3888f65126883b5bb72e7a0d1a72e64dba329b]<br>
+ <a href="https://explorer.inkonchain.com/address/0xf0eb81d532a25f6a7ae144026eba1cc43ec5e01c?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intDeedMaster [0xf0eb81d532a25f6a7ae144026eba1cc43ec5e01c]<br>
+ <a href="https://explorer.inkonchain.com/address/0x1effb9ab223c4ea18e11927bac0ef4fddda89671?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseDefaultAddresses [0x1effb9ab223c4ea18e11927bac0ef4fddda89671]<br>
+ <a href="https://explorer.inkonchain.com/address/0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> reverseAddresses [0xa6cc5a43d8de3b3e917c4ebd6c4e56a7dcb6cbf8]<br>
+ <a href="https://explorer.inkonchain.com/address/0x82301243198e208b90e1bbfe3d134d0c4a86c2b1?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> priceOracle [0x82301243198e208b90e1bbfe3d134d0c4a86c2b1]<br>
+ <a href="https://explorer.inkonchain.com/address/0x42f136303a16281d17be4a8c338ddd2fb357a337?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ownedResolver [0x42f136303a16281d17be4a8c338ddd2fb357a337]<br>
+ <a href="https://explorer.inkonchain.com/address/0xd6d08bd18e814e92ecf69d492fc0a4f822658db1?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> resolverAddresses2 [0xd6d08bd18e814e92ecf69d492fc0a4f822658db1]<br>
+ <a href="https://explorer.inkonchain.com/address/0x1ee35f96b80d40c00e4725c773edcbcd0dcc0306?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> baseRegistrarAddresses [0x1ee35f96b80d40c00e4725c773edcbcd0dcc0306]<br>
+ <a href="https://explorer.inkonchain.com/address/0x9fab241a2035b33e4327c9c6074b211a939b4007?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> subdomainRegistrar [0x9fab241a2035b33e4327c9c6074b211a939b4007]<br>
+ <a href="https://explorer.inkonchain.com/address/0xea5ef72bfda032f440f8ae0dc9b06435938e6472?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethRegControllerAddresses [0xea5ef72bfda032f440f8ae0dc9b06435938e6472]<br>
+ <a href="https://explorer.inkonchain.com/address/0xc90e88e9019c985a155c996e05903605d1995cb6?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> customRegistrarAddresses [0xc90e88e9019c985a155c996e05903605d1995cb6]<br>
+ <a href="https://explorer.inkonchain.com/address/0x1ae129d0a2f3d267030e1839a9815a83c56f1ce9?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> root [0x1ae129d0a2f3d267030e1839a9815a83c56f1ce9]<br>
+ <a href="https://explorer.inkonchain.com/address/0xee5c03b9ec3b5ea8f4dcb66f0691cf296b058abc?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> bulkRenewal [0xee5c03b9ec3b5ea8f4dcb66f0691cf296b058abc]<br>
+ <a href="https://explorer.inkonchain.com/address/0xf6b64dfeb46ce2b1793d03e070bd44510e02d116?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> DNSSECImplAddresses [0xf6b64dfeb46ce2b1793d03e070bd44510e02d116]<br>
+ <a href="https://explorer.inkonchain.com/address/0x9fba5f9e6c5a703731bc9e7bddaf8c33caa7cbe9?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> dnsRegistrar [0x9fba5f9e6c5a703731bc9e7bddaf8c33caa7cbe9]<br>
+ <a href="https://explorer.inkonchain.com/address/0x96750a75376f4393ba02c5e1066aed232cb65b6c?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA256Addresses [0x96750a75376f4393ba02c5e1066aed232cb65b6c]<br>
+ <a href="https://explorer.inkonchain.com/address/0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> RSASHA1Addresses [0x0143e55a49b317211fe2d2ad99f9fe395c0ab70d]<br>
+ <a href="https://explorer.inkonchain.com/address/0xb24a8c178cf81d35e38683012e786e3231cb950b?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1Addresses [0xb24a8c178cf81d35e38683012e786e3231cb950b]<br>
+ <a href="https://explorer.inkonchain.com/address/0x2c804ca3604771eb71210736f9cab91c984b57ea?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA256Addresses [0x2c804ca3604771eb71210736f9cab91c984b57ea]<br>
+ <a href="https://explorer.inkonchain.com/address/0xeb9a1effe5bd833dfaefb761b59ddec33370bc04?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> SHA1NSEC3Addresses [0xeb9a1effe5bd833dfaefb761b59ddec33370bc04]<br>
+ <a href="https://explorer.inkonchain.com/address/0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> P256SHA256Addresses [0x2b0aabb0cde0f57ab86eb578ced3d8b717407ee7]<br>
+ <a href="https://explorer.inkonchain.com/address/0x5164ab7725bc1f58ff2b63b6cbbb2d5d8c5f056c?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TLDPublicSuffixAddresses [0x5164ab7725bc1f58ff2b63b6cbbb2d5d8c5f056c]<br>
+ <a href="https://explorer.inkonchain.com/address/0x889bfd39342feabfdb18b649131e2e2e28b92a2e?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> gwalletAddresses [0x889bfd39342feabfdb18b649131e2e2e28b92a2e]<br>
+ <a href="https://explorer.inkonchain.com/address/0xa77c4ba3cf1ef9f654676445aa1798370d0a0b61?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> walletFactoryAddresses [0xa77c4ba3cf1ef9f654676445aa1798370d0a0b61]<br>
+ <a href="https://explorer.inkonchain.com/address/0x18a90dccfd140aba71299334a16a8c4a3309e39f?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> TokenMasterContract [0x18a90dccfd140aba71299334a16a8c4a3309e39f]<br>
+ <a href="https://explorer.inkonchain.com/address/0x3033edfcc0424743a9cbdcff91771a75990539e9?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> metaDataAddresses [0x3033edfcc0424743a9cbdcff91771a75990539e9]<br>
+ <a href="https://explorer.inkonchain.com/address/0x124bb8e8c994a107c0fab0337311547f217cfa89?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> expPriceOracleAddresses [0x124bb8e8c994a107c0fab0337311547f217cfa89]<br>
+ <a href="https://explorer.inkonchain.com/address/0x6e720f0f882ef04db76282b71f59f4e28f2f39ae?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> nameWrapperAddresses [0x6e720f0f882ef04db76282b71f59f4e28f2f39ae]<br>
+ <a href="https://explorer.inkonchain.com/address/0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> ethControllerAddresses [0x4492d80d192aaf1f6f828bd5ddb83d33eb6a1c3f]<br>
+ <a href="https://explorer.inkonchain.com/address/0xd1f01d6e20059098f95a06e130ff462f153423af?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall3Addresses [0xd1f01d6e20059098f95a06e130ff462f153423af]<br>
+ <a href="https://explorer.inkonchain.com/address/0x5d479c8fe2393056e793956828facb4344d79725?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> Multicall4Addresses [0x5d479c8fe2393056e793956828facb4344d79725]<br>
+ <a href="https://explorer.inkonchain.com/address/0x86dced891a0349b42b24b0b912553863dfed69e5?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> intentionsAddresses [0x86dced891a0349b42b24b0b912553863dfed69e5]<br>
+ <a href="https://explorer.inkonchain.com/address/0xb495a08d5baf7bb96de3acc2b82f180c944bb5f0?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> globalTokenAddresses [0xb495a08d5baf7bb96de3acc2b82f180c944bb5f0]<br>
+ <a href="https://explorer.inkonchain.com/address/0x0000000000000000000000000000000000000001?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> swapRouter [0x0000000000000000000000000000000000000001]<br>
+ <a href="https://explorer.inkonchain.com/address/0x4200000000000000000000000000000000000006?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> swapWETH_contract [0x4200000000000000000000000000000000000006]<br>
+ <a href="https://explorer.inkonchain.com/address/0x2d270e6886d130d724215a266106e6832161eaed?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> swapUSDC_contract [0x2D270e6886d130D724215A266106e6832161EAEd]<br>
+ <a href="https://explorer.inkonchain.com/address/0xef684c38f94f48775959ecf2012d7e864ffb9dd4?tab=contract" target="_blank" style="color:#6892ed;font-weight:500;">url</a> accrossWETH_SpokePool [0xeF684C38F94F48775959ECf2012D7E864ffb9dd4]<br>
 
 <br><br>
 
