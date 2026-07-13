@@ -42,6 +42,8 @@ Ungravel live installations on EVM mainnet chains:
 
 http://www.ungravel.lat/?bd?184?first                  ( arc-testnet - native USDC - super-fast )
 
+http://www.ungravel.lat/?bd?274                        ( arc-mainnet - native USDC - soon!!! )
+
 https://www.ungravel.lat/?bd?244                       ( ROBINHOOD testnet )
 
 https://www.ungravel.lat/?bd?254                       ( ROBINHOOD chain | mainnet USDG )
