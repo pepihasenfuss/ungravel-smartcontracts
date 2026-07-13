@@ -40,41 +40,56 @@ Proxies for group shares and group voting - 2 contracts<br>
 
 Ungravel live installations on EVM mainnet chains:
 
+http://www.ungravel.lat/?bd?184?first                  ( arc-testnet - native USDC - super-fast )
+
 https://www.ungravel.lat/?bd?244                       ( ROBINHOOD testnet )
 
-https://www.ungravel.lat/?bd?254                       ( ROBINHOOD chain | mainnet )
+https://www.ungravel.lat/?bd?254                       ( ROBINHOOD chain | mainnet USDG )
 
 http://www.ungravel.lat/?bd?264 ink                    ( INK mainnet (kraken) )
 
-http://kaia.ungravel.org kaia                          ( KAIA stablecoin mainnet )
-
 http://hyper.ungravel.org hyper                        ( HyperLiquid EVM )
 
-http://gnosis.ungravel.org gnosis                      ( super cheap, discontinued ) ***
-
-http://stable.ungravel.org stable                      ( STABLE mainnet )
+http://stable.ungravel.org stable                      ( STABLE mainnet - native USDT )
 
 http://www.ungravel.lat/?bd?194?first                  ( STABLE - native USDT mainnet, Paypal paywall )
 
 http://www.ungravel.lat/?bd?204                        ( PLASMA - XPL / USDT - mainnet )
 
-http://www.ungravel.lat/?bd?184?first                  ( arc-testnet - native USDC - super-fast )
-
 http://base.ungravel.org base                          ( pretty fast! Promising. Cheap transactions.)
 
 http://arbitrum.ungravel.org arbitrum                  ( super fast and really good user experience, thanks to BlockPi! )
 
-http://polygon.ungravel.org polygon                    ( live on mainnet, fast )
+http://polygon.ungravel.org polygon                    ( live on mainnet, cheap transactions, USDC | PYUSD )
 
 http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
 
-http://ethereum.ungravel.org ethereum mainnet          ( too expensive, slow ) 
+http://ethereum.ungravel.org ethereum mainnet          ( expensive, slow - USDC / PYUSD ) 
 
-http://avalanche.ungravel.org avalanche                ( level-2 chain / mainnet )
+http://avalanche.ungravel.org avalanche                ( level-2 chain / mainnet - USDC )
 
 http://unichain.ungravel.org unichain                  ( very fast )
 
 http://optimism.ungravel.org optimism                  ( I cannot get test ether! Otherwise fast. )
+
+https://www.ungravel.lat/?bd?144                       ( SONEIUM - powered by SONY )
+
+https://www.ungravel.lat/?bd?154                       ( WorldChain )
+
+https://www.ungravel.lat/?bd?164                       ( ZORA - with USDzC )
+
+https://www.ungravel.lat/?bd?174                       ( CELO - with USDT )
+
+<br><br>
+
+Ungravel - other chains - ask to get access - all are live, yet discontinued *** (s.a. Blast, Lisk, Scroll, Ethereum, Gnosis e.a.)
+
+
+http://www.ungravel.com/?bd?35                         ( sepolia - very slow - deprecated )
+
+https://www.ungravel.lat/?bd?224                       ( PHAROS - atlantic testnet - deprecated: Impossible to get enough PHRS )
+
+http://gnosis.ungravel.org gnosis                      ( super cheap, discontinued ) ***
 
 https://www.ungravel.lat/?bd?14 scroll                 ( zk-roll-up SCROLL, deprecated ) ***
 
@@ -86,22 +101,7 @@ https://www.ungravel.lat/?bd?64  taiko                 ( faster since the chain 
 
 https://www.ungravel.lat/?bd?24 lisk                   ( level-2 chain, deprecated ) ***
 
-https://www.ungravel.lat/?bd?144                       ( SONEIUM - powered by SONY )
-
-https://www.ungravel.lat/?bd?154                       ( WorldChain )
-
-https://www.ungravel.lat/?bd?164                       ( ZORA )
-
-https://www.ungravel.lat/?bd?174                       ( CELO )
-
-<br><br>
-
-Ungravel - other chains - ask to get access - all are live, yet discontinued *** (s.a. Blast, Lisk, Scroll, Ethereum, Gnosis e.a.)
-
-
- http://www.ungravel.com/?bd?35                         ( sepolia - very slow - deprecated )
-
- https://www.ungravel.lat/?bd?224                       ( PHAROS - atlantic testnet - deprecated: Impossible to get enough PHRS )
+http://kaia.ungravel.org kaia                          ( KAIA stablecoin mainnet )
 
 <br><br>
 
