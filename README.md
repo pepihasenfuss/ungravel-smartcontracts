@@ -90,7 +90,7 @@ https://www.ungravel.lat/?bd?174                       ( CELO - with USDT .celo 
 
 <br><br>
 
-Ungravel - other chains - ask to get access - all are live, yet discontinued *** (s.a. Blast, Lisk, Scroll, Ethereum, Gnosis e.a.)
+Ungravel - other chains - ask to get access - all are live, yet discontinued *** (s.a. Blast, Lisk, Scroll, Gnosis, Pharos testnet, Sepolia, Gnosis e.a.)
 
 
 http://www.ungravel.com/?bd?35                         ( sepolia - very slow - deprecated )
