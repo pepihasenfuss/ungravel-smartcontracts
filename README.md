@@ -40,51 +40,53 @@ Proxies for group shares and group voting - 2 contracts<br>
 
 Ungravel live installations on EVM mainnet chains:
 
-http://www.ungravel.lat/?bd?184?first                  ( arc-testnet - native USDC - super-fast )
+https://www.ungravel.lat/?bd?184?first                 ( arc-testnet - native USDC - super-fast .arc )
 
-http://arc.ungravel.org                                ( arc-mainnet/USDC - preview )
+http://arc.ungravel.org                                ( arc-mainnet/USDC - preview .usdc )
 
-http://www.ungravel.lat/?bd?274                        ( arc-mainnet - native USDC - soon!!! )
+https://www.ungravel.lat/?bd?274                       ( native USDC-mainnet - soon!!! .usdc )
 
-https://www.ungravel.lat/?bd?244                       ( ROBINHOOD testnet )
+https://www.ungravel.lat/?bd?244                       ( ROBINHOOD testnet .robin )
 
-https://www.ungravel.lat/?bd?254                       ( ROBINHOOD chain | mainnet USDG )
+https://www.ungravel.lat/?bd?254                       ( ROBINHOOD chain | mainnet USDG .usdg )
 
-http://www.ungravel.lat/?bd?264 ink                    ( INK mainnet (kraken) )
+https://www.ungravel.lat/?bd?264                       ( INK mainnet (kraken) .ink )
 
-http://hyper.ungravel.org hyper                        ( HyperLiquid EVM )
+http://hyper.ungravel.org hyper                        ( HyperLiquid EVM .hyper )
 
 http://stable.ungravel.org stable                      ( STABLE mainnet - native USDT )
 
-http://www.ungravel.lat/?bd?194?first                  ( STABLE - native USDT mainnet, Paypal paywall )
+https://www.ungravel.lat/?bd?194?first                 ( STABLE - native USDT mainnet, Paypal Paywall .stable )
 
-https://www.ungravel.lat/?bd?284                       ( MONAD - mainnet )
+https://www.ungravel.lat/?bd?284                       ( MONAD - mainnet .monad )
 
-http://www.ungravel.lat/?bd?204                        ( PLASMA - XPL / USDT - mainnet )
+https://www.ungravel.lat/?bd?224                       ( Pharos - mainnet .phrs )
 
-http://base.ungravel.org base                          ( pretty fast! Promising. Cheap transactions.)
+https://www.ungravel.lat/?bd?204                       ( PLASMA - XPL / USDT - mainnet .plasma )
 
-http://arbitrum.ungravel.org arbitrum                  ( super fast and really good user experience, thanks to BlockPi! )
+http://base.ungravel.org base                          ( pretty fast! Promising. Cheap transactions .base )
 
-http://polygon.ungravel.org polygon                    ( live on mainnet, cheap transactions, USDC | PYUSD )
+http://arbitrum.ungravel.org arbitrum                  ( super fast and really good user experience, thanks to BlockPi! .one )
 
-http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap )
+http://polygon.ungravel.org polygon                    ( live on mainnet, cheap transactions, USDC | PYUSD .matic )
 
-http://ethereum.ungravel.org ethereum mainnet          ( expensive, slow - USDC / PYUSD ) 
+http://bscmain.ungravel.org binance                    ( live on mainnet, super fast, not quite cheap .bsc )
 
-http://avalanche.ungravel.org avalanche                ( level-2 chain / mainnet - USDC )
+http://ethereum.ungravel.org ethereum mainnet          ( expensive, slow - USDC / PYUSD, .eth ) 
 
-http://unichain.ungravel.org unichain                  ( very fast )
+http://avalanche.ungravel.org avalanche                ( level-2 chain / mainnet - USDC .ava )
 
-http://optimism.ungravel.org optimism                  ( I cannot get test ether! Otherwise fast. )
+http://unichain.ungravel.org unichain                  ( very fast .uni )
 
-https://www.ungravel.lat/?bd?144                       ( SONEIUM - powered by SONY )
+http://optimism.ungravel.org optimism                  ( I cannot get test ether! Otherwise fast .op )
 
-https://www.ungravel.lat/?bd?154                       ( WorldChain )
+https://www.ungravel.lat/?bd?144                       ( SONEIUM - powered by SONY .son )
 
-https://www.ungravel.lat/?bd?164                       ( ZORA - with USDzC )
+https://www.ungravel.lat/?bd?154                       ( WorldChain .wc )
 
-https://www.ungravel.lat/?bd?174                       ( CELO - with USDT )
+https://www.ungravel.lat/?bd?164                       ( ZORA - with USDzC .zora )
+
+https://www.ungravel.lat/?bd?174                       ( CELO - with USDT .celo )
 
 <br><br>
 
@@ -95,7 +97,7 @@ http://www.ungravel.com/?bd?35                         ( sepolia - very slow - d
 
 https://www.ungravel.lat/?bd?224                       ( PHAROS - atlantic testnet - deprecated: Impossible to get enough PHRS )
 
-http://gnosis.ungravel.org gnosis                      ( super cheap, discontinued ) ***
+http://gnosis.ungravel.org gnosis                      ( discontinued, no relevance ) ***
 
 https://www.ungravel.lat/?bd?14 scroll                 ( zk-roll-up SCROLL, deprecated ) ***
 
