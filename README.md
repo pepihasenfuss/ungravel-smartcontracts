@@ -42,6 +42,8 @@ Ungravel live installations on EVM mainnet chains:
 
 http://www.ungravel.lat/?bd?184?first                  ( arc-testnet - native USDC - super-fast )
 
+http://arc.ungravel.org                                ( arc-mainnet/USDC - preview )
+
 http://www.ungravel.lat/?bd?274                        ( arc-mainnet - native USDC - soon!!! )
 
 https://www.ungravel.lat/?bd?244                       ( ROBINHOOD testnet )
@@ -55,6 +57,8 @@ http://hyper.ungravel.org hyper                        ( HyperLiquid EVM )
 http://stable.ungravel.org stable                      ( STABLE mainnet - native USDT )
 
 http://www.ungravel.lat/?bd?194?first                  ( STABLE - native USDT mainnet, Paypal paywall )
+
+https://www.ungravel.lat/?bd?284                       ( MONAD - mainnet )
 
 http://www.ungravel.lat/?bd?204                        ( PLASMA - XPL / USDT - mainnet )
 
