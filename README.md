@@ -80,6 +80,8 @@ http://unichain.ungravel.org unichain                  ( very fast .uni )
 
 http://optimism.ungravel.org optimism                  ( I cannot get test ether! Otherwise fast .op )
 
+https://www.ungravel.lat/?bd?124 linea                 ( consensys / metamask chain .linea )
+
 https://www.ungravel.lat/?bd?144                       ( SONEIUM - powered by SONY .son )
 
 https://www.ungravel.lat/?bd?154                       ( WorldChain .wc )
@@ -100,8 +102,6 @@ https://www.ungravel.lat/?bd?224                       ( PHAROS - atlantic testn
 http://gnosis.ungravel.org gnosis                      ( discontinued, no relevance ) ***
 
 https://www.ungravel.lat/?bd?14 scroll                 ( zk-roll-up SCROLL, deprecated ) ***
-
-http://linea.ungravel.org linea                        ( consensys / metamask chain, not relevant ) ***
 
 https://www.ungravel.lat/?bd?104 blast                 ( live on mainnet, quite cheap, deprecated ) ***
 
