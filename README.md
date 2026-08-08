@@ -54,6 +54,8 @@ https://www.ungravel.lat/?bd?264                       ( INK mainnet (kraken) .i
 
 http://hyper.ungravel.org hyper                        ( HyperLiquid EVM .hyper )
 
+https://www.ungravel.lat/?bd?294                       ( Sonic - .sonic )
+
 http://stable.ungravel.org stable                      ( STABLE mainnet - native USDT )
 
 https://www.ungravel.lat/?bd?194?first                 ( STABLE - native USDT mainnet, Paypal Paywall .stable )
